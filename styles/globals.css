@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,7 +47,6 @@ nav {
 
 .mikey-logo {
   margin-right: 10px;
-  width: 50px;
 }
 
 .navbar-menu {
@@ -82,6 +82,19 @@ nav {
   font-family: THEBOLDFONT;
   position: relative;
   left: 20px;
+}
+.location-icon{
+  width: 30px;
+}
+
+.dots{
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap:5px;
+}
+.dots-svg{
+  width: 10px;
+  height: 10px;
 }
 
 .menu-icon-line-1 {
