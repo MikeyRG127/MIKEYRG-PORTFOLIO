@@ -34,6 +34,11 @@ const Introduction = () => {
         <span className="presentation-line-2">JOSE ALBERTO</span>
         <span className="presentation-line-3">RODRIGUEZ GUZMAN</span>
       </div>
+      <div className="stacks">
+        <span>FullStack Web Developer</span>
+        <span>UX/UI</span>
+        <span>Problem Solver</span>
+      </div>
 
       <div className="nickname">
         <span className="nickname-line-1">but call me</span>
@@ -41,9 +46,7 @@ const Introduction = () => {
         <span className="nickname-line-3">READ STORY</span>
       </div>
 
-      <div className="more-about-me">
-        <span className="more-about-me-text">MORE ABOUT ME</span>
-      </div>
+      
     </section>
   );
 };
