@@ -30,7 +30,6 @@
 body {
   display: grid;
   width: 100%;
-  min-width: 400px;
   height: auto;
   grid-template-columns: auto;
   background-color: #ffffff;
