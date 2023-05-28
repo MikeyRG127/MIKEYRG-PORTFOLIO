@@ -42,7 +42,8 @@ nav {
   grid-template-columns: auto auto;
   background-color: black;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 15px;
 }
 
 .mikey-logo {
@@ -62,7 +63,7 @@ nav {
 .menu-icon {
   display: grid;
   grid-template-columns: auto;
-  gap: 10px;
+  gap: 5px;
   width: auto;
   height: auto;
   justify-self: end;
@@ -71,7 +72,7 @@ nav {
 .home-menu-icon-line {
   width: 3px;
   background-color: white;
-  height: 50px;
+  height: 40px;
   justify-self: center;
   opacity: 50%;
 }
@@ -143,7 +144,8 @@ nav {
 }
 
 .mikey-picture {
-  width: 70%;
+  width: 80%;
+  max-width: 300px;
 }
 
 .presentation {
