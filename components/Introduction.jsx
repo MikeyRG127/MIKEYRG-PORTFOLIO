@@ -36,7 +36,7 @@ const Introduction = () => {
       </div>
       <div className="stacks">
         <span>FullStack Web Developer</span>
-        <span>UX/UI</span>
+        <span>UI/UX</span>
         <span>Problem Solver</span>
       </div>
 
@@ -44,7 +44,10 @@ const Introduction = () => {
         <span className="nickname-line-1">but call me</span>
         <span className="nickname-line-2">Mikey</span>
         <span className="nickname-line-3">READ STORY</span>
+        <span className="nickname-line-animation"></span>
       </div>
+
+      
 
       
     </section>

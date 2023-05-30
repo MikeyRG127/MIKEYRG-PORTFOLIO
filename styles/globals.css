@@ -30,6 +30,7 @@
 body {
   display: grid;
   width: 100%;
+  min-width: 400px;
   height: auto;
   grid-template-columns: auto;
   background-color: #ffffff;
@@ -253,6 +254,77 @@ nav {
   opacity: 0.5;
   top: 5px;
 }
+
+.nickname-line-animation{
+  display: grid;
+  height: 2px;
+  background-color: black;
+  position: relative;
+  left: 8px;
+  bottom: 7px;
+  animation: mymove 1.5s infinite;
+}
+
+@keyframes mymove {
+  from {width: 0px;}
+  to {width: 70px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page-location {
   width: 100%;
@@ -553,3 +625,4 @@ nav {
     transform: skew(-4deg);
   }
 }
+
