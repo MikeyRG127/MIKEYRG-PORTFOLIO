@@ -227,6 +227,7 @@ nav {
   position: relative;
   left: 10px;
   top: -10px;
+  cursor: pointer;
 }
 
 
@@ -255,7 +256,10 @@ nav {
   top: 5px;
 }
 
-.nickname-line-animation{
+
+
+
+.anim1{
   display: grid;
   height: 2px;
   background-color: black;
@@ -269,6 +273,25 @@ nav {
   from {width: 0px;}
   to {width: 70px;}
 }
+
+.read-story{
+  display: none;
+}
+
+.read-story.active{
+  display: grid;
+  width: 300px;
+  height: 150px;
+  background-color: black;
+  justify-items: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 50px;
+  color: white;
+  border-radius: 5px;
+  outline: 10px solid rgba(0, 0, 0, 0.123);
+}
+
 
 
 

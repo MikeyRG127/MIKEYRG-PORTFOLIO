@@ -22,12 +22,12 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   themeColor: 'black',
   verification: {
-    google: ['google','37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
+  google: ['google','37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
     
   }
-
-  
 };
+
+
 
 function RootLayout({ children }) {
   return (
