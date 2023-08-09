@@ -24,6 +24,8 @@ const Introduction = () => {
 
       <div className="mikey-picture">
         <img
+          height={240}
+          width={240}
           className="mikey-picture"
           src="/assets/images/mikey-picture.png"
           alt="mikey-picture" />
@@ -50,13 +52,9 @@ const Introduction = () => {
         <span className="nickname-line-animation anim1"></span>
       </div>
     </section><section></section>
-    
-    
-    
-    
-    
+
     </>
-      
+
   );
 };
 
