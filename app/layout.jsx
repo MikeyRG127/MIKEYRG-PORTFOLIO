@@ -1,7 +1,7 @@
 import "@styles/globals.css"
 import Navbar from "@components/Navbar"
 import Footer from "@components/Footer";
-
+import AboutMe from "@components/AboutMe";
 
 export const metadata = {
   title: "MikeyRG",
@@ -23,11 +23,9 @@ export const metadata = {
   themeColor: 'black',
   verification: {
   google: ['google','37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
-    
+     
   }
 };
-
-
 
 function RootLayout({ children }) {
   return (
@@ -35,6 +33,7 @@ function RootLayout({ children }) {
       <body>
         <Navbar></Navbar>
         {children}
+        <AboutMe></AboutMe>
         <Footer></Footer>
       </body>
     </html>
