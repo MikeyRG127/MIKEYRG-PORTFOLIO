@@ -27,7 +27,7 @@ const Introduction = () => {
           height={240}
           width={240}
           className="mikey-picture"
-          src="/assets/images/mikey-picture.png"
+          src="/assets/images/mikey-picture-min.png"
           alt="mikey-picture" />
       </div>
 
