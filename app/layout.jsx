@@ -15,15 +15,15 @@ export const metadata = {
     maximumScale: 1,
   },
   description: 'MikeyRG portfolio website.',
-  keywords: ['MikeyRG Portfolio', 'Creative Portfolio', 'MikeyRG','Modern Portfolio'],
+  keywords: ['MikeyRG Portfolio', 'Creative Portfolio', 'MikeyRG', 'Modern Portfolio'],
   creator: 'MikeyRG',
   publisher: 'MikeyRG',
   authors: [{ name: 'Jose Alberto' }, { name: 'MikeyRG', url: 'https://www.mikeyrg.site' }],
   referrer: 'origin-when-cross-origin',
   themeColor: 'black',
   verification: {
-  google: ['google','37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
-     
+    google: ['google', '37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
+
   }
 };
 
