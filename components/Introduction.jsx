@@ -1,5 +1,5 @@
 import Script from "next/script";
-await const Introduction = () => {
+const Introduction = () => {
   return (
     <><section className="introduction" data-anchor="slide1">
 
