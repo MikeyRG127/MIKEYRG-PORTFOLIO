@@ -22,6 +22,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("/assets/fonts/BebasNeue-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArchitectsDaughter-Regular";
+  src: url("/assets/fonts/ArchitectsDaughter-Regular.ttf");
+  font-display: swap;
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -44,11 +58,11 @@ nav {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: auto auto;
-  background-color: black;
+  grid-auto-flow: column;
+  background-color: rgb(255, 255, 255);
   align-items: center;
-  padding: 10px;
-  padding-left: 15px;
+  padding: 30px 40px 0px 40px;
+  z-index: 1;
 }
 
 .mikey-logo {
@@ -57,38 +71,152 @@ nav {
 
 .navbar-menu {
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-auto-flow: column;
   width: auto;
   height: auto;
   align-items: center;
   justify-self: end;
-  gap: 40px;
+  gap: 60px;
+
 }
 
-.menu-icon {
+.nav-sections {
   display: grid;
-  grid-template-columns: auto;
-  gap: 5px;
-  width: auto;
-  height: auto;
-  justify-self: end;
+  font-family: BebasNeue-Regular;
+  font-size: 40px;
+  border: 0px none;
+  background-color: transparent;
 }
 
-.home-menu-icon-line {
-  width: 3px;
-  background-color: white;
-  height: 40px;
-  justify-self: center;
-  opacity: 50%;
+.language-selection {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 25px;
+  color: #999999;
 }
 
-.page-location {
-  width: 100%;
+
+.button-get-in-touch {
+  padding: 20px;
+  font-family: BebasNeue-Regular;
+  background-color: black;
   color: white;
-  font-family: THEBOLDFONT;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
   position: relative;
-  left: 20px;
+  cursor: pointer;
 }
+
+.button-get-in-touch::before {
+  content: "GET IN TOUCH";
+  padding: 20px;
+  font-family: BebasNeue-Regular;
+  background-color: #FF0000;
+  color: transparent;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 5px;
+  left: -2%;
+  top: -5%;
+  z-index: -1;
+}
+
+.button-get-in-touch::after {
+  content: "GET IN TOUCH";
+  padding: 20px;
+  font-family: BebasNeue-Regular;
+  background-color: #0047FF;
+  color: transparent;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 5px;
+  left: 2%;
+  top: 5%;
+  z-index: -1;
+}
+
+.language-english {
+  cursor: pointer;
+}
+
+.language-spanish {
+  cursor: pointer;
+}
+
+.language-english.selected {
+  background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: auto;
+}
+
+.language-english.selected::after {
+  content: "";
+  display: grid;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  left: 81.9%;
+  top: 7.1%;
+  background-color: transparent;
+  border: 2px solid #4d4d4d;
+  border-radius: 5px;
+}
+
+.language-spanish.selected {
+  background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: auto;
+}
+
+.language-spanish.selected::after {
+  content: "";
+  display: grid;
+  position: absolute;
+  width: 62px;
+  height: 30px;
+  left: 77.7%;
+  top: 7.1%;
+  background-color: transparent;
+  border: 2px solid #4d4d4d;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .location-icon {
   width: 20px;
@@ -105,26 +233,7 @@ nav {
   height: 5px;
 }
 
-.menu-icon-line-1 {
-  background-color: white;
-  width: 40px;
-  height: 5px;
-}
 
-.menu-icon-line-2 {
-  background-color: white;
-  width: 50px;
-  height: 5px;
-  padding-right: 10px;
-  position: relative;
-  left: -15px;
-}
-
-.menu-icon-line-3 {
-  background-color: white;
-  width: 40px;
-  height: 5px;
-}
 
 .introduction {
   display: grid;
@@ -310,62 +419,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .page-location {
   width: 100%;
   font-family: THEBOLDFONT;
@@ -375,293 +428,4 @@ nav {
   color: white;
   font-size: 30px;
   letter-spacing: 0.5em;
-
-  animation: page-location-skew 1s infinite linear alternate-reverse;
-}
-
-.page-location::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: 2px;
-  text-shadow: -2px 0 #ff00c1;
-
-  clip: rect(44px, 450px, 56px, 0);
-
-  animation: page-location-anim 5s infinite linear alternate-reverse;
-}
-
-.page-location::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: -2px;
-  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-  animation: page-location-anim2 1s infinite linear alternate-reverse;
-}
-
-@keyframes page-location-anim {
-  0% {
-    clip: rect(47px, 9999px, 6px, 0);
-    transform: skew(0.11deg);
-  }
-
-  5% {
-    clip: rect(70px, 9999px, 6px, 0);
-    transform: skew(0.96deg);
-  }
-
-  10% {
-    clip: rect(44px, 9999px, 8px, 0);
-    transform: skew(0.44deg);
-  }
-
-  15% {
-    clip: rect(37px, 9999px, 98px, 0);
-    transform: skew(0.94deg);
-  }
-
-  20% {
-    clip: rect(55px, 9999px, 29px, 0);
-    transform: skew(0.53deg);
-  }
-
-  25% {
-    clip: rect(17px, 9999px, 50px, 0);
-    transform: skew(0.25deg);
-  }
-
-  30% {
-    clip: rect(21px, 9999px, 50px, 0);
-    transform: skew(0.25deg);
-  }
-
-  35% {
-    clip: rect(62px, 9999px, 11px, 0);
-    transform: skew(0.73deg);
-  }
-
-  40% {
-    clip: rect(87px, 9999px, 55px, 0);
-    transform: skew(0.34deg);
-  }
-
-  45% {
-    clip: rect(3px, 9999px, 49px, 0);
-    transform: skew(0.2deg);
-  }
-
-  50% {
-    clip: rect(15px, 9999px, 76px, 0);
-    transform: skew(0.83deg);
-  }
-
-  55% {
-    clip: rect(62px, 9999px, 62px, 0);
-    transform: skew(1deg);
-  }
-
-  60% {
-    clip: rect(65px, 9999px, 2px, 0);
-    transform: skew(0.36deg);
-  }
-
-  65% {
-    clip: rect(54px, 9999px, 45px, 0);
-    transform: skew(0.93deg);
-  }
-
-  70% {
-    clip: rect(86px, 9999px, 73px, 0);
-    transform: skew(0.29deg);
-  }
-
-  75% {
-    clip: rect(86px, 9999px, 64px, 0);
-    transform: skew(0.21deg);
-  }
-
-  80% {
-    clip: rect(91px, 9999px, 59px, 0);
-    transform: skew(0.42deg);
-  }
-
-  85% {
-    clip: rect(41px, 9999px, 3px, 0);
-    transform: skew(0.7deg);
-  }
-
-  90% {
-    clip: rect(3px, 9999px, 45px, 0);
-    transform: skew(0.6deg);
-  }
-
-  95% {
-    clip: rect(80px, 9999px, 29px, 0);
-    transform: skew(0.36deg);
-  }
-
-  100% {
-    clip: rect(47px, 9999px, 8px, 0);
-    transform: skew(0.1deg);
-  }
-}
-
-@keyframes page-location-anim2 {
-  0% {
-    clip: rect(5px, 9999px, 39px, 0);
-    transform: skew(0.19deg);
-  }
-
-  5% {
-    clip: rect(43px, 9999px, 49px, 0);
-    transform: skew(0.03deg);
-  }
-
-  10% {
-    clip: rect(9px, 9999px, 82px, 0);
-    transform: skew(0.23deg);
-  }
-
-  15% {
-    clip: rect(22px, 9999px, 5px, 0);
-    transform: skew(0.39deg);
-  }
-
-  20% {
-    clip: rect(79px, 9999px, 99px, 0);
-    transform: skew(0.6deg);
-  }
-
-  25% {
-    clip: rect(60px, 9999px, 7px, 0);
-    transform: skew(0.3deg);
-  }
-
-  30% {
-    clip: rect(63px, 9999px, 3px, 0);
-    transform: skew(0.57deg);
-  }
-
-  35% {
-    clip: rect(47px, 9999px, 98px, 0);
-    transform: skew(0.22deg);
-  }
-
-  40% {
-    clip: rect(21px, 9999px, 71px, 0);
-    transform: skew(0.37deg);
-  }
-
-  45% {
-    clip: rect(29px, 9999px, 70px, 0);
-    transform: skew(0.08deg);
-  }
-
-  50% {
-    clip: rect(75px, 9999px, 66px, 0);
-    transform: skew(0.69deg);
-  }
-
-  55% {
-    clip: rect(20px, 9999px, 8px, 0);
-    transform: skew(0.51deg);
-  }
-
-  60% {
-    clip: rect(60px, 9999px, 89px, 0);
-    transform: skew(0.88deg);
-  }
-
-  65% {
-    clip: rect(32px, 9999px, 82px, 0);
-    transform: skew(0.73deg);
-  }
-
-  70% {
-    clip: rect(2px, 9999px, 29px, 0);
-    transform: skew(0.85deg);
-  }
-
-  75% {
-    clip: rect(79px, 9999px, 60px, 0);
-    transform: skew(0.14deg);
-  }
-
-  80% {
-    clip: rect(92px, 9999px, 85px, 0);
-    transform: skew(0.28deg);
-  }
-
-  85% {
-    clip: rect(13px, 9999px, 78px, 0);
-    transform: skew(0.61deg);
-  }
-
-  90% {
-    clip: rect(4px, 9999px, 51px, 0);
-    transform: skew(0.09deg);
-  }
-
-  95% {
-    clip: rect(52px, 9999px, 11px, 0);
-    transform: skew(0.5deg);
-  }
-
-  100% {
-    clip: rect(11px, 9999px, 22px, 0);
-    transform: skew(0.58deg);
-  }
-}
-
-@keyframes page-location-skew {
-  0% {
-    transform: skew(4deg);
-  }
-
-  10% {
-    transform: skew(1deg);
-  }
-
-  20% {
-    transform: skew(1deg);
-  }
-
-  30% {
-    transform: skew(-4deg);
-  }
-
-  40% {
-    transform: skew(-2deg);
-  }
-
-  50% {
-    transform: skew(-1deg);
-  }
-
-  60% {
-    transform: skew(4deg);
-  }
-
-  70% {
-    transform: skew(-2deg);
-  }
-
-  80% {
-    transform: skew(3deg);
-  }
-
-  90% {
-    transform: skew(0deg);
-  }
-
-  100% {
-    transform: skew(-4deg);
-  }
 }

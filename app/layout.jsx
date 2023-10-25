@@ -18,12 +18,11 @@ export const metadata = {
   keywords: ['MikeyRG Portfolio', 'Creative Portfolio', 'MikeyRG', 'Modern Portfolio'],
   creator: 'MikeyRG',
   publisher: 'MikeyRG',
-  authors: [{ name: 'Jose Alberto' }, { name: 'MikeyRG', url: 'https://www.mikeyrg.site' }],
+  authors: [{ name: 'Jose Alberto' }, { name: 'MikeyRG', url: 'https://www.mikeyrg.com' }],
   referrer: 'origin-when-cross-origin',
   themeColor: 'black',
   verification: {
     google: ['google', '37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
-
   }
 };
 
