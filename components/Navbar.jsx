@@ -13,10 +13,10 @@ const Navbar = () => {
 
       <div className="navbar-menu">
         <button className="nav-sections selected">HOME</button>
-        <button className="nav-sections">ABOUT</button>
-        <button className="nav-sections">WORK</button>
+        <button className="nav-sections " >ABOUT</button>
+        <button className="nav-sections "  >WORK</button>
         <div className="language-selection">
-          <but className="language-spanish ">ESP</but>
+          <span className="language-spanish ">ESP</span>
           <span className="language-english selected">EN</span>
         </div>
         <button className="button-get-in-touch">GET IN TOUCH</button>
