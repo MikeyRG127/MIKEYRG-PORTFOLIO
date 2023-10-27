@@ -34,6 +34,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("/assets/fonts/Anton-Regular.ttf");
+  font-display: swap;
+}
+
 
 
 *,
@@ -69,6 +75,13 @@ nav {
 .mikey-logo {
   margin-right: 10px;
   cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.mikey-logo:hover {
+  opacity: 50%;
+  transition: opacity 0.3s ease;
 }
 
 .navbar-menu {
@@ -101,7 +114,7 @@ nav {
 }
 
 .nav-sections:hover {
-  color: #4d4d4d;
+  color: #6b6b6b;
 }
 
 .nav-sections.selected::before {
@@ -114,7 +127,21 @@ nav {
   z-index: -1;
   margin: -2px;
   border-radius: inherit;
-  background: linear-gradient(to left, #FF0000 0%, #0047FF 100%);
+  background: linear-gradient(to left, #FF0000 0%, #0047FF 80%);
+  background-position: left;
+  background-size: 200%;
+  animation: gradient-animation 3s infinite alternate;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
 }
 
 .nav-sections.selected:hover {
@@ -264,13 +291,138 @@ nav {
 
 
 
+.presentation-container {
+  display: grid;
+  width: auto;
+  height: auto;
+  position: relative;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+.hi {
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 40px;
+  position: absolute;
+  bottom: 340px;
+  left: 21%;
+  text-wrap: nowrap;
+}
+
+.waving-hand {
+  position: absolute;
+  bottom: 350px;
+  left: 24%;
+}
+
+.joserodriguez {
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 40px;
+  position: absolute;
+  bottom: 340px;
+  left: 55%;
+  text-wrap: nowrap;
+  background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 100%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.joserodriguez:hover {
+  opacity: 60%;
+}
+
+.and {
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 40px;
+  position: absolute;
+  bottom: 300px;
+  left: 36%;
+  text-wrap: nowrap;
+}
+
+.iama {
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 40px;
+  position: absolute;
+  bottom: 300px;
+  left: 55%;
+  text-wrap: nowrap;
+}
+
+.fullstack {
+  font-family: Anton-Regular;
+  font-size: 64px;
+  position: absolute;
+  bottom: 70px;
+  left: 17%;
+}
+
+.web-developer {
+  font-family: Anton-Regular;
+  font-size: 118px;
+  position: absolute;
+  bottom: -55px;
+  left: 17%;
+}
+
+
+.and-graphic-designer {
+  font-family: ArchitectsDaughter-Regular;
+  font-size: 72px;
+  position: absolute;
+  bottom: -105px;
+  left: 31%;
+  text-wrap: nowrap;
+}
+
+.located-in-dominican-republic {
+  font-family: Anton-Regular;
+  font-size: 20px;
+  position: absolute;
+  bottom: -110px;
+  left: 65%;
+  background-color: transparent;
+  border-radius: 5px;
+  background: #ffffff;
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  line-height: 1.2;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
 
 
+.located-in-dominican-republic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(to left, #FF0000 0%, #0047FF 80%);
+  background-position: left;
+  background-size: 200%;
+  animation: gradient-animation-location 3s infinite alternate;
+}
 
 
+@keyframes gradient-animation-location {
+  0% {
+    background-position: left;
+  }
 
-
+  100% {
+    background-position: right;
+  }
+}
 
 
 
@@ -305,7 +457,7 @@ nav {
 
 
 
-.introduction {
+.Main {
   display: grid;
   justify-items: center;
   padding-top: 20px;
@@ -331,14 +483,10 @@ nav {
 
 .mikey-picture {
   display: grid;
-  justify-items: center;
-  margin-top: 10px;
+  justify-self: center;
+  margin-top: 50px;
 }
 
-.mikey-picture {
-  width: 80%;
-  max-width: 300px;
-}
 
 .presentation {
   display: grid;

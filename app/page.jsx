@@ -1,11 +1,11 @@
-import Introduction from "@components/Introduction"
+import Main from "@components/Main"
 import AboutMe from "@components/AboutMe"
 const page = () => {
   return (
     <>
 
 
-      <Introduction className="section"></Introduction>
+      <Main className="section"></Main>
       <AboutMe className="section"></AboutMe>
 
 
