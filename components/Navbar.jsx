@@ -1,8 +1,9 @@
 import Image from "next/image";
-
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <nav className="navbar">
+
       <Image
         src="/assets/icons/mikey.png"
         alt="Picture of the author"
@@ -12,14 +13,14 @@ const Navbar = () => {
       />
 
       <div className="navbar-menu">
-        <button className="nav-sections selected">HOME</button>
-        <button className="nav-sections " >ABOUT</button>
-        <button className="nav-sections "  >WORK</button>
+        <Link className="nav-sections selected" href="/">HOME</Link>
+        <Link className="nav-sections " href="/about">ABOUT</Link>
+        <Link className="nav-sections " href="/work">WORK</Link>
         <div className="language-selection">
           <span className="language-spanish ">ESP</span>
           <span className="language-english selected">EN</span>
         </div>
-        <button className="button-get-in-touch">GET IN TOUCH</button>
+        <Link className="button-get-in-touch" href="/getintouch">GET IN TOUCH</Link>
       </div>
     </nav>
   );

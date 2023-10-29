@@ -1,7 +1,6 @@
 import "@styles/globals.css"
 import Navbar from "@components/Navbar"
 import Footer from "@components/Footer";
-import AboutMe from "@components/AboutMe";
 
 export const metadata = {
   title: "MikeyRG",
@@ -32,7 +31,6 @@ function RootLayout({ children }) {
       <body>
         <Navbar></Navbar>
         {children}
-        <AboutMe></AboutMe>
         <Footer></Footer>
       </body>
     </html>
