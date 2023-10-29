@@ -84,12 +84,14 @@ nav {
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.3s ease;
-
+  transition: transform 0.3s;
 }
 
 .mikey-logo:hover {
   opacity: 50%;
   transition: opacity 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 
 .navbar-menu {
@@ -109,53 +111,58 @@ nav {
   font-size: 40px;
   background-color: transparent;
   border-radius: 5px;
-  position: relative;
-  background: #ffffff;
-  background-clip: padding-box;
-  border: solid 5px transparent;
+  cursor: pointer;
+  transition: transform 0.3s;
   line-height: 0.8;
   padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  transition: color 0.3s ease;
-  cursor: pointer;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.nav-sections.selected {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: auto;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 0.8;
+  box-shadow: 2px 2px 0px #FF0000, -2px -2px 0px #0047FF;
+  transition: transform 0.3s;
+  animation: gradient-animation 5s infinite;
+}
+
+.nav-sections.selected:hover {
+  cursor: not-allowed;
+  transform: none;
+  color: inherit;
 }
 
 .nav-sections:hover {
   color: #6b6b6b;
+  transform: scale(1.05);
 }
 
-.nav-sections.selected::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(to left, #FF0000 0%, #0047FF 80%);
-  background-position: left;
-  background-size: 200%;
-  animation: gradient-animation 3s infinite alternate;
-}
+
 
 
 @keyframes gradient-animation {
   0% {
-    background-position: left;
+    box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
+  }
+
+  50% {
+    box-shadow: 3px 3px 0px #0047FF, -3px -3px 0px #FF0000;
   }
 
   100% {
-    background-position: right;
+    box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
   }
 }
 
-.nav-sections.selected:hover {
-  color: black;
-  cursor: auto;
-}
 
 
 
@@ -181,77 +188,46 @@ nav {
   cursor: pointer;
   white-space: nowrap;
   transition: font-size 0.5s ease;
+  transition: transform 0.3s;
+  box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
+
+
 }
 
 
 .button-get-in-touch:hover {
-  font-size: 23px;
+  transform: scale(1.05);
 }
 
-.button-get-in-touch::before {
-  content: "GET IN TOUCH";
-  padding: 20px;
-  font-family: BebasNeue-Regular;
-  background-color: #FF0000;
-  color: transparent;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  font-size: 20px;
-  border-radius: 5px;
-  left: -2%;
-  top: -5%;
-  z-index: -1;
-  transition: font-size 0.3s ease;
-}
-
-.button-get-in-touch:hover::before {
-  font-size: 23px;
-}
-
-.button-get-in-touch::after {
-  content: "GET IN TOUCH";
-  padding: 20px;
-  font-family: BebasNeue-Regular;
-  background-color: #0047FF;
-  color: transparent;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  font-size: 20px;
-  border-radius: 5px;
-  left: 2%;
-  top: 5%;
-  z-index: -1;
-  transition: font-size 0.3s ease;
-}
-
-.button-get-in-touch:hover::after {
-  font-size: 23px;
-}
 
 .language-english {
   cursor: pointer;
   color: #999999;
   transition: color 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .language-english:hover {
   cursor: pointer;
   color: #2e2e2e;
   transition: color 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 
 .language-spanish {
   cursor: pointer;
   color: #999999;
   transition: color 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .language-spanish:hover {
   cursor: pointer;
   color: #2e2e2e;
   transition: color 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 
 .language-english.selected {
