@@ -357,6 +357,7 @@ nav {
   background-clip: text;
   color: transparent;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .joserodriguez:hover {
@@ -380,6 +381,7 @@ nav {
   font-size: 80px;
   top: 10px;
   left: -370px;
+  white-space: nowrap;
 }
 
 .and {
@@ -426,6 +428,7 @@ nav {
   bottom: -110px;
   left: -50px;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .located-in-dominican-republic {
@@ -445,6 +448,7 @@ nav {
   text-wrap: nowrap;
   cursor: pointer;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .located-in-dominican-republic:hover {
