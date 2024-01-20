@@ -1,7 +1,7 @@
 
 const about = () => {
     return (
-        <div>HOLA PALOMOS</div>
+        <div></div>
     )
 }
 export default about;

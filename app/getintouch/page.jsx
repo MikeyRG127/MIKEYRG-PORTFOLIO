@@ -1,6 +1,6 @@
 const getintouch = () => {
     return (
-        <div>HOLA PALOMOS</div>
+        <div></div>
     )
 }
 export default getintouch;

@@ -1,6 +1,6 @@
 const work = () => {
     return (
-        <div>HOLA PALOMOS</div>
+        <div></div>
     )
 }
 export default work;
