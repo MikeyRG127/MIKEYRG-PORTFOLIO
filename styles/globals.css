@@ -130,7 +130,7 @@ nav {
   padding-left: 7px;
   padding-right: 7px;
   line-height: 0.8;
-  box-shadow: 2px 2px 0px #FF0000, -2px -2px 0px #0047FF;
+  box-shadow: 1px 1px 0px #FF0000, -1px -1px 0px #0047FF;
   transition: transform 0.3s;
   animation: gradient-animation 5s infinite;
 }
