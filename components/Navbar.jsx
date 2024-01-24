@@ -12,9 +12,10 @@ const Navbar = () => {
 
   const pathname = usePathname()
   useEffect(() => {
+
+
     const navbarOptions = document.querySelectorAll(".nav-sections");
     const logoClicked = document.getElementById("LogoClicked");
-
 
     logoClicked.addEventListener('click', () => {
       navbarOptions.forEach(element => {

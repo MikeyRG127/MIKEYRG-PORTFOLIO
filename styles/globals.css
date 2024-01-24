@@ -124,15 +124,16 @@ nav {
   font-family: BebasNeue-Regular;
   font-size: 40px;
   background-color: transparent;
-  border-radius: 5px;
   cursor: auto;
   padding-top: 5px;
   padding-left: 7px;
   padding-right: 7px;
   line-height: 0.8;
-  box-shadow: 1px 1px 0px #FF0000, -1px -1px 0px #0047FF;
-  transition: transform 0.3s;
-  animation: gradient-animation 5s infinite;
+  border-style: solid;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #FF0000, #0047FF) border-box;
+  border-radius: 0.15em;
+  border: 3px solid transparent;
 }
 
 .nav-sections.selected:hover {
@@ -145,26 +146,6 @@ nav {
   color: #6b6b6b;
   transform: scale(1.05);
 }
-
-
-
-
-@keyframes gradient-animation {
-  0% {
-    box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
-  }
-
-  50% {
-    box-shadow: 3px 3px 0px #0047FF, -3px -3px 0px #FF0000;
-  }
-
-  100% {
-    box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
-  }
-}
-
-
-
 
 .language-selection {
   display: grid;
