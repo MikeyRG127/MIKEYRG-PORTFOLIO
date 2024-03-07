@@ -430,7 +430,10 @@ nav {
   animation: gradient-animation-location 3s infinite alternate;
 }
 
-.mikey-picture {}
+.mikey-picture {
+  height: 30vw;
+  width: 30vw;
+}
 
 @keyframes gradient-animation-location {
   0% {
