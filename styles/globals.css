@@ -447,3 +447,33 @@ nav {
   justify-items: center;
   margin-top: 80px;
 }
+
+.getintouch {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: max-content max-content;
+  margin-top: 80px;
+}
+
+.getintouch-box1 {
+  display: grid;
+}
+
+.getintouch-box1__text1 {
+  display: grid;
+  font-family: Anton-Regular;
+  font-size: 200px;
+  text-wrap: nowrap;
+  line-height: 1.0;
+  padding-left: 3vw;
+}
+
+.getintouch-box2-1__text {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 80px;
+  text-wrap: nowrap;
+  line-height: 1.0;
+  padding-left: 3vw;
+}

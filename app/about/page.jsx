@@ -1,9 +1,9 @@
 
 const about = () => {
     return (
-        <div>
+        <section className="about-main-container">
 
-        </div>
+        </section>
     )
 }
 export default about;
