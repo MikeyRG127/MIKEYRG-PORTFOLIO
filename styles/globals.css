@@ -458,22 +458,57 @@ nav {
 
 .getintouch-box1 {
   display: grid;
+  justify-items: center;
+  width: max-content;
+  margin-left: 3vw;
 }
 
 .getintouch-box1__text1 {
   display: grid;
   font-family: Anton-Regular;
-  font-size: 200px;
+  font-size: 30vh;
   text-wrap: nowrap;
   line-height: 1.0;
-  padding-left: 3vw;
+
+}
+
+.getintouch-box2 {
+  display: grid;
+  width: max-content;
+  justify-items: start;
 }
 
 .getintouch-box2-1__text {
   display: grid;
   font-family: BebasNeue-Regular;
-  font-size: 80px;
+  font-size: 10vh;
   text-wrap: nowrap;
   line-height: 1.0;
-  padding-left: 3vw;
+
+}
+
+.getintouch-box1__text2 {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 4vh;
+  text-wrap: nowrap;
+  line-height: 1.0;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.getintouch-box2-2 {
+  display: grid;
+  width: max-content;
+  grid-template-columns: max-content;
+}
+
+.getintouch-box2-2__text {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 4vh;
+  text-wrap: nowrap;
+  line-height: 0.8;
+  padding-top: 10px;
+  text-decoration: underline;
 }
