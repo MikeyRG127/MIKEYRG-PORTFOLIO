@@ -108,7 +108,7 @@ nav {
 .nav-sections {
   display: grid;
   font-family: BebasNeue-Regular;
-  font-size: 7vh;
+  font-size: 40px;
   background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
@@ -430,10 +430,6 @@ nav {
   animation: gradient-animation-location 3s infinite alternate;
 }
 
-.mikey-picture {
-  height: 30vw;
-  width: 30vw;
-}
 
 @keyframes gradient-animation-location {
   0% {
