@@ -1,3 +1,6 @@
+/*===================================( WEBSITE CONFIGS AND RESOURCES )============================================*/
+/*Website Resource (START)*/
+/*
 @font-face {
   font-family: "THEBOLDFONT";
   src: url("/assets/fonts/THEBOLDFONT.ttf");
@@ -39,9 +42,12 @@
   src: url("/assets/fonts/Anton-Regular.ttf");
   font-display: swap;
 }
+*/
+/*Website Resource (END)*/
 
 
 
+/*Website Configuration (START)*/
 *,
 *::before,
 *::after {
@@ -57,6 +63,41 @@
   color: inherit;
 }
 
+*:focus {
+  outline: none;
+}
+
+*:active {
+  background-color: none !important;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+span {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*Website Configuration (END)*/
+
+/*===================================( WEBSITE CONFIGS AND RESOURCES )============================================*/
+
+
+
+
+
+
+/*===================================( MOBILE )============================================*/
+
+/*Mobile Body Config (START)*/
 body {
   display: grid;
   width: 100%;
@@ -67,6 +108,12 @@ body {
   background-color: #ffffff;
 }
 
+/*Mobile Body Config (END)*/
+
+
+
+
+/*Mobile Navbar (START)*/
 nav {
   display: grid;
   width: 100%;
@@ -74,13 +121,12 @@ nav {
   grid-auto-flow: column;
   background-color: rgb(255, 255, 255);
   align-items: center;
-  padding: 30px 40px 0px 40px;
+  padding: 15px 15px 30px 15px;
   z-index: 1;
+  gap: 2rem;
 }
 
-
 .mikey-logo {
-  margin-right: 10px;
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.3s ease;
@@ -101,83 +147,24 @@ nav {
   height: auto;
   align-items: center;
   justify-self: end;
-  gap: 50px;
-
+  gap: 1.5rem;
 }
 
 .nav-sections {
-  display: grid;
-  font-family: BebasNeue-Regular;
-  font-size: 40px;
-  background-color: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  line-height: 0.8;
-  padding-top: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+  display: none;
 }
 
 .nav-sections.selected {
-  display: grid;
-  font-family: BebasNeue-Regular;
-  font-size: 40px;
-  background-color: transparent;
-  cursor: auto;
-  padding-top: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
-  line-height: 0.8;
-  border-style: solid;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, #FF0000, #0047FF) border-box;
-  border-radius: 0.15em;
-  border: 3px solid transparent;
-}
-
-.nav-sections.selected:hover {
-  cursor: not-allowed;
-  transform: none;
-  color: inherit;
-}
-
-.nav-sections:hover {
-  color: #6b6b6b;
-  transform: scale(1.05);
+  display: none;
 }
 
 .language-selection {
   display: grid;
   grid-auto-flow: column;
-  gap: 15px;
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 25px;
+  gap: 1rem;
+  font-family: __ArchitectsDaughterRegular_ca443e;
+  font-size: 1.2rem;
   color: #999999;
-}
-
-
-.button-get-in-touch {
-  padding: 20px;
-  font-family: BebasNeue-Regular;
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  position: relative;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: font-size 0.5s ease;
-  transition: transform 0.3s;
-  box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
-
-
-}
-
-
-.button-get-in-touch:hover {
-  transform: scale(1.05);
 }
 
 
@@ -255,191 +242,266 @@ nav {
   border-radius: 5px;
 }
 
+.button-get-in-touch {
+  padding: 0.5rem;
+  font-family: __BebasNeueRegular_171f10;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: font-size 0.5s ease;
+  transition: transform 0.3s;
+  box-shadow: 3px 3px 0px #FF0000, -3px -3px 0px #0047FF;
+}
+
+.button-get-in-touch:hover {
+  transform: scale(1.05);
+}
+
+
+/*Mobile Navbar (END)*/
+
+
+
+
+/*Mobile Hero Section (START)*/
+
 .presentation-container {
   display: grid;
-  width: auto;
+  width: 100%;
   height: auto;
-  justify-items: center;
 }
 
 .presentation {
   display: grid;
-  width: max-content;
+  width: 100%;
   height: max-content;
-  position: relative;
-  top: -30px;
-
+  padding: 0px 15px;
+  line-height: 4.5rem;
 }
 
-.hi {
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 40px;
-  position: absolute;
-  bottom: 340px;
-  left: -200px;
+.im {
+  font-family: __AntonRegular_56858d;
+  font-size: 80px;
   text-wrap: nowrap;
-}
 
-.waving-hand {
-  position: absolute;
-  bottom: 350px;
-  left: -162px;
-  animation: wave 2s infinite;
-  transform-origin: bottom center;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(20deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 .joserodriguez {
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 40px;
-  position: absolute;
-  bottom: 340px;
-  left: 290px;
+  font-family: __AntonRegular_56858d;
+  font-size: 15.2vw;
   text-wrap: nowrap;
-  background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
+  background-image: linear-gradient(to right, #0047FF, #FF0000);
   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
-  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
 }
 
-.joserodriguez:hover {
-  background: none;
-  -webkit-background-clip: none;
-  background-clip: none;
-  color: transparent;
+/*
+@media (min-width: 500px) {
+  .joserodriguez {
+    font-size: 40px;
+  }
 }
+*/
 
-
-.joserodriguez:hover::after {
-  content: attr(data-mikeyrg);
-  display: grid;
-  text-wrap: nowrap;
-  background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
-  position: absolute;
-  font-size: 80px;
-  top: 10px;
-  left: -370px;
-  white-space: nowrap;
-}
-
-.and {
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 40px;
-  position: absolute;
-  bottom: 300px;
-  left: 20px;
+.mikeyrg {
+  font-family: __AntonRegular_56858d;
+  font-size: 21.8vw;
   text-wrap: nowrap;
 }
 
-.iama {
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 40px;
-  position: absolute;
-  bottom: 300px;
-  left: 290px;
-  text-wrap: nowrap;
+.mikey-picture {
+  width: 90vw !important;
+  height: 90vw !important;
 }
 
 .fullstack {
-  font-family: Anton-Regular;
-  font-size: 64px;
-  position: absolute;
-  bottom: 70px;
-  left: -255px;
+  font-family: __AntonRegular_56858d;
+  font-size: 23vw;
   text-wrap: nowrap;
 }
 
 .web-developer {
-  font-family: Anton-Regular;
-  font-size: 118px;
-  position: absolute;
-  bottom: -55px;
-  left: -255px;
+  font-family: __AntonRegular_56858d;
+  font-size: 15.6vw;
   text-wrap: nowrap;
+  line-height: 5rem
 }
 
-
-.and-graphic-designer {
-  font-family: ArchitectsDaughter-Regular;
-  font-size: 72px;
-  position: absolute;
-  bottom: -110px;
-  left: -50px;
+.and {
+  font-family: __ArchitectsDaughterRegular_ca443e;
+  font-size: 10vw;
   text-wrap: nowrap;
-  white-space: nowrap;
+  justify-self: center;
+  line-height: 2rem;
 }
 
-.located-in-dominican-republic {
-  font-family: Anton-Regular;
+.graphic {
+  font-family: __ArchitectsDaughterRegular_ca443e;
+  font-size: 25.3vw;
+  text-wrap: nowrap;
+  line-height: 3.5rem;
+}
+
+.designer {
+  font-family: __ArchitectsDaughterRegular_ca443e;
+  font-size: 23vw;
+  text-wrap: nowrap;
+  line-height: 7rem;
+}
+
+/*Mobile Hero Section (END)*/
+
+
+
+
+/*Mobile About Section (START)*/
+
+.about-section {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.about-section span:nth-child(1) {
+  font-family: __AntonRegular_56858d;
+  font-size: 100px;
+  text-wrap: nowrap;
+  line-height: 5rem;
+  justify-self: center;
+  padding: 200px 0px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-color: transparent;
+  text-underline-offset: 0.3em;
+  background-image: linear-gradient(to right, #0047FF, #FF0000);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 3em;
+}
+
+.about-section .paragraph {
+  font-family: __AntonRegular_56858d;
   font-size: 20px;
-  position: absolute;
-  bottom: -115px;
-  left: 437px;
+  text-wrap: wrap;
+  line-height: 1.5rem;
+  justify-self: center;
+
+}
+
+.work-section {
+  font-family: __AntonRegular_56858d;
+  font-size: 100px;
+  text-wrap: nowrap;
+  line-height: 5rem;
+  justify-self: center;
+  padding: 200px 0px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-color: transparent;
+  text-underline-offset: 0.3em;
+  background-image: linear-gradient(to right, #0047FF, #FF0000);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 3em;
+}
+
+.getintouch-section {
+  font-family: __AntonRegular_56858d;
+  font-size: 100px;
+  text-wrap: nowrap;
+  line-height: 6rem;
+  justify-self: center;
+}
+
+.getintouch-section2 {
+  font-family: __AntonRegular_56858d;
+  font-size: 100px;
+  text-wrap: nowrap;
+  line-height: 6rem;
+  justify-self: center;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-color: transparent;
+  text-underline-offset: 0.3em;
+  background-image: linear-gradient(to right, #0047FF, #FF0000);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 3em;
+}
+
+/*Mobile About Section (END)*/
+
+
+
+/*===================================( MOBILE )============================================*/
+
+
+
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+
+
+/*
+
+.nav-sections {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 40px;
   background-color: transparent;
   border-radius: 5px;
-  background: #ffffff;
-  background-clip: padding-box;
-  border: solid 1px transparent;
-  line-height: 1.2;
-  padding-left: 3px;
-  padding-right: 3px;
-  text-wrap: nowrap;
   cursor: pointer;
-  transition: color 0.3s ease;
-  white-space: nowrap;
+  transition: transform 0.3s;
+  line-height: 0.8;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
-.located-in-dominican-republic:hover {
-  color: #7c7c7c;
+.nav-sections.selected {
+  display: grid;
+  font-family: BebasNeue-Regular;
+  font-size: 40px;
+  background-color: transparent;
+  cursor: auto;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 0.8;
+  border-style: solid;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #FF0000, #0047FF) border-box;
+  border-radius: 0.15em;
+  border: 3px solid transparent;
+}
+
+.nav-sections.selected:hover {
+  cursor: not-allowed;
+  transform: none;
+  color: inherit;
+}
+
+.nav-sections:hover {
+  color: #6b6b6b;
+  transform: scale(1.05);
 }
 
 
 
-.located-in-dominican-republic::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(to left, #FF0000 0%, #0047FF 80%);
-  background-position: left;
-  background-size: 200%;
-  animation: gradient-animation-location 3s infinite alternate;
-}
-
-
-@keyframes gradient-animation-location {
-  0% {
-    background-position: left;
-  }
-
-  100% {
-    background-position: right;
-  }
-}
 
 .presentation {
   display: grid;
@@ -511,3 +573,5 @@ nav {
   padding-top: 10px;
   text-decoration: underline;
 }
+
+*/

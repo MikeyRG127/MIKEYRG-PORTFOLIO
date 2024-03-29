@@ -42,8 +42,8 @@ const Navbar = () => {
         <Image
           src="/assets/icons/mikey.png"
           alt="Picture of the author"
-          width={70}
-          height={80}
+          width={50}
+          height={60}
           className="mikey-logo"
         />
       </Link>

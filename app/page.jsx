@@ -6,31 +6,6 @@ const page = () => {
   useEffect(() => {
     const picture = document.querySelector('.mikey-picture');
     const container = document.querySelector('*');
-    const myname = document.getElementById('myname');
-
-    myname.addEventListener("mouseenter", () => {
-      const hi = document.getElementById('hi');
-      const handWaving = document.getElementById('hand-waving');
-      const and = document.getElementById('and');
-      const iama = document.getElementById('iama');
-      handWaving.style.display = 'none';
-      hi.style.display = 'none';
-      and.style.display = 'none';
-      iama.style.display = 'none';
-    });
-
-    myname.addEventListener('mouseleave', () => {
-      const hi = document.getElementById('hi');
-      const handWaving = document.getElementById('hand-waving');
-      const and = document.getElementById('and');
-      const iama = document.getElementById('iama');
-      handWaving.style.display = 'grid';
-      hi.style.display = 'grid';
-      and.style.display = 'grid';
-      iama.style.display = 'grid';
-
-    });
-
     let isMouseOver = false;
     let mouseX = 0;
     let mouseY = 0;
@@ -91,36 +66,52 @@ const page = () => {
   return (
     <div className="presentation-container">
 
-
       <div className="presentation">
+
+        <span className="im" id="im">I'M</span>
+        <span className="joserodriguez">JOSE RODRIGUEZ</span>
+        <span className="mikeyrg">“MIKEYRG”</span>
         <Image
           src="/assets/images/profile.png"
           alt="MikeyRG picture."
-          width={439}
-          height={439}
+          width={385}
+          height={385}
           className="mikey-picture"
           id="picture"
         ></Image>
-        <span className="hi" id="hi">Hi,&nbsp;&nbsp; my name is</span>
-        <Image
-          src="/assets/icons/waving-hand.svg"
-          alt="waving-hand"
-          width={35}
-          height={35}
-          className="waving-hand"
-          id="hand-waving"
-        />
-
-        <span className="joserodriguez" id="myname" data-mikeyrg="AKA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MikeyRG">Jose Rodriguez</span>
-        <span className="and" id="and">and</span>
-        <span className="iama" id="iama">I am a</span>
         <span className="fullstack">FULLSTACK</span>
         <span className="web-developer">WEB DEVELOPER</span>
-        <span className="and-graphic-designer">& GRAPHIC DESIGNER</span>
-        <span className="located-in-dominican-republic">LOCATED IN DOMINICAN REPUBLIC</span>
+        <span className="and">&</span>
+        <span className="graphic">Graphic</span>
+        <span className="designer">Designer</span>
+
+        <span className="about-section">
+          <span className="title">ABOUT</span>
+          <span className="paragraph">
+            A 26-year-old enthusiast of
+            programming and graphic design.
+            My mission? To craft outstanding
+            projects that not only meet current
+            standards but also exceed client
+            expectations. Let's collaborate to bring your creative visions to life!
+          </span>
+        </span>
+
+        <span className="work-section">WORK</span>
+        <span className="getintouch-section">GET IN</span>
+        <span className="getintouch-section2">TOUCH</span>
+      </div>
+
+      <div className="about-section">
+
+
       </div>
 
     </div>
+
+
+
+
   );
 }
 

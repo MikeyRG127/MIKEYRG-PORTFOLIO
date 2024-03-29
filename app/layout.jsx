@@ -1,6 +1,23 @@
 import "@styles/globals.css"
 import Navbar from "@components/Navbar"
 import Footer from "@components/Footer";
+import localFont from 'next/font/local'
+
+const AntonRegular = localFont({
+  src: '../public/assets/fonts/Anton-Regular.ttf',
+  display: 'swap',
+})
+
+const ArchitectsDaughterRegular = localFont({
+  src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
+  display: 'swap',
+})
+
+const BebasNeueRegular = localFont({
+  src: '../public/assets/fonts/BebasNeue-Regular.ttf',
+  display: 'swap',
+})
+
 
 export const metadata = {
   title: "MikeyRG",
@@ -27,7 +44,7 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
       <body>
         <Navbar></Navbar>
         {children}
