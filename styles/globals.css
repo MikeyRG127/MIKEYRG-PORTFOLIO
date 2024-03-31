@@ -108,6 +108,58 @@ body {
   background-color: #ffffff;
 }
 
+.lines-y {
+  position: fixed;
+  /* or absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  /* Ensure the lines are on top of other elements */
+  pointer-events: none;
+  /* Ignore mouse events on the lines */
+  background-image: linear-gradient(to bottom, transparent 95%, rgba(0, 0, 0, 0.2) 95%);
+  background-size: 100% 1rem;
+  /* Adjust the height of the lines */
+  background-repeat: repeat-y;
+}
+
+.lines-x {
+  position: fixed;
+  /* or absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  /* Ensure the lines are on top of other elements */
+  pointer-events: none;
+  /* Ignore mouse events on the lines */
+  background-image: linear-gradient(to right, transparent 95%, rgba(0, 0, 0, 0.2) 95%);
+  background-size: 1.5rem 100%;
+  /* Adjust the width of the lines */
+  background-repeat: repeat-x;
+}
+
+.vertical-lines-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-line {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
 /*Mobile Body Config (END)*/
 
 
@@ -121,9 +173,10 @@ nav {
   grid-auto-flow: column;
   background-color: rgb(255, 255, 255);
   align-items: center;
-  padding: 15px 15px 30px 15px;
+  padding: 15px 15px 50px 15px;
   z-index: 1;
   gap: 2rem;
+
 }
 
 .mikey-logo {
@@ -276,29 +329,39 @@ nav {
   height: auto;
 }
 
+
 .presentation {
   display: grid;
   width: 100%;
   height: max-content;
-  padding: 0px 15px;
+  padding: 0px 4vw;
   /*line-height: 4.5rem;*/
 }
+
+.presentation-title {
+  display: grid;
+  width: 100%;
+  height: max-content;
+  /*line-height: 4.5rem;*/
+  justify-self: center;
+}
+
 
 .im {
   font-family: __AntonRegular_56858d;
   font-size: 20vw;
   text-wrap: nowrap;
-  line-height: 18vw;
+  line-height: 15vw;
 }
 
 .joserodriguez {
   font-family: __AntonRegular_56858d;
-  font-size: 15vw;
+  font-size: 14.65vw;
   text-wrap: nowrap;
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 15vw;
+  line-height: 20vw;
 }
 
 /*
@@ -311,27 +374,40 @@ nav {
 
 .mikeyrg {
   font-family: __AntonRegular_56858d;
-  font-size: 21.5vw;
+  font-size: 21vw;
   text-wrap: nowrap;
-  line-height: 20vw;
+  line-height: 15vw;
 }
 
 .mikey-picture {
-  width: 90vw !important;
-  height: 90vw !important;
+  width: 80vw !important;
+  height: 80vw !important;
+  justify-self: center;
+  position: relative;
+  top: -40px;
+}
+
+.presentation-profession {
+  display: grid;
+  width: 100%;
+  height: max-content;
+  /*line-height: 4.5rem;*/
+  justify-items: center;
 }
 
 .fullstack {
   font-family: __AntonRegular_56858d;
-  font-size: 23vw;
+  font-size: 22.2vw;
   text-wrap: nowrap;
+  line-height: 20vw;
 }
 
 .web-developer {
   font-family: __AntonRegular_56858d;
-  font-size: 15.6vw;
+  font-size: 14.9vw;
   text-wrap: nowrap;
-  line-height: 5rem
+  line-height: 15vw;
+
 }
 
 .and {
@@ -339,21 +415,21 @@ nav {
   font-size: 10vw;
   text-wrap: nowrap;
   justify-self: center;
-  line-height: 2rem;
+  line-height: 10vw;
 }
 
 .graphic {
   font-family: __ArchitectsDaughterRegular_ca443e;
-  font-size: 25.3vw;
+  font-size: 24.7vw;
   text-wrap: nowrap;
-  line-height: 3.5rem;
+  line-height: 5vw;
 }
 
 .designer {
   font-family: __ArchitectsDaughterRegular_ca443e;
-  font-size: 23vw;
+  font-size: 22vw;
   text-wrap: nowrap;
-  line-height: 7rem;
+  line-height: 35vw;
 }
 
 /*Mobile Hero Section (END)*/

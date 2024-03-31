@@ -46,6 +46,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
       <body>
+        <div className="vertical-lines-container"></div>
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
