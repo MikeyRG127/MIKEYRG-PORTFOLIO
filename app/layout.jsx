@@ -18,6 +18,16 @@ const BebasNeueRegular = localFont({
   display: 'swap',
 })
 
+const KhulaRegular = localFont({
+  src: '../public/assets/fonts/Khula-Regular.ttf',
+  display: 'swap',
+})
+
+const PermanentMarkerRegular = localFont({
+  src: '../public/assets/fonts/PermanentMarker-Regular.ttf',
+  display: 'swap',
+})
+
 
 export const metadata = {
   title: "MikeyRG",
@@ -44,7 +54,7 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
+    <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
       <body>
         <div className="vertical-lines-container"></div>
         <Navbar></Navbar>

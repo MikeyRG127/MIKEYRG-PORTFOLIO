@@ -131,17 +131,25 @@ const page = () => {
             standards but also exceed client
             expectations. Let's collaborate to bring your creative visions to life!
           </span>
+          <span className="suggestion1">WANT TO SEE</span>
+          <span className="suggestion2">EDUCATION</span>
+          <span className="suggestion3">SKILLS</span>
+          <span className="suggestion4">WORK EXPERIENCE?</span>
+          <span className="suggestion5">HERE IS MY RESUME</span>
         </span>
 
         <span className="work-section">WORK</span>
         <span className="getintouch-section">GET IN</span>
         <span className="getintouch-section2">TOUCH</span>
+        <span className="getintouch-content">
+          <span className="getintouch-suggestion1">HAVE QUESTIONS,</span>
+          <span className="getintouch-suggestion2">PROBLEM OR</span>
+          <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
+          <span className="getintouch-suggestion4">LET'S TALK</span>
+        </span>
+
       </div>
 
-      <div className="about-section">
-
-
-      </div>
 
     </div>
 

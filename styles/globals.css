@@ -154,11 +154,12 @@ body {
   justify-content: space-between;
 }
 
+/*
 .vertical-line {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+*/
 
 /*Mobile Body Config (END)*/
 
@@ -465,13 +466,59 @@ nav {
 }
 
 .about-section .paragraph {
-  font-family: __AntonRegular_56858d;
+  font-family: __KhulaRegular_2599ce;
   font-size: 20px;
   text-wrap: wrap;
   line-height: 1.5rem;
   justify-self: center;
-
+  width: 90%;
+  padding-bottom: 70px;
 }
+
+.suggestion1 {
+  font-family: __AntonRegular_56858d;
+  font-size: 18.2vw;
+  text-wrap: nowrap;
+  line-height: 20vw;
+  justify-self: center;
+}
+
+
+.suggestion2 {
+  font-family: __AntonRegular_56858d;
+  font-size: 22vw;
+  text-wrap: nowrap;
+  line-height: 20vw;
+  justify-self: center;
+}
+
+
+.suggestion3 {
+  font-family: __AntonRegular_56858d;
+  font-size: 36vw;
+  text-wrap: nowrap;
+  line-height: 35vw;
+  justify-self: center;
+}
+
+.suggestion4 {
+  font-family: __AntonRegular_56858d;
+  font-size: 12vw;
+  text-wrap: nowrap;
+  line-height: 12vw;
+  justify-self: center;
+}
+
+.suggestion5 {
+  font-family: __ArchitectsDaughterRegular_ca443e;
+  font-size: 5vw;
+  text-wrap: nowrap;
+  line-height: 20vw;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 .work-section {
   font-family: __AntonRegular_56858d;
@@ -496,7 +543,7 @@ nav {
   font-family: __AntonRegular_56858d;
   font-size: 100px;
   text-wrap: nowrap;
-  line-height: 6rem;
+  line-height: 7rem;
   justify-self: center;
 }
 
@@ -504,8 +551,9 @@ nav {
   font-family: __AntonRegular_56858d;
   font-size: 100px;
   text-wrap: nowrap;
-  line-height: 6rem;
+  line-height: 5rem;
   justify-self: center;
+  padding: 0px 0px 200px 0px;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-text-decoration-line: underline;
@@ -515,8 +563,51 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   background-repeat: no-repeat;
   background-size: 100% 0.1em;
-  background-position: 0 3em;
+  background-position: 0 1em;
 }
+
+.getintouch-content {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.getintouch-suggestion1 {
+  font-family: __AntonRegular_56858d;
+  font-size: 13.8vw;
+  text-wrap: nowrap;
+  line-height: 12vw;
+  justify-self: center;
+}
+
+.getintouch-suggestion2 {
+  font-family: __AntonRegular_56858d;
+  font-size: 18.5vw;
+  text-wrap: nowrap;
+  line-height: 20vw;
+  justify-self: center;
+}
+
+.getintouch-suggestion3 {
+  font-family: __AntonRegular_56858d;
+  font-size: 12.5vw;
+  text-wrap: nowrap;
+  line-height: 12vw;
+  justify-self: center;
+}
+
+.getintouch-suggestion4 {
+  font-family: __PermanentMarkerRegular_321f92;
+  font-size: 12.5vw;
+  text-wrap: nowrap;
+  line-height: 30vw;
+  justify-self: center;
+  background-image: linear-gradient(to right, #0047FF, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 /*Mobile About Section (END)*/
 
