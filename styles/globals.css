@@ -102,7 +102,7 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  min-width: 400px;
+  min-width: 350px;
   height: auto;
   grid-template-columns: auto;
   background-color: #ffffff;
@@ -341,7 +341,7 @@ nav {
 
 .presentation-title {
   display: grid;
-  width: 100%;
+  width: max-content;
   height: max-content;
   /*line-height: 4.5rem;*/
   justify-self: center;
@@ -448,11 +448,12 @@ nav {
 
 .about-section span:nth-child(1) {
   font-family: __AntonRegular_56858d;
-  font-size: 100px;
+  font-size: 25vw;
   text-wrap: nowrap;
-  line-height: 5rem;
+  line-height: 5vw;
   justify-self: center;
-  padding: 200px 0px;
+  padding-bottom: 200px;
+  margin-top: 200px;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-text-decoration-line: underline;
@@ -462,7 +463,7 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   background-repeat: no-repeat;
   background-size: 100% 0.1em;
-  background-position: 0 3em;
+  background-position: 0 15vw;
 }
 
 .about-section .paragraph {
@@ -474,6 +475,10 @@ nav {
   width: 90%;
   padding-bottom: 70px;
 }
+
+
+
+
 
 .suggestion1 {
   font-family: __AntonRegular_56858d;
@@ -517,16 +522,26 @@ nav {
   justify-self: center;
   text-decoration: underline;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-section .suggestion5:hover {
+  transform: scale(1.05);
+}
+
+.about-section .suggestion5:not(:hover) {
+  transform: scale(1);
 }
 
 
 .work-section {
   font-family: __AntonRegular_56858d;
-  font-size: 100px;
+  font-size: 25vw;
   text-wrap: nowrap;
-  line-height: 5rem;
+  line-height: 5vw;
   justify-self: center;
-  padding: 200px 0px;
+  padding-bottom: 200px;
+  margin-top: 200px;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-text-decoration-line: underline;
@@ -536,24 +551,25 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   background-repeat: no-repeat;
   background-size: 100% 0.1em;
-  background-position: 0 3em;
+  background-position: 0 15vw;
 }
 
 .getintouch-section {
   font-family: __AntonRegular_56858d;
-  font-size: 100px;
+  font-size: 26vw;
   text-wrap: nowrap;
-  line-height: 7rem;
+  line-height: 18vw;
   justify-self: center;
+  margin-top: 200px;
 }
 
 .getintouch-section2 {
   font-family: __AntonRegular_56858d;
-  font-size: 100px;
+  font-size: 25vw;
   text-wrap: nowrap;
-  line-height: 5rem;
+  line-height: 30vw;
   justify-self: center;
-  padding: 0px 0px 200px 0px;
+  padding-bottom: 200px;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-text-decoration-line: underline;
@@ -563,7 +579,7 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   background-repeat: no-repeat;
   background-size: 100% 0.1em;
-  background-position: 0 1em;
+  background-position: 0 27vw;
 }
 
 .getintouch-content {
@@ -605,6 +621,143 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.getintouch-suggestion4:hover {
+  transform: scale(1.05);
+}
+
+.getintouch-suggestion4:not(:hover) {
+  transform: scale(1);
+}
+
+
+
+.linkedin {
+  font-family: __BebasNeueRegular_171f10;
+  font-size: 10vw;
+  text-wrap: nowrap;
+  line-height: 15vw;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* Set the default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
+}
+
+.linkedin:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.linkedin:not(:hover) {
+  transform: scale(1);
+  /* Set back to original scale when not hovered */
+}
+
+.facebook {
+  font-family: __BebasNeueRegular_171f10;
+  font-size: 10vw;
+  text-wrap: nowrap;
+  line-height: 15vw;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* Set the default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
+}
+
+.facebook:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.facebook:not(:hover) {
+  transform: scale(1);
+  /* Set back to original scale when not hovered */
+}
+
+.instagram {
+  font-family: __BebasNeueRegular_171f10;
+  font-size: 10vw;
+  text-wrap: nowrap;
+  line-height: 15vw;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* Set the default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
+}
+
+.instagram:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.instagram:not(:hover) {
+  transform: scale(1);
+  /* Set back to original scale when not hovered */
+}
+
+.whatsapp {
+  font-family: __BebasNeueRegular_171f10;
+  font-size: 10vw;
+  text-wrap: nowrap;
+  line-height: 15vw;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* Set the default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
+}
+
+.whatsapp:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.whatsapp:not(:hover) {
+  transform: scale(1);
+  /* Set back to original scale when not hovered */
+}
+
+.gmail {
+  font-family: __BebasNeueRegular_171f10;
+  font-size: 5vw;
+  text-wrap: nowrap;
+  margin: 100px 0px;
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* Set the default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
+}
+
+.gmail:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.gmail:not(:hover) {
+  transform: scale(1);
+  /* Set back to original scale when not hovered */
 }
 
 

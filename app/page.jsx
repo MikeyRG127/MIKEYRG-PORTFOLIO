@@ -147,7 +147,11 @@ const page = () => {
           <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
           <span className="getintouch-suggestion4">LET'S TALK</span>
         </span>
-
+        <span className="linkedin">LINKEDIN</span>
+        <span className="facebook">FACEBOOK</span>
+        <span className="instagram">INSTAGRAM</span>
+        <span className="whatsapp">WHATSAPP</span>
+        <span className="gmail">josealbertopersonal@gmail.com</span>
       </div>
 
 
