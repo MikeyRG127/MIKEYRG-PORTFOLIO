@@ -2,7 +2,7 @@
 import "@styles/globals.css"
 import Navbar from "@components/Navbar"
 import Footer from "@components/Footer";
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 
 const AntonRegular = localFont({
   src: '../public/assets/fonts/Anton-Regular.ttf',
