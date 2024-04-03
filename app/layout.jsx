@@ -29,7 +29,7 @@ const PermanentMarkerRegular = localFont({
   display: 'swap',
 })
 
-/*
+
 export const metadata = {
   title: "MikeyRG",
   icons: {
@@ -52,7 +52,7 @@ export const metadata = {
     google: ['google', '37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
   }
 };
-*/
+
 
 
 function RootLayout({ children, showNavbar }) {
