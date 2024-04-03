@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
 import { useEffect } from "react";
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 import english from '../public/plugins/js/en';
 import spanish from '../public/plugins/js/es';
 
@@ -56,7 +56,8 @@ const Navbar = () => {
           <span className="language-spanish ">ESP</span>
           <span className="language-english ">EN</span>
         </div>
-        <Link className="button-get-in-touch" href="/getintouch">GET IN TOUCH</Link>
+        <Link className="button-get-in-touch" href="#getintouch">GET IN TOUCH</Link>
+
       </div>
     </nav>
   );

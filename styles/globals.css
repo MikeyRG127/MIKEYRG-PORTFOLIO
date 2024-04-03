@@ -170,7 +170,7 @@ body {
 nav {
   display: grid;
   width: 100%;
-  height: auto;
+  height: max-content;
   grid-auto-flow: column;
   background-color: rgb(255, 255, 255);
   align-items: center;
@@ -533,6 +533,13 @@ nav {
   transform: scale(1);
 }
 
+#gmail-tooltip {
+  font-family: __KhulaRegular_2599ce;
+  padding: 5px 25px;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 15px;
+}
 
 .work-section {
   font-family: __AntonRegular_56858d;

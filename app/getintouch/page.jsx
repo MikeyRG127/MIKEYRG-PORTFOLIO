@@ -21,6 +21,7 @@ const getintouch = () => {
                 </div>
 
                 <div className="getintouch-box2-2">
+
                     <span className="getintouch-box2-2__text">LINKEDIN</span>
                     <span className="getintouch-box2-2__text">FACEBOOK</span>
                     <span className="getintouch-box2-2__text">INSTAGRAM</span>
