@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import RootLayout from '../layout';
-export default function App() {
+export default function resume() {
 
 
     const containerRef = useRef(null);

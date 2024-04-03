@@ -57,10 +57,7 @@ export const metadata = {
 function RootLayout({ children, showNavbar }) {
   return (
     <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
-      <head>
-        <title>Title</title>
-        <meta name='description' content='Description' />
-      </head>
+
       <body>
         <div className="vertical-lines-container"></div>
         {showNavbar ? <Navbar></Navbar> : <></>}
