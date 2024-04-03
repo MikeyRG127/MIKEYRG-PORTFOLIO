@@ -26,7 +26,7 @@ export default function resume() {
     }, []);
 
     return (
-        <div ref={containerRef} style={{ height: '100vh' }} />;
+        <div ref={containerRef} style={{ height: '100vh' }} />
     );
 }
 
