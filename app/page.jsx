@@ -129,72 +129,69 @@ const page = () => {
   }, []);
 
   return (
-    <RootLayout showNavbar={true}>
-      <div className="presentation-container">
 
-        <div className="presentation">
+    <div className="presentation-container">
 
-          <div className="presentation-title">
-            <span className="im" id="im">I'M</span>
-            <span className="joserodriguez">JOSE RODRIGUEZ</span>
-            <span className="mikeyrg">“MIKEYRG”</span>
-          </div>
-          <Image
-            src="/assets/images/profile.png"
-            alt="MikeyRG picture."
-            width={385}
-            height={385}
-            className="mikey-picture"
-            id="picture"
-          ></Image>
-          <div className="presentation-profession">
-            <span className="fullstack">FULLSTACK</span>
-            <span className="web-developer">WEB DEVELOPER</span>
-            <span className="and">&</span>
-            <span className="graphic">Graphic</span>
-            <span className="designer">Designer</span>
-          </div>
+      <div className="presentation">
 
-          <span className="about-section">
-            <span className="title">ABOUT</span>
-            <span className="paragraph">
-              A 26-year-old enthusiast of
-              programming and graphic design.
-              My mission? To craft outstanding
-              projects that not only meet current
-              standards but also exceed client
-              expectations. Let's collaborate to bring your creative visions to life!
-            </span>
-            <span className="suggestion1">WANT TO SEE</span>
-            <span className="suggestion2">EDUCATION</span>
-            <span className="suggestion3">SKILLS</span>
-            <span className="suggestion4">WORK EXPERIENCE?</span>
-            <Link href="/resume" className="suggestion5">HERE IS MY RESUME</Link>
-          </span>
-
-          <span className="work-section">WORK</span>
-          <span className="getintouch-section">GET IN</span>
-          <span className="getintouch-section2">TOUCH</span>
-          <span className="getintouch-content">
-            <span id="getintouch" className="getintouch-suggestion1">HAVE QUESTIONS,</span>
-            <span className="getintouch-suggestion2">PROBLEM OR</span>
-            <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
-            <span className="getintouch-suggestion4">LET'S TALK</span>
-          </span>
-          <Link href="https://www.linkedin.com/in/mikeyrg/" className="linkedin">LINKEDIN</Link>
-          <Link href="https://www.facebook.com/mikeyrg127/" className="facebook">FACEBOOK</Link>
-          <Link href="https://www.instagram.com/mikeyrg127/" className="instagram">INSTAGRAM</Link>
-          <Link href="https://wa.me/18293055147" className="whatsapp">WHATSAPP</Link>
-          <Tooltip id="gmail-tooltip" />
-          <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="gmail">josealbertopersonal@gmail.com</span>
+        <div className="presentation-title">
+          <span className="im" id="im">I'M</span>
+          <span className="joserodriguez">JOSE RODRIGUEZ</span>
+          <span className="mikeyrg">“MIKEYRG”</span>
+        </div>
+        <Image
+          src="/assets/images/profile.png"
+          alt="MikeyRG picture."
+          width={385}
+          height={385}
+          className="mikey-picture"
+          id="picture"
+        ></Image>
+        <div className="presentation-profession">
+          <span className="fullstack">FULLSTACK</span>
+          <span className="web-developer">WEB DEVELOPER</span>
+          <span className="and">&</span>
+          <span className="graphic">Graphic</span>
+          <span className="designer">Designer</span>
         </div>
 
+        <span className="about-section">
+          <span className="title">ABOUT</span>
+          <span className="paragraph">
+            A 26-year-old enthusiast of
+            programming and graphic design.
+            My mission? To craft outstanding
+            projects that not only meet current
+            standards but also exceed client
+            expectations. Let's collaborate to bring your creative visions to life!
+          </span>
+          <span className="suggestion1">WANT TO SEE</span>
+          <span className="suggestion2">EDUCATION</span>
+          <span className="suggestion3">SKILLS</span>
+          <span className="suggestion4">WORK EXPERIENCE?</span>
+          <Link href="/resume" className="suggestion5">HERE IS MY RESUME</Link>
+        </span>
 
+        <span className="work-section">WORK</span>
+        <span className="getintouch-section">GET IN</span>
+        <span className="getintouch-section2">TOUCH</span>
+        <span className="getintouch-content">
+          <span id="getintouch" className="getintouch-suggestion1">HAVE QUESTIONS,</span>
+          <span className="getintouch-suggestion2">PROBLEM OR</span>
+          <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
+          <span className="getintouch-suggestion4">LET'S TALK</span>
+        </span>
+        <Link href="https://www.linkedin.com/in/mikeyrg/" className="linkedin">LINKEDIN</Link>
+        <Link href="https://www.facebook.com/mikeyrg127/" className="facebook">FACEBOOK</Link>
+        <Link href="https://www.instagram.com/mikeyrg127/" className="instagram">INSTAGRAM</Link>
+        <Link href="https://wa.me/18293055147" className="whatsapp">WHATSAPP</Link>
+        <Tooltip id="gmail-tooltip" />
+        <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="gmail">josealbertopersonal@gmail.com</span>
       </div>
 
 
+    </div>
 
-    </RootLayout>
   );
 }
 
