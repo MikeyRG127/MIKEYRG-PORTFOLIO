@@ -26,7 +26,9 @@ export default function resume() {
     }, []);
 
     return (
-        <div ref={containerRef} style={{ height: '100vh' }} />
+        <RootLayout showNavbar={false}>
+            <div ref={containerRef} style={{ height: '100vh' }} />;
+        </RootLayout>
     );
 }
 

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const getintouch = () => {
     return (
         <section className="getintouch">

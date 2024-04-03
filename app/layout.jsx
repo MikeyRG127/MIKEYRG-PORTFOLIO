@@ -28,7 +28,7 @@ const PermanentMarkerRegular = localFont({
   display: 'swap',
 })
 
-
+/*
 export const metadata = {
   title: "MikeyRG",
   icons: {
@@ -51,16 +51,31 @@ export const metadata = {
     google: ['google', '37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA'],
   }
 };
+*/
 
 
-
-function RootLayout({ children }) {
+function RootLayout({ children, showNavbar }) {
   return (
     <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
-
+      <head>
+        <title>MikeyRG</title>
+        <link rel="icon" href="/assets/icons/favicon.ico" />
+        <link rel="apple-touch-icon" href="/assets/icons/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="MikeyRG portfolio website." />
+        <meta name="keywords" content="MikeyRG Portfolio, Creative Portfolio, MikeyRG, Modern Portfolio" />
+        <meta name="creator" content="MikeyRG" />
+        <meta name="publisher" content="MikeyRG" />
+        <meta name="author" content="Jose Alberto" />
+        <meta name="author" content="MikeyRG" />
+        <link rel="author" href="https://www.mikeyrg.com" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="theme-color" content="white" />
+        <meta name="google-site-verification" content="37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA" />
+      </head>
       <body>
         <div className="vertical-lines-container"></div>
-        <Navbar></Navbar>
+        {showNavbar ? <Navbar></Navbar> : <></>}
         {children}
         <Footer />
       </body>
