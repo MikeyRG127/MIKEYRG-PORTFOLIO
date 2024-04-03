@@ -522,16 +522,22 @@ nav {
   justify-self: center;
   text-decoration: underline;
   cursor: pointer;
+  color: black;
+  /* Set the default color */
   transition: color 0.3s ease, transform 0.3s ease;
+  /* Combine transitions */
 }
 
 .about-section .suggestion5:hover {
+  color: #2e2e2e;
+  /* Change color on hover */
   transform: scale(1.05);
 }
 
 .about-section .suggestion5:not(:hover) {
   transform: scale(1);
 }
+
 
 #gmail-tooltip {
   font-family: __KhulaRegular_2599ce;
