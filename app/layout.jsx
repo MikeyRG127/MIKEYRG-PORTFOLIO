@@ -54,12 +54,12 @@ export const metadata = {
 
 
 
-function RootLayout({ children, showNavbar }) {
+function RootLayout({ children }) {
   return (
     <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
       <body>
         <div className="vertical-lines-container"></div>
-        {showNavbar ? <Navbar></Navbar> : <></>}
+        <Navbar></Navbar>
         {children}
         <Footer />
       </body>
