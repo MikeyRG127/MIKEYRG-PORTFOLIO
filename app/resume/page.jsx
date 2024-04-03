@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import RootLayout from '../layout';
 export default function resume() {
 
 
@@ -26,9 +25,9 @@ export default function resume() {
     }, []);
 
     return (
-        <RootLayout showNavbar={false}>
-            <div ref={containerRef} style={{ height: '100vh' }} />;
-        </RootLayout>
+
+        <div ref={containerRef} style={{ height: '100vh' }} />
+
     );
 }
 
