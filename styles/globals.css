@@ -634,16 +634,7 @@ nav {
   background-image: linear-gradient(to right, #0047FF, #FF0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
 
-.getintouch-suggestion4:hover {
-  transform: scale(1.05);
-}
-
-.getintouch-suggestion4:not(:hover) {
-  transform: scale(1);
 }
 
 
