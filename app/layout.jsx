@@ -54,7 +54,7 @@ export const metadata = {
 */
 
 
-function RootLayout({ children, showNavbar }) {
+function RootLayout({ children, isNavBarGidden }) {
   return (
     <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
       <head>
@@ -75,7 +75,6 @@ function RootLayout({ children, showNavbar }) {
       </head>
       <body>
         <div className="vertical-lines-container"></div>
-        {showNavbar ? <Navbar></Navbar> : <></>}
         {children}
         <Footer />
       </body>
