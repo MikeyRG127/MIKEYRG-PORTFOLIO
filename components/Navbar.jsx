@@ -10,7 +10,6 @@ import spanish from '../public/plugins/js/es';
 
 const Navbar = () => {
 
-  const pathname = usePathname()
   useEffect(() => {
 
 

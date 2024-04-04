@@ -182,10 +182,10 @@ const page = () => {
             <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
             <span className="getintouch-suggestion4">LET'S TALK</span>
           </span>
-          <Link href="https://www.linkedin.com/in/mikeyrg/" className="linkedin">LINKEDIN</Link>
-          <Link href="https://www.facebook.com/mikeyrg127/" className="facebook">FACEBOOK</Link>
-          <Link href="https://www.instagram.com/mikeyrg127/" className="instagram">INSTAGRAM</Link>
-          <Link href="https://wa.me/18293055147" className="whatsapp">WHATSAPP</Link>
+          <Link href="https://www.linkedin.com/in/mikeyrg/" target="_blank" className="linkedin">LINKEDIN</Link>
+          <Link href="https://www.facebook.com/mikeyrg127/" target="_blank" className="facebook">FACEBOOK</Link>
+          <Link href="https://www.instagram.com/mikeyrg127/" target="_blank" className="instagram">INSTAGRAM</Link>
+          <Link href="https://wa.me/18293055147" target="_blank" className="whatsapp">WHATSAPP</Link>
           <Tooltip id="gmail-tooltip" />
           <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="gmail">josealbertopersonal@gmail.com</span>
         </div>
