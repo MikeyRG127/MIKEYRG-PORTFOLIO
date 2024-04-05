@@ -161,6 +161,7 @@ body {
 }
 */
 
+
 /*Mobile Body Config (END)*/
 
 
@@ -364,6 +365,24 @@ nav {
   -webkit-text-fill-color: transparent;
   line-height: 20vw;
 }
+
+.joserodriguez-desktop {
+  display: none;
+}
+
+.joserodriguez-desktop1 {
+  display: none;
+}
+
+.joserodriguez-desktop2 {
+  display: none;
+}
+
+.mikey-picture-desktop {
+  display: none;
+}
+
+
 
 /*
 @media (min-width: 500px) {
@@ -778,55 +797,304 @@ nav {
 
 @media (min-width: 768px) {}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+  nav {
+    padding: 30px;
+  }
+
+
+  .nav-sections {
+    display: grid;
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    line-height: 0.8;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .nav-sections.selected {
+    display: grid;
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 40px;
+    background-color: transparent;
+    cursor: auto;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 0.8;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #FF0000, #0047FF) border-box;
+    border-radius: 0.15em;
+    border: 3px solid transparent;
+  }
+
+  .nav-sections.selected:hover {
+    cursor: not-allowed;
+    transform: none;
+    color: inherit;
+  }
+
+  .nav-sections:hover {
+    color: #6b6b6b;
+    transform: scale(1.05);
+  }
+
+  .language-selection {
+    margin: 0px 2vw;
+    gap: 1.5rem;
+  }
+
+  .presentation {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    padding: 0px 4vw;
+    /*line-height: 4.5rem;*/
+
+  }
+
+  .presentation-title {
+    display: grid;
+    width: max-content;
+    height: max-content;
+    /*line-height: 4.5rem;*/
+    justify-self: center;
+  }
+
+  .im {
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 5vw;
+    justify-self: start;
+  }
+
+  .joserodriguez {
+    display: none;
+  }
+
+  .joserodriguez-desktop {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    gap: 15vw;
+  }
+
+
+  .joserodriguez-desktop1 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 8vw;
+    text-wrap: nowrap;
+    background-image: linear-gradient(to right, #0047FF, #FF0000 300%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 10vw;
+  }
+
+  .joserodriguez-desktop2 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 8vw;
+    text-wrap: nowrap;
+    background-image: linear-gradient(to right, #0047FF -50%, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 10vw;
+  }
+
+  .mikey-picture-desktop {
+    display: grid;
+    position: absolute;
+    left: 21vw;
+    top: 120px;
+    z-index: 10000;
+    width: 27vw !important;
+    height: 27vw !important;
+  }
+
+  .mikeyrg {
+    display: none;
+  }
+
+  .mikey-picture {
+    display: none;
+  }
+
+  .presentation-profession {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    /*line-height: 4.5rem;*/
+    justify-items: start;
+
+  }
+
+  .fullstack {
+    font-family: __AntonRegular_56858d;
+    font-size: 4vw;
+    text-wrap: nowrap;
+    line-height: 5vw;
+    position: relative;
+    z-index: 10000;
+    top: 10px;
+    left: 7.3vw;
+  }
+
+  .web-developer {
+    font-family: __AntonRegular_56858d;
+    font-size: 6vw;
+    text-wrap: nowrap;
+    line-height: 5vw;
+    position: relative;
+    z-index: 10000;
+    top: 10px;
+    left: 7.3vw;
+  }
+
+  .and {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 8vw;
+    text-wrap: nowrap;
+    justify-self: start;
+    line-height: 4vw;
+    position: relative;
+    left: 5vw;
+    top: 10px;
+    transform: rotate(-15deg);
+  }
+
+  .graphic {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 8vw;
+    text-wrap: nowrap;
+    line-height: 1vw;
+    position: relative;
+    left: 11vw;
+    top: -0.5vw;
+  }
+
+  .designer {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 8vw;
+    text-wrap: nowrap;
+    line-height: 1vw;
+    position: relative;
+    left: 43vw;
+    top: -1.5vw;
+  }
+
+  .about-section {
+    display: none;
+  }
+
+  .about-section span:nth-child(1) {
+    display: none;
+  }
+
+  .about-section .paragraph {
+    display: none;
+  }
+
+  .suggestion1 {
+    display: none;
+  }
+
+
+  .suggestion2 {
+    display: none;
+  }
+
+
+  .suggestion3 {
+    display: none;
+  }
+
+  .suggestion4 {
+    display: none;
+  }
+
+  .suggestion5 {
+    display: none;
+  }
+
+
+
+  #gmail-tooltip {
+    display: none;
+  }
+
+  .work-section {
+    display: none;
+  }
+
+  .getintouch-section {
+    display: none;
+  }
+
+  .getintouch-section2 {
+    display: none;
+  }
+
+  .getintouch-content {
+    display: none;
+  }
+
+  .getintouch-suggestion1 {
+    display: none;
+  }
+
+  .getintouch-suggestion2 {
+    display: none;
+  }
+
+  .getintouch-suggestion3 {
+    display: none;
+  }
+
+  .getintouch-suggestion4 {
+    display: none;
+
+  }
+
+
+
+  .linkedin {
+    display: none;
+  }
+
+
+  .facebook {
+    display: none;
+  }
+
+
+  .instagram {
+    display: none;
+  }
+
+
+  .whatsapp {
+    display: none;
+  }
+
+  .gmail {
+    display: none;
+  }
+
+}
+
+
 
 
 
 /*
-
-.nav-sections {
-  display: grid;
-  font-family: BebasNeue-Regular;
-  font-size: 40px;
-  background-color: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  line-height: 0.8;
-  padding-top: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-
-.nav-sections.selected {
-  display: grid;
-  font-family: BebasNeue-Regular;
-  font-size: 40px;
-  background-color: transparent;
-  cursor: auto;
-  padding-top: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
-  line-height: 0.8;
-  border-style: solid;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, #FF0000, #0047FF) border-box;
-  border-radius: 0.15em;
-  border: 3px solid transparent;
-}
-
-.nav-sections.selected:hover {
-  cursor: not-allowed;
-  transform: none;
-  color: inherit;
-}
-
-.nav-sections:hover {
-  color: #6b6b6b;
-  transform: scale(1.05);
-}
-
-
 
 
 .presentation {

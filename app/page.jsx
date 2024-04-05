@@ -48,6 +48,7 @@ const page = () => {
     });
 
     const picture = document.querySelector('.mikey-picture');
+    const pictureDesktop = document.querySelector('.mikey-picture-desktop');
     const container = document.querySelector('*');
     let isMouseOver = false;
     let mouseX = 0;
@@ -83,6 +84,7 @@ const page = () => {
 
         // Apply the transform to the image
         picture.style.transform = `translate(${imageX}px, ${imageY}px`;
+        pictureDesktop.style.transform = `translate(${imageX}px, ${imageY}px`;
 
         requestAnimationFrame(updateImagePosition);
       } else {
@@ -98,10 +100,12 @@ const page = () => {
         imageY += (0 - imageY) * resetSpeed;
 
         picture.style.transform = `translate(${imageX}px, ${imageY}px`;
+        pictureDesktop.style.transform = `translate(${imageX}px, ${imageY}px`;
 
         requestAnimationFrame(resetImagePosition);
       } else {
         picture.style.transform = 'translate(0, 0)';
+        pictureDesktop.style.transform = 'translate(0, 0)';
       }
     }
 
@@ -138,6 +142,18 @@ const page = () => {
           <div className="presentation-title">
             <span className="im" id="im">I'M</span>
             <span className="joserodriguez">JOSE RODRIGUEZ</span>
+            <div className="joserodriguez-desktop">
+              <span className="joserodriguez-desktop1">JOSE</span>
+              <Image
+                src="/assets/images/profile.png"
+                alt="MikeyRG picture."
+                width={385}
+                height={385}
+                className="mikey-picture-desktop"
+                id="picture"
+              ></Image>
+              <span className="joserodriguez-desktop2">RODRIGUEZ</span>
+            </div>
             <span className="mikeyrg">“MIKEYRG”</span>
           </div>
           <Image
