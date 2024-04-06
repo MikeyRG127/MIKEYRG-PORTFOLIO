@@ -1,6 +1,9 @@
+import Navbar from "@components/Navbar";
 const work = () => {
     return (
-        <div></div>
+        <>
+        </>
+
     )
 }
 export default work;

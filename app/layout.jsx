@@ -75,6 +75,7 @@ function RootLayout({ children, isNavBarGidden }) {
       </head>
       <body>
         <div className="vertical-lines-container"></div>
+        <Navbar></Navbar>
         {children}
         <Footer />
       </body>

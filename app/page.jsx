@@ -134,7 +134,6 @@ const page = () => {
 
   return (
     <>
-      <Navbar></Navbar>
       <div className="presentation-container">
 
         <div className="presentation">
@@ -167,6 +166,7 @@ const page = () => {
           <div className="presentation-profession">
             <span className="fullstack">FULLSTACK</span>
             <span className="web-developer">WEB DEVELOPER</span>
+            <span className="and-graphic-designer">And Graphic Designer</span>
             <span className="and">&</span>
             <span className="graphic">Graphic</span>
             <span className="designer">Designer</span>
