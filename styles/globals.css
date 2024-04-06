@@ -911,40 +911,33 @@ nav {
     justify-self: center;
   }
 
+  @keyframes cascade {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+
+    /* Initial position and opacity */
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Final position and opacity */
+  }
+
+
+
+
   .im {
     font-family: __AntonRegular_56858d;
     font-size: 8vw;
     text-wrap: nowrap;
     line-height: 5vw;
     justify-self: start;
-    animation: bounce 2s;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.1s;
   }
-
-
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(-100px);
-    }
-
-    50% {
-      transform: translateY(0px);
-    }
-
-    /* Bounce up */
-    100% {
-      transform: translateY(0px);
-    }
-
-    /* Return to original position */
-  }
-
-  /* Apply the bounce animation to the text */
-
-
-
-
-
 
 
 
@@ -968,6 +961,8 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 10vw;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.2s;
   }
 
   .joserodriguez-desktop2 {
@@ -979,6 +974,8 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 10vw;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.2s;
   }
 
   .mikey-picture-desktop {
@@ -989,6 +986,8 @@ nav {
     z-index: 10000;
     width: 27vw !important;
     height: 27vw !important;
+    animation: cascade 1s ease-in-out;
+    animation-delay: 0.3s;
   }
 
   .mikeyrg {
@@ -997,6 +996,8 @@ nav {
     text-wrap: nowrap;
     line-height: 1.5vw;
     justify-self: end;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.4s;
   }
 
 
@@ -1022,6 +1023,8 @@ nav {
     z-index: 10000;
     top: -3.3vw;
     left: 14.8vw;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.4s;
   }
 
   .web-developer {
@@ -1034,6 +1037,8 @@ nav {
     top: -1.4vw;
     left: 14.8vw;
     letter-spacing: 2px;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.5s;
   }
 
   .and-graphic-designer {
@@ -1045,6 +1050,8 @@ nav {
     position: relative;
     left: 36.5vw;
     top: 2.5vw;
+    animation: cascade 1s ease forwards;
+    animation-delay: 0.6s;
   }
 
   .and {
