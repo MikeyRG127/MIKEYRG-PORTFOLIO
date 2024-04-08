@@ -2,17 +2,21 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { useEffect } from "react";
+import { usePathname } from 'next/navigation'
 
 
 
 const Navbar = () => {
+  const pathname = usePathname()
+
+
 
   useEffect(() => {
-
 
     const navbarOptions = document.querySelectorAll(".nav-sections");
     const logoClicked = document.getElementById("LogoClicked");
     const getintouchClicked = document.getElementById("button-get-in-touch-desktop");
+
 
     getintouchClicked.addEventListener('click', () => {
       if (getintouchClicked.classList.contains('button-get-in-touch-desktop-selected')) {
@@ -26,6 +30,8 @@ const Navbar = () => {
 
     });
 
+
+
     logoClicked.addEventListener('click', () => {
       getintouchClicked.classList.remove('button-get-in-touch-desktop-selected');
       navbarOptions.forEach(element => {
@@ -35,7 +41,6 @@ const Navbar = () => {
     });
 
     navbarOptions.forEach(element => {
-
       element.addEventListener('click', () => {
         getintouchClicked.classList.remove('button-get-in-touch-desktop-selected');
         navbarOptions.forEach(element => {
