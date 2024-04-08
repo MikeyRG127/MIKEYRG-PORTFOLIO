@@ -389,6 +389,10 @@ nav {
 }
 
 
+.about-section-desktop {
+  display: none;
+}
+
 
 /*
 @media (min-width: 500px) {
@@ -843,7 +847,9 @@ nav {
       linear-gradient(to right, #FF0000, #0047FF) border-box;
     border-radius: 0.15em;
     border: 3px solid transparent;
+
   }
+
 
   .nav-sections.selected:hover {
     cursor: not-allowed;
@@ -912,21 +918,19 @@ nav {
   }
 
   @keyframes cascade {
-    0% {
+    from {
       transform: translateY(-100px);
       opacity: 0;
     }
 
     /* Initial position and opacity */
-    100% {
+    to {
       transform: translateY(0);
       opacity: 1;
     }
 
     /* Final position and opacity */
   }
-
-
 
 
   .im {
@@ -936,7 +940,7 @@ nav {
     line-height: 5vw;
     justify-self: start;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.1s;
+    /*animation-delay: 0.1s;*/
   }
 
 
@@ -952,6 +956,9 @@ nav {
   }
 
 
+
+
+
   .joserodriguez-desktop1 {
     display: grid;
     font-family: __AntonRegular_56858d;
@@ -962,7 +969,6 @@ nav {
     -webkit-text-fill-color: transparent;
     line-height: 10vw;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.2s;
   }
 
   .joserodriguez-desktop2 {
@@ -975,7 +981,6 @@ nav {
     -webkit-text-fill-color: transparent;
     line-height: 10vw;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.2s;
   }
 
   .mikey-picture-desktop {
@@ -986,8 +991,7 @@ nav {
     z-index: 10000;
     width: 27vw !important;
     height: 27vw !important;
-    animation: cascade 1s ease-in-out;
-    animation-delay: 0.3s;
+    animation: cascade 1s ease forwards;
   }
 
   .mikeyrg {
@@ -997,7 +1001,6 @@ nav {
     line-height: 1.5vw;
     justify-self: end;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.4s;
   }
 
 
@@ -1024,7 +1027,6 @@ nav {
     top: -3.3vw;
     left: 14.8vw;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.4s;
   }
 
   .web-developer {
@@ -1038,7 +1040,6 @@ nav {
     left: 14.8vw;
     letter-spacing: 2px;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.5s;
   }
 
   .and-graphic-designer {
@@ -1051,8 +1052,232 @@ nav {
     left: 36.5vw;
     top: 2.5vw;
     animation: cascade 1s ease forwards;
-    animation-delay: 0.6s;
   }
+
+  .about-section-desktop {
+    display: grid;
+    width: 100dvw;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 4vw;
+  }
+
+  .about-section-desktop .left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  }
+
+  .about-section-desktop .title {
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 8vw;
+    justify-self: start;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-color: transparent;
+    text-underline-offset: 0.3em;
+    background-image: linear-gradient(to right, #0047FF, #FF0000);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 7vw;
+    animation: cascade 1s ease forwards;
+  }
+
+  .left .paragraph {
+    font-family: __KhulaRegular_2599ce;
+    width: 60%;
+    font-size: 1.5vw;
+    animation: cascade 1s ease forwards;
+
+  }
+
+  .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    animation: cascade 1s ease forwards;
+  }
+
+  .right .suggestion1 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 8vw;
+    justify-self: center;
+  }
+
+  .right .suggestion2 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 6vw;
+    text-wrap: nowrap;
+    line-height: 2vw;
+    justify-self: center;
+  }
+
+  .right .suggestion3 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 10vw;
+    text-wrap: nowrap;
+    line-height: 12.5vw;
+    justify-self: center;
+  }
+
+  .right .suggestion4 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 3.3vw;
+    text-wrap: nowrap;
+    line-height: 0.2vw;
+    justify-self: center;
+  }
+
+  .right .suggestion5 {
+    display: grid;
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 2vw;
+    text-wrap: nowrap;
+    line-height: 1;
+    justify-self: center;
+    margin-top: 50px;
+  }
+
+
+  .work-section-desktop {
+    display: grid;
+    width: 100dvw;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 4vw;
+  }
+
+  .work-section-desktop .title {
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 8vw;
+    justify-self: start;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-color: transparent;
+    text-underline-offset: 0.3em;
+    background-image: linear-gradient(to right, #0047FF, #FF0000);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 7vw;
+    animation: cascade 1s ease forwards;
+  }
+
+  .getintouch-section-desktop {
+    display: grid;
+    width: 100dvw;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 4vw;
+    gap: 50px;
+  }
+
+  .left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    animation: cascade 1s ease forwards;
+  }
+
+  .getintouch-section-desktop .title1 {
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 8vw;
+    justify-self: start;
+    padding-bottom: 0px;
+    animation: cascade 1s ease forwards;
+  }
+
+  .getintouch-section-desktop .title2 {
+    font-family: __AntonRegular_56858d;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 1.5vw;
+    justify-self: start;
+    padding-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-color: transparent;
+    text-underline-offset: 0.3em;
+    background-image: linear-gradient(to right, #0047FF, #FF0000);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 3.5vw;
+    animation: cascade 1s ease forwards;
+  }
+
+  .getintouch-section-desktop .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    animation: cascade 1s ease forwards;
+    justify-items: center;
+  }
+
+  .getintouch-section-desktop .right .questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+  }
+
+
+  .questions .suggestion1 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 7vw;
+    text-wrap: nowrap;
+    line-height: 9.5vw;
+
+  }
+
+  .questions .suggestion2 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 9.4vw;
+    text-wrap: nowrap;
+    line-height: 5.5vw;
+
+  }
+
+  .questions .suggestion3 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 6.26vw;
+    text-wrap: nowrap;
+    line-height: 9vw;
+
+  }
+
+  .questions .suggestion4 {
+    display: grid;
+    font-family: __PermanentMarkerRegular_321f92;
+    font-size: 5vw;
+    text-wrap: nowrap;
+    line-height: 5vw;
+    justify-self: center;
+    background-image: linear-gradient(to right, #0047FF, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
 
   .and {
     display: none;

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from 'next/link';
 import { Tooltip } from 'react-tooltip';
-import Navbar from "@components/Navbar";
 const page = () => {
   const [copy, setCopy] = useState("Copy 💾");
   function copyToClipboard() {
