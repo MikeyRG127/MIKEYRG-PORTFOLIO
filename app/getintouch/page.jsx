@@ -1,3 +1,4 @@
+import "@styles/getintouch.css";
 
 const getintouch = () => {
 
@@ -8,10 +9,11 @@ const getintouch = () => {
                 <span className="title1">GET IN</span>
                 <span className="title2">TOUCH</span>
                 <div className="social-media">
-                    <span className="getintouch-box2-2__text">LINKEDIN</span>
-                    <span className="getintouch-box2-2__text">FACEBOOK</span>
-                    <span className="getintouch-box2-2__text">INSTAGRAM</span>
-                    <span className="getintouch-box2-2__text">WHATSAPP</span>
+                    <span className="social-media__items">LINKEDIN</span>
+                    <span className="social-media__items">FACEBOOK</span>
+                    <span className="social-media__items">INSTAGRAM</span>
+                    <span className="social-media__items">WHATSAPP</span>
+                    <span className="social-media__items">JOSEALBERTOPERSONAL@GMAIL.COM</span>
                 </div>
             </div>
 

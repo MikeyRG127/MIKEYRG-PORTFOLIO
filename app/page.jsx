@@ -46,6 +46,7 @@ const page = () => {
       }
     });
 
+
     const picture = document.querySelector('.mikey-picture');
     const pictureDesktop = document.querySelector('.mikey-picture-desktop');
     const container = document.querySelector('*');
@@ -165,10 +166,6 @@ const page = () => {
           <div className="presentation-profession">
             <span className="fullstack">FULLSTACK</span>
             <span className="web-developer">WEB DEVELOPER</span>
-            <span className="and-graphic-designer">And Graphic Designer</span>
-            <span className="and">&</span>
-            <span className="graphic">Graphic</span>
-            <span className="designer">Designer</span>
           </div>
 
           <span className="about-section">
