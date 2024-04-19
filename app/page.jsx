@@ -21,34 +21,7 @@ const page = () => {
 
   useEffect(() => {
 
-
-    const containerx = document.querySelector('.vertical-lines-container');
-    const viewportWidth = window.innerWidth;
-    const lineSpacing = 20; // Adjust this value to change the spacing between lines
-
-    const numLines = Math.floor(viewportWidth / lineSpacing);
-
-    for (let i = 0; i <= numLines; i++) {
-      const line = document.createElement('div');
-      line.classList.add('vertical-line');
-      line.style.width = '1px'; // Set the width of the line to 1 pixel
-      containerx.appendChild(line);
-    }
-
-    // Distribute the lines evenly across the container
-    const lines = containerx.querySelectorAll('.vertical-line');
-    containerx.style.justifyContent = 'space-between';
-    lines.forEach((line, index) => {
-      if (index === 0 || index === lines.length - 1) {
-        line.style.marginLeft = line.style.marginRight = '0';
-      } else {
-        line.style.marginLeft = line.style.marginRight = `${lineSpacing / 2}px`;
-      }
-    });
-
-
-    const picture = document.querySelector('.mikey-picture');
-    const pictureDesktop = document.querySelector('.mikey-picture-desktop');
+    const picture = document.querySelector('.name-and-photo-container__photo');
     const container = document.querySelector('*');
     let isMouseOver = false;
     let mouseX = 0;
@@ -84,7 +57,6 @@ const page = () => {
 
         // Apply the transform to the image
         picture.style.transform = `translate(${imageX}px, ${imageY}px`;
-        pictureDesktop.style.transform = `translate(${imageX}px, ${imageY}px`;
 
         requestAnimationFrame(updateImagePosition);
       } else {
@@ -100,12 +72,11 @@ const page = () => {
         imageY += (0 - imageY) * resetSpeed;
 
         picture.style.transform = `translate(${imageX}px, ${imageY}px`;
-        pictureDesktop.style.transform = `translate(${imageX}px, ${imageY}px`;
 
         requestAnimationFrame(resetImagePosition);
       } else {
         picture.style.transform = 'translate(0, 0)';
-        pictureDesktop.style.transform = 'translate(0, 0)';
+
       }
     }
 
@@ -134,27 +105,28 @@ const page = () => {
 
   return (
     <>
-      <div className="presentation-container">
-
-        <div className="presentation">
-
-          <div className="presentation-title">
-            <span className="im" id="im">I'M</span>
-            <span className="joserodriguez">JOSE RODRIGUEZ</span>
-            <div className="joserodriguez-desktop">
-              <span className="joserodriguez-desktop1">JOSE</span>
-              <Image
-                src="/assets/images/profile.png"
-                alt="MikeyRG picture."
-                width={385}
-                height={385}
-                className="mikey-picture-desktop"
-                id="picture"
-              ></Image>
-              <span className="joserodriguez-desktop2">RODRIGUEZ</span>
-            </div>
-            <span className="mikeyrg">“MIKEYRG”</span>
+      <div className="hero-section-container">
+        <div className="hero-section-desktop">
+          <span className="hero-section-desktop__im" id="im">I'M</span>
+          <div className="hero-section-desktop__name-and-photo-container">
+            <span className="name-and-photo-container__jose">JOSE</span>
+            <Image className="name-and-photo-container__photo" src="/assets/images/profile.png" alt="MikeyRG picture." width={385} height={385} id="picture"></Image>
+            <span className="name-and-photo-container__rodriguez">RODRIGUEZ</span>
           </div>
+          <div className="hero-section-desktop__nickname-container">
+            <span className="nickname-container__fullstack">FULLSTACK</span>
+            <span className="nickname-container__mikeyrg">“MIKEYRG”</span>
+          </div>
+          <span className="hero-section-desktop__web-developer">WEB DEVELOPER</span>
+          <span className="hero-section-desktop__phrase">Your Ideal Developer for Bringing Your Dream Software Project to Life.</span>
+        </div>
+
+
+
+        <div className="hero-section-mobile">
+          <span className="im" id="im">I'M</span>
+          <span className="joserodriguez">JOSE RODRIGUEZ</span>
+          <span className="mikeyrg">“MIKEYRG”</span>
           <Image
             src="/assets/images/profile.png"
             alt="MikeyRG picture."
@@ -163,46 +135,43 @@ const page = () => {
             className="mikey-picture"
             id="picture"
           ></Image>
-          <div className="presentation-profession">
-            <span className="fullstack">FULLSTACK</span>
-            <span className="web-developer">WEB DEVELOPER</span>
-          </div>
-
-          <span className="about-section">
-            <span className="title">ABOUT</span>
-            <span className="paragraph">
-              A 26-year-old enthusiast of
-              programming and graphic design.
-              My mission? To craft outstanding
-              projects that not only meet current
-              standards but also exceed client
-              expectations. Let's collaborate to bring your creative visions to life!
-            </span>
-            <span className="suggestion1">WANT TO SEE</span>
-            <span className="suggestion2">EDUCATION</span>
-            <span className="suggestion3">SKILLS</span>
-            <span className="suggestion4">WORK EXPERIENCE?</span>
-            <Link href="/resume" target="_blank" className="suggestion5">HERE IS MY RESUME</Link>
-          </span>
-
-          <span className="work-section">WORK</span>
-          <span className="getintouch-section">GET IN</span>
-          <span className="getintouch-section2">TOUCH</span>
-          <span className="getintouch-content">
-            <span id="getintouch" className="getintouch-suggestion1">HAVE QUESTIONS,</span>
-            <span className="getintouch-suggestion2">PROBLEM OR</span>
-            <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
-            <span className="getintouch-suggestion4">LET'S TALK</span>
-          </span>
-          <Link href="https://www.linkedin.com/in/mikeyrg/" target="_blank" className="linkedin">LINKEDIN</Link>
-          <Link href="https://www.facebook.com/mikeyrg127/" target="_blank" className="facebook">FACEBOOK</Link>
-          <Link href="https://www.instagram.com/mikeyrg127/" target="_blank" className="instagram">INSTAGRAM</Link>
-          <Link href="https://wa.me/18293055147" target="_blank" className="whatsapp">WHATSAPP</Link>
-          <Tooltip id="gmail-tooltip" />
-          <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="gmail">josealbertopersonal@gmail.com</span>
+          <span className="fullstack">FULLSTACK</span>
+          <span className="web-developer">WEB DEVELOPER</span>
+          <span className="phrase">Your Ideal Developer for Bringing Your Dream Software Project to Life.</span>
         </div>
 
+        <span className="about-section">
+          <span className="title">ABOUT</span>
+          <span className="paragraph">
+            A 26-year-old enthusiast of
+            programming and graphic design.
+            My mission? To craft outstanding
+            projects that not only meet current
+            standards but also exceed client
+            expectations. Let's collaborate to bring your creative visions to life!
+          </span>
+          <span className="suggestion1">WANT TO SEE</span>
+          <span className="suggestion2">EDUCATION</span>
+          <span className="suggestion3">SKILLS</span>
+          <span className="suggestion4">WORK EXPERIENCE?</span>
+          <Link href="/resume" target="_blank" className="suggestion5">HERE IS MY RESUME</Link>
+        </span>
 
+        <span className="work-section">WORK</span>
+        <span className="getintouch-section">GET IN</span>
+        <span className="getintouch-section2">TOUCH</span>
+        <span className="getintouch-content">
+          <span id="getintouch" className="getintouch-suggestion1">HAVE QUESTIONS,</span>
+          <span className="getintouch-suggestion2">PROBLEM OR</span>
+          <span className="getintouch-suggestion3">WANT TO HIRE ME?</span>
+          <span className="getintouch-suggestion4">LET'S TALK</span>
+        </span>
+        <Link href="https://www.linkedin.com/in/mikeyrg/" target="_blank" className="linkedin">LINKEDIN</Link>
+        <Link href="https://www.facebook.com/mikeyrg127/" target="_blank" className="facebook">FACEBOOK</Link>
+        <Link href="https://www.instagram.com/mikeyrg127/" target="_blank" className="instagram">INSTAGRAM</Link>
+        <Link href="https://wa.me/18293055147" target="_blank" className="whatsapp">WHATSAPP</Link>
+        <Tooltip id="gmail-tooltip" />
+        <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="gmail">josealbertopersonal@gmail.com</span>
       </div>
     </>
   );

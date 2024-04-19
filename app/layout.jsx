@@ -1,6 +1,5 @@
 import "@styles/globals.css";
 import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
 import localFont from 'next/font/local';
 
 const AntonRegular = localFont({
@@ -74,10 +73,8 @@ function RootLayout({ children, isNavBarGidden }) {
         <meta name="google-site-verification" content="37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA" />
       </head>
       <body>
-        <div className="vertical-lines-container"></div>
         <Navbar></Navbar>
         {children}
-        <Footer />
       </body>
     </html>
   );
