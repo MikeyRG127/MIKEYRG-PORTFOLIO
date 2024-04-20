@@ -1,0 +1,159 @@
+@keyframes cascade {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    /* Initial position and opacity */
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Final position and opacity */
+}
+
+.about-section-container {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0vw 10vw 0px 10vw;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    animation: cascade 1s ease forwards;
+}
+
+.grid-1 .title {
+    font-family: __AntonRegular_56858d;
+    font-size: 6vw;
+    text-wrap: nowrap;
+    line-height: 1;
+    justify-self: start;
+    align-self: self-start;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-color: transparent;
+    text-underline-offset: 0.3em;
+    background-image: linear-gradient(to right, #0047FF, #FF0000);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 6vw;
+}
+
+.grid-1 .download-resume {
+    width: max-content;
+    height: max-content;
+    padding: 0.5vw;
+    font-family: __BebasNeueRegular_171f10;
+    background-color: black;
+    color: white;
+    font-size: 1.7vw;
+    border: none;
+    border-radius: 0.5vw;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: font-size 0.5s ease;
+    transition: transform 0.3s;
+    align-self: center;
+    justify-self: end;
+}
+
+.grid-1 .download-resume:hover {
+    transform: scale(1.05);
+    background-color: #2e2e2e;
+}
+
+.about-paragraph {
+    font-family: __KhulaRegular_2599ce;
+    font-size: 1.5vw;
+    text-wrap: wrap;
+    line-height: 1.5vw;
+    justify-self: center;
+    width: 60%;
+    text-align: center;
+    padding: 6vw 0vw;
+    height: min-content;
+}
+
+.work-experience {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    gap: 2vw;
+}
+
+.work-experience__title {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    justify-self: center;
+    margin: 6vw 0px 3vw 0px;
+}
+
+
+.work-experience__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas:
+        "role years2"
+        "company years2"
+        "years years2"
+    ;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 1.5vw;
+    padding: 1vw;
+    transition: transform 0.3s ease;
+
+}
+
+.work-experience__items:hover {
+    transform: scale(1.05);
+    color: #2e2e2e;
+}
+
+.work-experience__items .role {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 3vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: role;
+}
+
+.work-experience__items .company {
+    font-family: __KhulaRegular_2599ce;
+    font-size: 1.5vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: company;
+}
+
+.work-experience__items .years {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 2vw;
+    text-wrap: wrap;
+    line-height: 1.5;
+    grid-area: years;
+}
+
+.work-experience__items .years2 {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 3vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: years2;
+    justify-self: end;
+    align-self: center;
+}

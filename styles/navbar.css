@@ -222,10 +222,6 @@ nav {
     }
 
 
-    .button-get-in-touch {
-        display: none;
-    }
-
     .button-get-in-touch-desktop {
         display: grid;
         padding: 0.5rem;

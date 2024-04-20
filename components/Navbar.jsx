@@ -79,7 +79,6 @@ const Navbar = () => {
           <span className="language-spanish ">ESP</span>
           <span className="language-english ">EN</span>
         </div>
-        <Link className="button-get-in-touch" href="#getintouch">GET IN TOUCH</Link>
         <Link className="button-get-in-touch-desktop" id="button-get-in-touch-desktop" href="/getintouch">GET IN TOUCH</Link>
       </div>
     </nav>
