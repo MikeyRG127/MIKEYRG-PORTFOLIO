@@ -13,6 +13,36 @@
     /* Final position and opacity */
 }
 
+/* Styles for WebKit-based browsers (Safari, Chrome, etc.) */
+/* Use ::-webkit-scrollbar to style scrollbar track, thumb, etc. */
+/* Note: This example only styles the scrollbar for WebKit-based browsers */
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar {
+    width: 5px !important;
+    /* Set width of the scrollbar */
+}
+
+/* Styles for the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+    background: #888 !important;
+    /* Background color of the thumb */
+    border-radius: 5px;
+    /* Rounded corners of the thumb */
+}
+
+/* Styles for the scrollbar track (the area the thumb moves on) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0 !important;
+    /* Background color of the track */
+}
+
+/* Styles for the scrollbar corner (between the vertical and horizontal scrollbars) */
+::-webkit-scrollbar-corner {
+    background: transparent !important;
+    /* Background color of the corner */
+}
+
 .about-section-container {
     display: grid;
     grid-template-rows: min-content;
@@ -20,6 +50,7 @@
     width: 100%;
     height: auto;
     padding: 0vw 10vw 0px 10vw;
+
 }
 
 .grid-1 {
@@ -156,4 +187,149 @@
     grid-area: years2;
     justify-self: end;
     align-self: center;
+}
+
+
+
+
+.education {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    gap: 2vw;
+}
+
+.education__title {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    justify-self: center;
+    margin: 6vw 0px 3vw 0px;
+}
+
+
+.education__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas:
+        "role years2"
+        "company years2"
+        "years years2"
+    ;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 1.5vw;
+    padding: 1vw;
+    transition: transform 0.3s ease;
+    color: #303030;
+}
+
+.education__items:hover {
+    transform: scale(1.05);
+    color: #000000;
+}
+
+.education__items .role {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 3vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: role;
+}
+
+.education__items .company {
+    font-family: __KhulaRegular_2599ce;
+    font-size: 1.5vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: company;
+}
+
+.education__items .years {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 2vw;
+    text-wrap: wrap;
+    line-height: 1.5;
+    grid-area: years;
+}
+
+.education__items .years2 {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 3vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: years2;
+    justify-self: end;
+    align-self: center;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 2vw;
+}
+
+.skills__title {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    justify-self: center;
+    margin: 6vw 0px 3vw 0px;
+    grid-area: 1 / span 2;
+}
+
+.skills .backend {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 5vw;
+}
+
+.backend .title {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: 1 / span 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.skills .frontend {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 5vw;
+}
+
+.frontend .title {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: 1 / span 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.skills .additional-tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 5vw;
+    padding-top: 5vw;
+}
+
+.additional-tools .title {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 4vw;
+    text-wrap: wrap;
+    line-height: 1;
+    grid-area: 1 / span 3;
+    align-self: center;
+    justify-self: center;
 }

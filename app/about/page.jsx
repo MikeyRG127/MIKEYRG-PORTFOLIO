@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import "@styles/about.css";
+import Image from "next/image";
 const about = () => {
     return (
         <section className="about-section-container">
@@ -15,7 +16,7 @@ const about = () => {
                 standards but also exceed client
                 expectations. Let's collaborate to bring your creative visions to life!
             </span>
-            <span className="work-experience">
+            <div className="work-experience">
                 <span className="work-experience__title">Work Experience</span>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
@@ -35,40 +36,177 @@ const about = () => {
                     <span className="years">2017 - 2019</span>
                     <span className="years2">2 yrs 2 mos</span>
                 </div>
-                <span className="work-experience__title">Education</span>
-                <div className="work-experience__items">
+            </div>
+
+            <div className="education">
+                <span className="education__title">Education</span>
+                <div className="education__items">
                     <span className="role">Universidad Autónoma de Santo Domingo - UASD</span>
                     <span className="company">Bachelor’s Degree, Computer Science</span>
                     <span className="years">2023 - Present</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
-                <div className="work-experience__items">
+                <div className="education__items">
                     <span className="role">Instituto Técnico Superior Comunitario - ITSC</span>
                     <span className="company">Associate Degree in Software Development</span>
                     <span className="years">2017 - 2020</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
-                <div className="work-experience__items">
+                <div className="education__items">
                     <span className="role">Ministerio de Educación Superior, Ciencia y Tecnología - Mescyt</span>
                     <span className="company">English immersion program</span>
                     <span className="years">2018 - 2018</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
-                <div className="work-experience__items">
+                <div className="education__items">
                     <span className="role">Instituto de Formación Técnico Profesional {'(INFOTEP)'}</span>
                     <span className="company">Certificate in Graphic Design</span>
                     <span className="years">2015 - 2016</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
-                <span className="work-experience__title">Skills</span>
-            </span>
-            <div className="grid-2">
-                <span className="suggestion1">WANT TO SEE</span>
-                <span className="suggestion2">EDUCATION</span>
-                <span className="suggestion3">SKILLS</span>
-                <span className="suggestion4">WORK EXPERIENCE?</span>
-                <Link href="/resume" target="_blank" className="suggestion5">HERE IS MY RESUME</Link>
             </div>
+
+            <div className="skills">
+                <span className="skills__title">Skills</span>
+                <div className="backend">
+                    <span className="title">Backend</span>
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                </div>
+
+                <div className="frontend">
+                    <span className="title">Frontend</span>
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                </div>
+
+                <div className="additional-tools">
+                    <span className="title">Additional Tools</span>
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                    <Image
+                        src="/assets/icons/mikey.png"
+                        alt="Picture of the author"
+                        width={50}
+                        height={60}
+                        className="mikey-logo"
+                    />
+                </div>
+            </div>
+
 
         </section>
     )
