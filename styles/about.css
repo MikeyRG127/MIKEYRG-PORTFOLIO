@@ -116,12 +116,12 @@
     border-radius: 1.5vw;
     padding: 1vw;
     transition: transform 0.3s ease;
-
+    color: #303030;
 }
 
 .work-experience__items:hover {
     transform: scale(1.05);
-    color: #2e2e2e;
+    color: #000000;
 }
 
 .work-experience__items .role {

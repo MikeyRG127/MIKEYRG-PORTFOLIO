@@ -19,21 +19,21 @@ const about = () => {
                 <span className="work-experience__title">Work Experience</span>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">Freelance {`(Self Employed)`} Full-Time </span>
+                    <span className="company">Freelance {`(Self Employed)`} · Full-Time </span>
                     <span className="years">2021 - Present</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">Freelance {`(Self Employed)`} Full-Time </span>
-                    <span className="years">2021 - Present</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <span className="company">iKompras · Full-Time</span>
+                    <span className="years">2020 - 2021</span>
+                    <span className="years2">1 yr 10 mos</span>
                 </div>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">Freelance {`(Self Employed)`} Full-Time </span>
-                    <span className="years">2021 - Present</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <span className="company">Solumedios · Full-time</span>
+                    <span className="years">2017 - 2019</span>
+                    <span className="years2">2 yrs 2 mos</span>
                 </div>
                 <span className="work-experience__title">Education</span>
                 <div className="work-experience__items">
@@ -50,8 +50,8 @@ const about = () => {
                 </div>
                 <div className="work-experience__items">
                     <span className="role">Ministerio de Educación Superior, Ciencia y Tecnología - Mescyt</span>
-                    <span className="company">Bachelor’s Degree, Computer Science</span>
-                    <span className="years">English immersion program</span>
+                    <span className="company">English immersion program</span>
+                    <span className="years">2018 - 2018</span>
                     <span className="years2">3 yrs 4 mos</span>
                 </div>
                 <div className="work-experience__items">
