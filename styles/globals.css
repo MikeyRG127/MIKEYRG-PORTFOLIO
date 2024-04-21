@@ -112,6 +112,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: min-content 1fr;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 /*Mobile Body Config (END)*/
