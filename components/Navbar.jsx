@@ -63,10 +63,10 @@ const Navbar = () => {
 
       <Link id="LogoClicked" href="/">
         <Image
-          src="/assets/icons/mikey.png"
+          src="/assets/icons/mikeyrg-logo.svg"
           alt="Picture of the author"
-          width={50}
-          height={60}
+          width={169}
+          height={208}
           className="mikey-logo"
         />
       </Link>

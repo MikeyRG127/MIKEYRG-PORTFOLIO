@@ -618,11 +618,38 @@ body {
     font-family: __AntonRegular_56858d;
     font-size: 8vw;
     text-wrap: nowrap;
-    background-image: linear-gradient(to right, #0047FF, #FF0000 300%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 10vw;
     animation: cascade 1s ease forwards;
+    color: rgba(255, 255, 255, 0.1);
+
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* FF3.6+ */
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* W3C */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047FF), color-stop(16%, #FF0000), color-stop(32%, #0047FF), color-stop(48%, #FF0000), color-stop(64%, #0047FF), color-stop(80%, #FF0000), color-stop(100%, #0047FF));
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0047FF', endColorstr='#FF0000', GradientType=1);
+    /* IE6-9 */
+
+    -webkit-background-size: 300% 300%;
+    -moz-background-size: 300% 300%;
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
   }
 
   .name-and-photo-container__photo {
@@ -632,7 +659,7 @@ body {
     align-self: center;
     z-index: 10000;
     width: 27vw !important;
-    height: 26.5vw !important;
+    height: 27vw !important;
     animation: cascade 1s ease forwards;
   }
 
@@ -641,11 +668,98 @@ body {
     font-family: __AntonRegular_56858d;
     font-size: 8vw;
     text-wrap: nowrap;
-    background-image: linear-gradient(to right, #0047FF -50%, #FF0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 10vw;
+
+
+
+    color: rgba(255, 255, 255, 0.1);
+
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* FF3.6+ */
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    /* W3C */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047FF), color-stop(16%, #FF0000), color-stop(32%, #0047FF), color-stop(48%, #FF0000), color-stop(64%, #0047FF), color-stop(80%, #FF0000), color-stop(100%, #0047FF));
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0047FF', endColorstr='#FF0000', GradientType=1);
+    /* IE6-9 */
+
+    -webkit-background-size: 300% 300%;
+    -moz-background-size: 300% 300%;
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     animation: cascade 1s ease forwards;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
+  }
+
+
+
+  @keyframes cascade {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+
+    /* Initial position and opacity */
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Final position and opacity */
+  }
+
+  @-moz-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+
+    100% {
+      background-position: top right;
+    }
+  }
+
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+
+    100% {
+      background-position: top right;
+    }
+  }
+
+  @-o-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+
+    100% {
+      background-position: top right;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+
+    100% {
+      background-position: top right;
+    }
   }
 
 
@@ -664,10 +778,13 @@ body {
     display: none;
   }
 
+
+
   .hero-section-mobile {
     display: none;
 
   }
+
 
   .hero-section-desktop__nickname-container {
     display: grid;
@@ -701,6 +818,7 @@ body {
     animation: cascade 1s ease forwards;
     justify-self: end;
   }
+
 
   .hero-section-desktop__phrase {
     font-family: __KhulaRegular_2599ce;
@@ -890,5 +1008,9 @@ body {
   .gmail {
     display: none;
   }
+
+
+
+
 
 }

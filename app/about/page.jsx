@@ -44,13 +44,25 @@ const about = () => {
                     <span className="role">Universidad Autónoma de Santo Domingo - UASD</span>
                     <span className="company">Bachelor’s Degree, Computer Science</span>
                     <span className="years">2023 - Present</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <Image
+                        src="/assets/icons/uasd.png"
+                        alt="Picture of the author"
+                        width={130}
+                        height={130}
+                        className="education-logos"
+                    />
                 </div>
                 <div className="education__items">
                     <span className="role">Instituto Técnico Superior Comunitario - ITSC</span>
                     <span className="company">Associate Degree in Software Development</span>
                     <span className="years">2017 - 2020</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <Image
+                        src="/assets/icons/itsc.png"
+                        alt="Picture of the author"
+                        width={130}
+                        height={130}
+                        className="education-logos"
+                    />
                 </div>
                 <div className="education__items">
                     <span className="role">Ministerio de Educación Superior, Ciencia y Tecnología - Mescyt</span>

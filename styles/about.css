@@ -156,6 +156,7 @@
 .work-experience__items:hover {
     transform: scale(1.05);
     color: #000000;
+
 }
 
 .work-experience__items .role {
@@ -164,6 +165,7 @@
     text-wrap: wrap;
     line-height: 1;
     grid-area: role;
+
 }
 
 .work-experience__items .company {
@@ -226,6 +228,7 @@
     padding: 1vw;
     transition: transform 0.3s ease;
     color: #303030;
+
 }
 
 .education__items:hover {
@@ -265,6 +268,14 @@
     grid-area: years2;
     justify-self: end;
     align-self: center;
+}
+
+.education__items .education-logos {
+
+    grid-area: years2;
+    justify-self: end;
+    align-self: center;
+    margin-right: 5vw;
 }
 
 

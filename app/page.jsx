@@ -19,8 +19,24 @@ const page = () => {
   }
 
 
-  useEffect(() => {
 
+
+  useEffect(() => {
+    const jose = document.querySelector('.name-and-photo-container__jose');
+    const rodriguez = document.querySelector('.name-and-photo-container__rodriguez');
+
+    function startShimmer() {
+      jose.style.animation = 'shimmer infinite 3s linear';
+      rodriguez.style.animation = 'shimmer infinite 3s linear';
+    }
+
+
+    // Function to start shimmer animation
+
+
+    // Event listener to start shimmer animation after cascade animation ends
+    jose.addEventListener('animationend', startShimmer);
+    rodriguez.addEventListener('animationend', startShimmer);
     const picture = document.querySelector('.name-and-photo-container__photo');
     const container = document.querySelector('*');
     let isMouseOver = false;

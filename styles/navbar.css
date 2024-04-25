@@ -12,13 +12,15 @@ nav {
 
 }
 
+
+
 .mikey-logo {
     cursor: pointer;
     opacity: 100%;
     transition: opacity 0.3s ease;
     transition: transform 0.3s;
-    width: 8vw;
-    height: 8.5vw;
+    width: 169px;
+    height: 208px;
 }
 
 .mikey-logo:hover {
@@ -109,12 +111,50 @@ nav {
 }
 
 .language-spanish.selected {
-    background: linear-gradient(to bottom, #FF0000 0%, #0047FF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
+
     color: transparent;
     cursor: auto;
     position: relative;
+}
+
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
 }
 
 .language-spanish.selected::after {
@@ -162,13 +202,13 @@ nav {
 @media (min-width: 1024px) {
 
     nav {
-        padding: 30px;
-        padding: 1vw 2vw 1vw 2vw;
+        padding: 1vw 1.5vw 0.5vw 1.5vw;
     }
 
     .mikey-logo {
-        width: 4vw;
-        height: 4.5vw;
+        width: 50.7px;
+        height: 62.4px;
+        image-rendering: crisp-edges;
     }
 
     .nav-sections {
@@ -197,10 +237,55 @@ nav {
         line-height: 0.8;
         border-style: solid;
         background: linear-gradient(white, white) padding-box,
-            linear-gradient(to right, #FF0000, #0047FF) border-box;
+            linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%) border-box;
+        background-position: top left;
+        animation: shimmer infinite 3s linear;
         border-radius: 0.15em;
+        -webkit-background-size: 300% 300%;
+        -moz-background-size: 300% 300%;
+        background-size: 300% 300%;
         border: 3px solid transparent;
 
+    }
+
+    @-moz-keyframes shimmer {
+        0% {
+            background-position: top left;
+        }
+
+        100% {
+            background-position: top right;
+        }
+    }
+
+    @-webkit-keyframes shimmer {
+        0% {
+            background-position: top left;
+        }
+
+        100% {
+            background-position: top right;
+        }
+    }
+
+    @-o-keyframes shimmer {
+        0% {
+            background-position: top left;
+        }
+
+        100% {
+            background-position: top right;
+        }
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: top left;
+        }
+
+        100% {
+            background-position: top right;
+        }
     }
 
 
@@ -218,7 +303,7 @@ nav {
     .language-selection {
         margin: 0px 2vw;
         gap: 1.5rem;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
 
@@ -237,6 +322,7 @@ nav {
         transition: font-size 0.5s ease;
         transition: transform 0.3s;
         box-shadow: 0.2vw 0.2vw 0px #FF0000, -0.2vw -0.2vw 0px #0047FF;
+        letter-spacing: 1.2px;
     }
 
     .button-get-in-touch-desktop-selected {
