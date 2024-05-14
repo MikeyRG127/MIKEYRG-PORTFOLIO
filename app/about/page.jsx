@@ -5,10 +5,6 @@ import Footer from "@components/Footer";
 const about = () => {
     return (
         <section className="about-section-container">
-            <div className="grid-1">
-                <span className="title">ABOUT</span>
-                <Link className="download-resume" href="#getintouch">DOWNLOAD RESUME</Link>
-            </div>
             <span className="about-paragraph">
                 A 26-year-old enthusiast of
             </span>
@@ -229,7 +225,9 @@ const about = () => {
                         />
                     </div>
                 </span>
-
+                <div className="grid-1">
+                    <Link className="download-resume" href="#getintouch">DOWNLOAD RESUME</Link>
+                </div>
             </div>
             <Footer className="footer"></Footer>
 

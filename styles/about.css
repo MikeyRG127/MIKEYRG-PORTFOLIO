@@ -98,7 +98,7 @@
 
 .grid-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
     height: auto;
     animation: cascade 1s ease forwards;
@@ -140,7 +140,8 @@
     transition: font-size 0.5s ease;
     transition: transform 0.3s;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
+    margin-top: 5vw;
 }
 
 .grid-1 .download-resume:hover {
