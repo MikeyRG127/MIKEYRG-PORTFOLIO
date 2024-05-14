@@ -13,6 +13,46 @@
     /* Final position and opacity */
 }
 
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
 /* Styles for WebKit-based browsers (Safari, Chrome, etc.) */
 /* Use ::-webkit-scrollbar to style scrollbar track, thumb, etc. */
 /* Note: This example only styles the scrollbar for WebKit-based browsers */
@@ -53,7 +93,7 @@
     padding: 0vw 10vw 0px 10vw;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    position: relative;
 }
 
 .grid-1 {
@@ -109,15 +149,65 @@
 }
 
 .about-paragraph {
-    font-family: __KhulaRegular_2599ce;
-    font-size: 1.5vw;
-    text-wrap: wrap;
-    line-height: 1.5vw;
-    justify-self: center;
-    width: 60%;
-    text-align: center;
+    font-family: __AntonRegular_56858d;
+    font-size: 6.30vw;
+    text-wrap: nowrap;
+    line-height: 0vw;
+    width: 100%;
     padding: 6vw 0vw;
     height: min-content;
+    color: var(--secondary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.about-paragraph2 {
+    font-family: __AntonRegular_56858d;
+    font-size: 12.2vw;
+    text-wrap: nowrap;
+    line-height: 8vw;
+    width: 100%;
+    height: min-content;
+    color: var(--secondary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.about-paragraph3 {
+    font-family: __AntonRegular_56858d;
+    font-size: 19.15vw;
+    text-wrap: nowrap;
+    line-height: 1vw;
+    padding-top: 12vw;
+    width: 100%;
+    height: min-content;
+    color: var(--secondary-color);
+    /* letter-spacing: 1vw; */
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.about-paragraph4 {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 8.9vw;
+    text-wrap: nowrap;
+    line-height: 10vw;
+    padding-top: 8.5vw;
+    color: rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047FF), color-stop(16%, #FF0000), color-stop(32%, #0047FF), color-stop(48%, #FF0000), color-stop(64%, #0047FF), color-stop(80%, #FF0000), color-stop(100%, #0047FF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0047FF', endColorstr='#FF0000', GradientType=1);
+    background-size: 300% 300%;
+    animation: shimmer infinite 3s linear;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
+    text-align: center;
 }
 
 .work-experience {
@@ -128,12 +218,24 @@
 }
 
 .work-experience__title {
-    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-family: __AntonRegular_56858d;
     font-size: 4vw;
     text-wrap: wrap;
+    line-height: 0;
+    margin: 10vw 0px 0vw 0px;
+    padding-left: 5.2vw;
+    background-color: #222;
+    color: var(--secondary-color);
+}
+
+.work-experience__title2 {
+    font-family: __AntonRegular_56858d;
+    font-size: 16.32vw;
+    text-wrap: wrap;
     line-height: 1;
-    justify-self: center;
-    margin: 6vw 0px 3vw 0px;
+    margin: 0vw 0px 0vw 0px;
+    padding-left: 4.6vw;
+    color: var(--secondary-color);
 }
 
 
@@ -151,6 +253,7 @@
     padding: 1vw;
     transition: transform 0.3s ease;
     color: #303030;
+    margin: 0vw 5vw;
 }
 
 .work-experience__items:hover {
@@ -204,19 +307,32 @@
     gap: 2vw;
 }
 
+
 .education__title {
-    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-family: __AntonRegular_56858d;
     font-size: 4vw;
     text-wrap: wrap;
+    line-height: 0;
+    margin: 5vw 0px 0vw 0px;
+    padding-left: 5.2vw;
+    background-color: #222;
+    color: var(--secondary-color);
+}
+
+.education__title2 {
+    font-family: __AntonRegular_56858d;
+    font-size: 17.9vw;
+    text-wrap: wrap;
     line-height: 1;
-    justify-self: center;
-    margin: 6vw 0px 3vw 0px;
+    margin: 0vw 0px 0vw 0px;
+    padding-left: 4.6vw;
+    color: var(--secondary-color);
 }
 
 
 .education__items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: max-content max-content max-content;
     grid-template-areas:
         "role years2"
@@ -228,7 +344,7 @@
     padding: 1vw;
     transition: transform 0.3s ease;
     color: #303030;
-
+    margin: 0vw 5vw;
 }
 
 .education__items:hover {
@@ -281,26 +397,60 @@
 
 .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: min-content;
     gap: 2vw;
 }
 
+.skills__tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10vw;
+}
+
 .skills__title {
-    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-family: __AntonRegular_56858d;
     font-size: 4vw;
     text-wrap: wrap;
-    line-height: 1;
-    justify-self: center;
-    margin: 6vw 0px 3vw 0px;
-    grid-area: 1 / span 2;
+    line-height: 0;
+    margin: 5vw 0px 0vw 0px;
+    padding-left: 5.2vw;
+    color: var(--secondary-color);
 }
+
+.skills__title2 {
+    font-family: __AntonRegular_56858d;
+    font-size: 29.1vw;
+    text-wrap: wrap;
+    line-height: 1;
+    margin: 0vw 0px 0vw 0px;
+    padding-left: 4.6vw;
+    color: var(--secondary-color);
+}
+
+.skills__title3 {
+    font-family: __AntonRegular_56858d;
+    font-size: 9vw;
+    text-wrap: wrap;
+    line-height: 0.5;
+    padding-left: 5.2vw;
+    letter-spacing: 18vw;
+    color: var(--secondary-color);
+}
+
+.skills__items {
+    justify-self: center;
+}
+
+
 
 .skills .backend {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content;
     gap: 5vw;
+    margin: 5vw 0px 0vw 0px;
 }
 
 .backend .title {
@@ -318,6 +468,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content;
     gap: 5vw;
+    margin: 5vw 0px 0vw 0px;
+
 }
 
 .frontend .title {
@@ -334,8 +486,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content;
+    grid-gap: 5vw;
     gap: 5vw;
-    padding-top: 5vw;
+    padding-top: 0vw;
+    margin: 0vw 0px 0vw 0px;
 }
 
 .additional-tools .title {
@@ -346,4 +500,8 @@
     grid-area: 1 / span 3;
     align-self: center;
     justify-self: center;
+}
+
+.footer {
+    padding: 0vw -10vw 0px -10vw !important;
 }

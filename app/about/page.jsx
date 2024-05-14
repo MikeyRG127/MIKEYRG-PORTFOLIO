@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
+import Footer from "@components/Footer";
 const about = () => {
     return (
         <section className="about-section-container">
@@ -10,14 +11,20 @@ const about = () => {
             </div>
             <span className="about-paragraph">
                 A 26-year-old enthusiast of
+            </span>
+            <span className="about-paragraph2">
                 programming.
-                My mission? To craft outstanding
-                projects that not only meet current
-                standards but also exceed client
-                expectations. Let's collaborate to bring your creative visions to life!
+            </span>
+            <span className="about-paragraph3">
+                FROM THE
+            </span>
+
+            <span className="about-paragraph4">
+                DOMINICAN REPUBLIC
             </span>
             <div className="work-experience">
-                <span className="work-experience__title">Work Experience</span>
+                <span className="work-experience__title">WITH OVER 5 YEARS OF PROFESSIONAL</span>
+                <span className="work-experience__title2">EXPERIENCE</span>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
                     <span className="company">Freelance {`(Self Employed)`} · Full-Time </span>
@@ -39,7 +46,8 @@ const about = () => {
             </div>
 
             <div className="education">
-                <span className="education__title">Education</span>
+                <span className="education__title">EXCELLENT</span>
+                <span className="education__title2">EDUCATION</span>
                 <div className="education__items">
                     <span className="role">Universidad Autónoma de Santo Domingo - UASD</span>
                     <span className="company">Bachelor’s Degree, Computer Science</span>
@@ -79,146 +87,151 @@ const about = () => {
             </div>
 
             <div className="skills">
-                <span className="skills__title">Skills</span>
-                <div className="backend">
-                    <span className="title">Backend</span>
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                </div>
+                <span className="skills__title">VERSATILE</span>
+                <span className="skills__title2">SKILLS</span>
+                <span className="skills__title3">SETT</span>
+                <span className="skills__tools">
+                    <div className="backend">
+                        <span className="title">Backend</span>
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                    </div>
 
-                <div className="frontend">
-                    <span className="title">Frontend</span>
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                </div>
+                    <div className="frontend">
+                        <span className="title">Frontend</span>
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                    </div>
 
-                <div className="additional-tools">
-                    <span className="title">Additional Tools</span>
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                    <Image
-                        src="/assets/icons/mikey.png"
-                        alt="Picture of the author"
-                        width={50}
-                        height={60}
-                        className="mikey-logo"
-                    />
-                </div>
+                    <div className="additional-tools">
+                        <span className="title">Additional Tools</span>
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mikey.png"
+                            alt="Picture of the author"
+                            width={50}
+                            height={60}
+                            className="skills__items"
+                        />
+                    </div>
+                </span>
+
             </div>
-
+            <Footer className="footer"></Footer>
 
         </section>
     )

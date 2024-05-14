@@ -30,71 +30,11 @@ const page = () => {
       rodriguez.style.animation = 'shimmer infinite 3s linear';
     }
 
-
-    // Function to start shimmer animation
-
-
     // Event listener to start shimmer animation after cascade animation ends
     jose.addEventListener('animationend', startShimmer);
     rodriguez.addEventListener('animationend', startShimmer);
-    const picture = document.querySelector('.name-and-photo-container__photo');
-    const container = document.querySelector('*');
-    let isMouseOver = false;
-    let mouseX = 0;
-    let mouseY = 0;
-    let imageX = 0;
-    let imageY = 0;
 
-    container.addEventListener('mouseenter', () => {
-      isMouseOver = true;
-      requestAnimationFrame(updateImagePosition);
-    });
 
-    container.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX - container.getBoundingClientRect().left; // Mouse position relative to the container
-      mouseY = e.clientY - container.getBoundingClientRect().top;
-    });
-
-    container.addEventListener('mouseleave', () => {
-      isMouseOver = false;
-    });
-
-    function updateImagePosition() {
-      if (isMouseOver) {
-        const parallaxAmount = 30; // Adjust this value for the desired parallax effect
-
-        // Calculate the new position for the image based on mouse position
-        const targetX = (mouseX / container.offsetWidth - 0.5) * parallaxAmount;
-        const targetY = (mouseY / container.offsetHeight - 0.5) * parallaxAmount;
-
-        // Use easing for smoother movement (you can use different easing functions)
-        imageX += (targetX - imageX) * 0.1;
-        imageY += (targetY - imageY) * 0.1;
-
-        // Apply the transform to the image
-        picture.style.transform = `translate(${imageX}px, ${imageY}px`;
-
-        requestAnimationFrame(updateImagePosition);
-      } else {
-        resetImagePosition();
-      }
-    }
-
-    function resetImagePosition() {
-      const resetSpeed = 0.01;
-
-      if (Math.abs(imageX) > 0.01 || Math.abs(imageY) > 0.01) {
-        imageX += (0 - imageX) * resetSpeed;
-        imageY += (0 - imageY) * resetSpeed;
-
-        picture.style.transform = `translate(${imageX}px, ${imageY}px`;
-
-        requestAnimationFrame(resetImagePosition);
-      } else {
-        picture.style.transform = 'translate(0, 0)';
-
-      }
-    }
 
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

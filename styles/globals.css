@@ -1,4 +1,11 @@
 /*===================================( WEBSITE CONFIGS AND RESOURCES )============================================*/
+
+/*Local Resource*/
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #222222;
+}
+
 /*Website Resource (START)*/
 /*
 @font-face {
@@ -594,6 +601,7 @@ body {
     line-height: 5vw;
     justify-self: start;
     animation: cascade 1s ease forwards;
+    color: var(--secondary-color);
     /*animation-delay: 0.1s;*/
   }
 
@@ -771,6 +779,7 @@ body {
     line-height: 1.5vw;
     justify-self: start;
     animation: cascade 1s ease forwards;
+    color: var(--secondary-color);
   }
 
 
@@ -792,6 +801,7 @@ body {
     width: 100%;
     height: max-content;
     justify-self: center;
+
   }
 
   .nickname-container__mikeyrg {
@@ -804,6 +814,7 @@ body {
     left: -0.8vw;
     animation: cascade 1s ease forwards;
     justify-self: end;
+    color: var(--secondary-color);
   }
 
   .hero-section-desktop__web-developer {
@@ -817,6 +828,7 @@ body {
     letter-spacing: 0.1vw;
     animation: cascade 1s ease forwards;
     justify-self: end;
+    color: var(--secondary-color);
   }
 
 

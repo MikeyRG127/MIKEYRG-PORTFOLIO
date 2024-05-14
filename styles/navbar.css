@@ -206,8 +206,8 @@ nav {
     }
 
     .mikey-logo {
-        width: 50.7px;
-        height: 62.4px;
+        width: 40.7px;
+        height: 50.4px;
         image-rendering: crisp-edges;
     }
 
@@ -223,6 +223,7 @@ nav {
         padding-top: 5px;
         padding-left: 7px;
         padding-right: 7px;
+        color: var(--secondary-color);
     }
 
     .nav-sections.selected {
@@ -245,7 +246,7 @@ nav {
         -moz-background-size: 300% 300%;
         background-size: 300% 300%;
         border: 3px solid transparent;
-
+        color: var(--secondary-color);
     }
 
     @-moz-keyframes shimmer {
@@ -311,7 +312,7 @@ nav {
         display: grid;
         padding: 0.5rem;
         font-family: __BebasNeueRegular_171f10;
-        background-color: black;
+        background-color: var(--secondary-color);
         color: white;
         font-size: 1.5vw;
         border: none;
@@ -328,7 +329,7 @@ nav {
     .button-get-in-touch-desktop-selected {
 
         background-color: white;
-        color: black;
+        color: var(--secondary-color);
     }
 
     .button-get-in-touch-desktop:hover {

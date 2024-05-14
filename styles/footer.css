@@ -1,0 +1,35 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 4vw;
+    position: absolute;
+    bottom: 0;
+    /* Position the child element at the bottom */
+    left: 0;
+    width: 100%;
+    /* Make the child element stretch to full width of parent */
+    transform: translateY(290vw);
+    /* Move the child element up by its own height */
+    background-color: var(--secondary-color);
+    border-radius: 30px 30px 0px 0px;
+    color: white;
+    padding: 0px 5vw 0px 5vw;
+}
+
+.footer .copyright {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 2vw;
+}
+
+.footer .designer {
+    font-family: __BebasNeueRegular_171f10;
+    font-size: 2vw;
+    text-align: end;
+}
+
+
+.footer .designer__item {
+    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-size: 2vw;
+    text-align: end;
+}
