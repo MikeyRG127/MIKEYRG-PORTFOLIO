@@ -442,7 +442,13 @@
 
 .skills__items {
     justify-self: center;
+    transition: transform 0.3s;
 }
+
+.skills__items:hover {
+    transform: scale(1.1);
+}
+
 
 
 

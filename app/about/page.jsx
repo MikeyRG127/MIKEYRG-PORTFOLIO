@@ -88,90 +88,132 @@ const about = () => {
                 <span className="skills__title3">SETT</span>
                 <span className="skills__tools">
                     <div className="backend">
-                        <span className="title">Backend</span>
+                        <span className="title">FRONTEND</span>
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/html5-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/css-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/javascript-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/tailwindcss-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/sass-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/angular-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/puntonet-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/nextjs-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/react-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/illustrator-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/adobe-photoshop-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/figma-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                     </div>
 
                     <div className="frontend">
-                        <span className="title">Frontend</span>
+                        <span className="title">BACKEND</span>
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
@@ -182,42 +224,42 @@ const about = () => {
                     <div className="additional-tools">
                         <span className="title">Additional Tools</span>
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.png"
+                            src="/assets/icons/mikey.svg"
                             alt="Picture of the author"
                             width={50}
                             height={60}
