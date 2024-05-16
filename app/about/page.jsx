@@ -49,8 +49,8 @@ const about = () => {
                     <span className="company">Bachelor’s Degree, Computer Science</span>
                     <span className="years">2023 - Present</span>
                     <Image
-                        src="/assets/icons/uasd.png"
-                        alt="Picture of the author"
+                        src="/assets/icons/uasd-logo.svg"
+                        alt="uasd-logo"
                         width={130}
                         height={130}
                         className="education-logos"
@@ -61,8 +61,8 @@ const about = () => {
                     <span className="company">Associate Degree in Software Development</span>
                     <span className="years">2017 - 2020</span>
                     <Image
-                        src="/assets/icons/itsc.png"
-                        alt="Picture of the author"
+                        src="/assets/icons/itsc-logo.svg"
+                        alt="itsc-logo"
                         width={130}
                         height={130}
                         className="education-logos"
@@ -72,13 +72,25 @@ const about = () => {
                     <span className="role">Ministerio de Educación Superior, Ciencia y Tecnología - Mescyt</span>
                     <span className="company">English immersion program</span>
                     <span className="years">2018 - 2018</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <Image
+                        src="/assets/icons/mescyt-logo.svg"
+                        alt="mescyt-logo"
+                        width={130}
+                        height={130}
+                        className="education-logos"
+                    />
                 </div>
                 <div className="education__items">
                     <span className="role">Instituto de Formación Técnico Profesional {'(INFOTEP)'}</span>
                     <span className="company">Certificate in Graphic Design</span>
                     <span className="years">2015 - 2016</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <Image
+                        src="/assets/icons/infotep-logo.svg"
+                        alt="infotep-logo"
+                        width={130}
+                        height={130}
+                        className="education-logos"
+                    />
                 </div>
             </div>
 
@@ -91,84 +103,84 @@ const about = () => {
                         <span className="title">FRONTEND</span>
                         <Image
                             src="/assets/icons/html5-logo.svg"
-                            alt="Picture of the author"
+                            alt="html5-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/css-logo.svg"
-                            alt="Picture of the author"
+                            alt="css-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/javascript-logo.svg"
-                            alt="Picture of the author"
+                            alt="javascript-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/tailwindcss-logo.svg"
-                            alt="Picture of the author"
+                            alt="tailwindcss-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/sass-logo.svg"
-                            alt="Picture of the author"
+                            alt="sass-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/angular-logo.svg"
-                            alt="Picture of the author"
+                            alt="angular-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/puntonet-logo.svg"
-                            alt="Picture of the author"
+                            alt="puntonet-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/nextjs-logo.svg"
-                            alt="Picture of the author"
+                            alt="nextjs-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/react-logo.svg"
-                            alt="Picture of the author"
+                            alt="react-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/illustrator-logo.svg"
-                            alt="Picture of the author"
+                            alt="illustrator-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/adobe-photoshop-logo.svg"
-                            alt="Picture of the author"
+                            alt="adobe-photoshop-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/figma-logo.svg"
-                            alt="Picture of the author"
+                            alt="figma-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -179,21 +191,21 @@ const about = () => {
                         <span className="title">BACKEND</span>
                         <Image
                             src="/assets/icons/nodejs-logo.svg"
-                            alt="Picture of the author"
+                            alt="nodejs-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/C++-logo.svg"
-                            alt="Picture of the author"
+                            alt="C++-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/csharp-logo.svg"
-                            alt="Picture of the author"
+                            alt="csharp-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -201,49 +213,49 @@ const about = () => {
 
                         <Image
                             src="/assets/icons/java-logo.svg"
-                            alt="Picture of the author"
+                            alt="java-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/python-logo.svg"
-                            alt="Picture of the author"
+                            alt="python-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/typescript-logo.svg"
-                            alt="Picture of the author"
+                            alt="typescript-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/expressjs-logo.svg"
-                            alt="Picture of the author"
+                            alt="expressjs-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/sqlserver-logo.svg"
-                            alt="Picture of the author"
+                            alt="sqlserver-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/postgresql-logo.svg"
-                            alt="Picture of the author"
+                            alt="postgresql-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/mongodb-logo.svg"
-                            alt="Picture of the author"
+                            alt="mongodb-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -251,7 +263,7 @@ const about = () => {
 
                         <Image
                             src="/assets/icons/sqlite-logo.svg"
-                            alt="Picture of the author"
+                            alt="sqlite-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -259,7 +271,7 @@ const about = () => {
 
                         <Image
                             src="/assets/icons/mysql-logo.svg"
-                            alt="Picture of the author"
+                            alt="mysql-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -270,21 +282,21 @@ const about = () => {
                         <span className="title">Additional Tools</span>
                         <Image
                             src="/assets/icons/git-logo.svg"
-                            alt="Picture of the author"
+                            alt="git-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/github-logo.svg"
-                            alt="Picture of the author"
+                            alt="github-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/bash-logo.svg"
-                            alt="Picture of the author"
+                            alt="bash-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -292,21 +304,21 @@ const about = () => {
 
                         <Image
                             src="/assets/icons/npm-logo.svg"
-                            alt="Picture of the author"
+                            alt="npm-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/visualstudio-logo.svg"
-                            alt="Picture of the author"
+                            alt="visualstudio-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/webpack-logo.svg"
-                            alt="Picture of the author"
+                            alt="webpack-logo"
                             width={60}
                             height={60}
                             className="skills__items"
@@ -314,21 +326,21 @@ const about = () => {
 
                         <Image
                             src="/assets/icons/playwright-logo.svg"
-                            alt="Picture of the author"
+                            alt="playwright-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/trello-logo.svg"
-                            alt="Picture of the author"
+                            alt="trello-logo"
                             width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
                             src="/assets/icons/jira-logo.svg"
-                            alt="Picture of the author"
+                            alt="jira-logo"
                             width={60}
                             height={60}
                             className="skills__items"
