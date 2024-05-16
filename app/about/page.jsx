@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
-import Footer from "@components/Footer";
 const about = () => {
     return (
+
         <section className="about-section-container">
             <span className="about-paragraph">
                 A 26-year-old enthusiast of
@@ -178,44 +178,89 @@ const about = () => {
                     <div className="frontend">
                         <span className="title">BACKEND</span>
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/nodejs-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/C++-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/csharp-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+
+                        <Image
+                            src="/assets/icons/java-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/python-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/typescript-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/expressjs-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/sqlserver-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/postgresql-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/mongodb-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+
+                        <Image
+                            src="/assets/icons/sqlite-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+
+                        <Image
+                            src="/assets/icons/mysql-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
@@ -224,54 +269,79 @@ const about = () => {
                     <div className="additional-tools">
                         <span className="title">Additional Tools</span>
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/git-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/github-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/bash-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+
+                        <Image
+                            src="/assets/icons/npm-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/visualstudio-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/webpack-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+
+                        <Image
+                            src="/assets/icons/playwright-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                         <Image
-                            src="/assets/icons/mikey.svg"
+                            src="/assets/icons/trello-logo.svg"
                             alt="Picture of the author"
-                            width={50}
+                            width={60}
+                            height={60}
+                            className="skills__items"
+                        />
+                        <Image
+                            src="/assets/icons/jira-logo.svg"
+                            alt="Picture of the author"
+                            width={60}
                             height={60}
                             className="skills__items"
                         />
                     </div>
                 </span>
-                <div className="grid-1">
-                    <Link className="download-resume" href="#getintouch">DOWNLOAD RESUME</Link>
-                </div>
+
+
             </div>
-            <Footer className="footer"></Footer>
+            <section className="footer">
+                <span className="copyright">©2024</span>
+                <span className="designer">DESIGNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="designer__item">MikeyRG</span></span>
+            </section>
 
         </section>
     )
