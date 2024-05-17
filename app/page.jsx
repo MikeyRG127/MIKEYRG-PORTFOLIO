@@ -2,25 +2,20 @@
 import "@styles/home.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Link from 'next/link';
-import { Tooltip } from 'react-tooltip';
+import localFont from 'next/font/local';
+
+const AntonRegular = localFont({
+  src: '../public/assets/fonts/Anton-Regular.ttf',
+  display: 'swap',
+})
+
+const KhulaRegular = localFont({
+  src: '../public/assets/fonts/Khula-Regular.ttf',
+  display: 'swap',
+})
+
+
 const page = () => {
-  const [copy, setCopy] = useState("Copy 💾");
-  function copyToClipboard() {
-    var specificUrl = "josealbertopersonal@gmail.com"; // Specify the URL you want to copy
-
-    navigator.clipboard.writeText(specificUrl)
-      .then(function () {
-        setCopy("Copied ✅");
-        console.log('URL copied to clipboard successfully');
-      })
-      .catch(function (error) {
-        console.error('Unable to copy URL: ', error);
-      });
-  }
-
-
-
 
   useEffect(() => {
     const jose = document.querySelector('.name-and-photo__jose');
@@ -34,9 +29,6 @@ const page = () => {
     // Event listener to start shimmer animation after cascade animation ends
     jose.addEventListener('animationend', startShimmer);
     rodriguez.addEventListener('animationend', startShimmer);
-
-
-
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -60,9 +52,11 @@ const page = () => {
 
   }, []);
 
+
+
   return (
     <>
-      <div className="hero-section">
+      <div className={`hero-section ${AntonRegular.className} ${KhulaRegular.className}`}>
         <div className="desktop">
           <span className="desktop__im" id="im">I'M</span>
           <div className="desktop__name-and-photo">
@@ -82,4 +76,5 @@ const page = () => {
   );
 }
 
-export default page
+export default page;
+

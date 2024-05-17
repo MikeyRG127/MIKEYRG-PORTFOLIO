@@ -1,31 +1,6 @@
 import "@styles/globals.css";
 import Navbar from "@components/Navbar";
-import localFont from 'next/font/local';
 
-const AntonRegular = localFont({
-  src: '../public/assets/fonts/Anton-Regular.ttf',
-  display: 'swap',
-})
-
-const ArchitectsDaughterRegular = localFont({
-  src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
-  display: 'swap',
-})
-
-const BebasNeueRegular = localFont({
-  src: '../public/assets/fonts/BebasNeue-Regular.ttf',
-  display: 'swap',
-})
-
-const KhulaRegular = localFont({
-  src: '../public/assets/fonts/Khula-Regular.ttf',
-  display: 'swap',
-})
-
-const PermanentMarkerRegular = localFont({
-  src: '../public/assets/fonts/PermanentMarker-Regular.ttf',
-  display: 'swap',
-})
 
 /*
 export const metadata = {
@@ -53,9 +28,9 @@ export const metadata = {
 */
 
 
-function RootLayout({ children, isNavBarGidden }) {
+function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${AntonRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className} ${PermanentMarkerRegular.className} ${KhulaRegular.className}`}>
+    <html lang="en">
       <head>
         <title>MikeyRG</title>
         <link rel="icon" href="/assets/icons/favicon.ico" />

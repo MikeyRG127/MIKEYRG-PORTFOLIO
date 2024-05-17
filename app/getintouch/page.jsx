@@ -3,6 +3,18 @@ import "@styles/getintouch.css";
 import Link from 'next/link';
 import { Tooltip } from 'react-tooltip';
 import { useState } from "react";
+import localFont from 'next/font/local';
+
+const AntonRegular = localFont({
+    src: '../../public/assets/fonts/Anton-Regular.ttf',
+    display: 'swap',
+})
+const PermanentMarkerRegular = localFont({
+    src: '../../public/assets/fonts/PermanentMarker-Regular.ttf',
+    display: 'swap',
+})
+
+
 const getintouch = () => {
 
 
@@ -21,7 +33,7 @@ const getintouch = () => {
     }
 
     return (
-        <section className="getintouch-section">
+        <section className={`getintouch-section ${AntonRegular.className} ${PermanentMarkerRegular.className}`}>
             <div className="left">
                 <span className="title1">GET IN</span>
                 <span className="title2">TOUCH</span>

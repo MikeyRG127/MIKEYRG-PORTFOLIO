@@ -1,11 +1,32 @@
 import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
+import localFont from 'next/font/local';
+
+const AntonRegular = localFont({
+    src: '../../public/assets/fonts/Anton-Regular.ttf',
+    display: 'swap',
+})
+
+const ArchitectsDaughterRegular = localFont({
+    src: '../../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
+    display: 'swap',
+})
+
+const BebasNeueRegular = localFont({
+    src: '../../public/assets/fonts/BebasNeue-Regular.ttf',
+    display: 'swap',
+})
+
+const KhulaRegular = localFont({
+    src: '../../public/assets/fonts/Khula-Regular.ttf',
+    display: 'swap',
+})
+
+
 const about = () => {
     return (
-
-
-        <section className="about-section">
+        <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
             <span className="about-paragraph">
                 A 26-year-old enthusiast of
             </span>

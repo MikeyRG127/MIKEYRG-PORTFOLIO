@@ -4,8 +4,17 @@ import Image from "next/image";
 import Link from 'next/link';
 import { useEffect } from "react";
 import { usePathname } from 'next/navigation'
+import localFont from 'next/font/local';
 
+const ArchitectsDaughterRegular = localFont({
+  src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
+  display: 'swap',
+})
 
+const BebasNeueRegular = localFont({
+  src: '../public/assets/fonts/BebasNeue-Regular.ttf',
+  display: 'swap',
+})
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -59,7 +68,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
 
       <Link id="LogoClicked" href="/">
         <Image
@@ -70,7 +79,6 @@ const Navbar = () => {
           className="mikey-logo"
         />
       </Link>
-
       <div className="navbar-menu">
         <Link className="nav-sections selected" href="/">HOME</Link>
         <Link className="nav-sections" href="/about">ABOUT</Link>

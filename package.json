@@ -18,10 +18,13 @@
     "@nextui-org/react": "^2.2.10",
     "framer-motion": "^11.0.24",
     "fullpage.js": "^4.0.20",
+    "i18next": "^23.11.4",
     "next": "13.4.4",
+    "next-i18next": "^15.3.0",
     "pspdfkit": "^2024.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^14.1.1",
     "react-tooltip": "^5.26.3"
   },
   "devDependencies": {
