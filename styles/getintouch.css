@@ -14,12 +14,13 @@
         }
     }
 
-    .getintouch-section-desktop {
+    .getintouch-section {
         display: grid;
         width: 100dvw;
         grid-template-columns: 1fr 1fr;
         padding: 0px 4vw;
         gap: 50px;
+
     }
 
     .left {
@@ -29,7 +30,7 @@
         animation: cascade 1s ease forwards;
     }
 
-    .getintouch-section-desktop .title1 {
+    .getintouch-section .title1 {
         font-family: __AntonRegular_56858d;
         font-size: 5vw;
         text-wrap: nowrap;
@@ -39,7 +40,7 @@
         animation: cascade 1s ease forwards;
     }
 
-    .getintouch-section-desktop .title2 {
+    .getintouch-section .title2 {
         font-family: __AntonRegular_56858d;
         font-size: 5vw;
         text-wrap: nowrap;
@@ -59,7 +60,7 @@
         animation: cascade 1s ease forwards;
     }
 
-    .getintouch-section-desktop .right {
+    .getintouch-section .right {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
@@ -67,7 +68,7 @@
         justify-items: center;
     }
 
-    .getintouch-section-desktop .right .questions {
+    .getintouch-section .right .questions {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: max-content;

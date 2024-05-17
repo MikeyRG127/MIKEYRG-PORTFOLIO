@@ -4,7 +4,8 @@ import Image from "next/image";
 const about = () => {
     return (
 
-        <section className="about-section-container">
+
+        <section className="about-section">
             <span className="about-paragraph">
                 A 26-year-old enthusiast of
             </span>

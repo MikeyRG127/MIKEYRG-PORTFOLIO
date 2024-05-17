@@ -58,13 +58,13 @@
 /* Note: This example only styles the scrollbar for WebKit-based browsers */
 
 /* Styles for the scrollbar track */
-.about-section-container::-webkit-scrollbar {
+.about-section::-webkit-scrollbar {
     width: 5px !important;
     /* Set width of the scrollbar */
 }
 
 /* Styles for the scrollbar thumb (the draggable handle) */
-.about-section-container::-webkit-scrollbar-thumb {
+.about-section::-webkit-scrollbar-thumb {
     background: #888 !important;
     /* Background color of the thumb */
     border-radius: 5px;
@@ -72,19 +72,19 @@
 }
 
 /* Styles for the scrollbar track (the area the thumb moves on) */
-.about-section-container::-webkit-scrollbar-track {
+.about-section::-webkit-scrollbar-track {
     background: #f0f0f0 !important;
     /* Background color of the track */
 }
 
 /* Styles for the scrollbar corner (between the vertical and horizontal scrollbars) */
-.about-section-container::-webkit-scrollbar-corner {
+.about-section::-webkit-scrollbar-corner {
     background: transparent !important;
     /* Background color of the corner */
 }
 
 
-.about-section-container {
+.about-section {
     display: grid;
     grid-template-rows: min-content;
     grid-template-columns: 100%;

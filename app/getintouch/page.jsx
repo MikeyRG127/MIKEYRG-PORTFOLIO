@@ -2,7 +2,7 @@
 import "@styles/getintouch.css";
 import Link from 'next/link';
 import { Tooltip } from 'react-tooltip';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const getintouch = () => {
 
 
@@ -20,11 +20,8 @@ const getintouch = () => {
             });
     }
 
-
-
     return (
-        <section className="getintouch-section-desktop">
-
+        <section className="getintouch-section">
             <div className="left">
                 <span className="title1">GET IN</span>
                 <span className="title2">TOUCH</span>
@@ -37,21 +34,13 @@ const getintouch = () => {
                     <span data-tooltip-id="gmail-tooltip" data-tooltip-content={copy} onClick={copyToClipboard} className="social-media__items">JOSEALBERTOPERSONAL@GMAIL.COM</span>
                 </div>
             </div>
-
-
             <div className="right">
-
                 <div className="questions">
                     <span className="suggestion1" >HAVE QUESTIONS,</span>
                     <span className="suggestion2">PROBLEM OR</span>
                     <span className="suggestion3">WANT TO HIRE ME?</span>
                     <span className="suggestion4">LET'S TALK</span>
-
-
                 </div>
-
-
-
             </div>
         </section>
     )
