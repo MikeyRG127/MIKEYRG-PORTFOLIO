@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useEffect } from "react";
 import { usePathname } from 'next/navigation'
 import localFont from 'next/font/local';
+import logo from '../public/assets/icons/mikeyrg-logo.svg';
 const ArchitectsDaughterRegular = localFont({
   src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
   display: 'swap',
@@ -67,7 +68,7 @@ const Navbar = () => {
 
       <Link id="LogoClicked" href="/">
         <Image
-          src='/assets/icons/mikeyrg-logo.svg'
+          src={logo}
           alt="Picture of the author"
           width={169}
           height={208}
