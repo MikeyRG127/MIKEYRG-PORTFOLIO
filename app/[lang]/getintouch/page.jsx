@@ -6,11 +6,11 @@ import { useState } from "react";
 import localFont from 'next/font/local';
 
 const AntonRegular = localFont({
-    src: '../../public/assets/fonts/Anton-Regular.ttf',
+    src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
 })
 const PermanentMarkerRegular = localFont({
-    src: '../../public/assets/fonts/PermanentMarker-Regular.ttf',
+    src: '../../../public/assets/fonts/PermanentMarker-Regular.ttf',
     display: 'swap',
 })
 

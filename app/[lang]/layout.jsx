@@ -26,11 +26,13 @@ export const metadata = {
   }
 };
 */
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'es' }]
+}
 
-
-function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <head>
         <title>MikeyRG</title>
         <link rel="icon" href="/assets/icons/favicon.ico" />
@@ -54,5 +56,3 @@ function RootLayout({ children }) {
     </html>
   );
 }
-
-export default RootLayout;

@@ -2,24 +2,23 @@ import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
-
 const AntonRegular = localFont({
-    src: '../../public/assets/fonts/Anton-Regular.ttf',
+    src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
 })
 
 const ArchitectsDaughterRegular = localFont({
-    src: '../../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
+    src: '../../../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
     display: 'swap',
 })
 
 const BebasNeueRegular = localFont({
-    src: '../../public/assets/fonts/BebasNeue-Regular.ttf',
+    src: '../../../public/assets/fonts/BebasNeue-Regular.ttf',
     display: 'swap',
 })
 
 const KhulaRegular = localFont({
-    src: '../../public/assets/fonts/Khula-Regular.ttf',
+    src: '../../../public/assets/fonts/Khula-Regular.ttf',
     display: 'swap',
 })
 
@@ -71,7 +70,7 @@ const about = () => {
                     <span className="company">Bachelor’s Degree, Computer Science</span>
                     <span className="years">2023 - Present</span>
                     <Image
-                        src="/assets/icons/uasd-logo.svg"
+                        src="public/assets/icons/uasd-logo.svg"
                         alt="uasd-logo"
                         width={130}
                         height={130}

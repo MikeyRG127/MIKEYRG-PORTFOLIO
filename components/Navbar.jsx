@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useEffect } from "react";
 import { usePathname } from 'next/navigation'
 import localFont from 'next/font/local';
-
 const ArchitectsDaughterRegular = localFont({
   src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
   display: 'swap',
@@ -57,22 +56,18 @@ const Navbar = () => {
           element.classList.remove('selected');
 
         })
-        element.classList.toggle('selected')
-        console.log(element);
+        element.classList.toggle('selected');
       })
     });
 
   }, []);
-
-
-
 
   return (
     <nav className={`navbar ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
 
       <Link id="LogoClicked" href="/">
         <Image
-          src="/assets/icons/mikeyrg-logo.svg"
+          src='/assets/icons/mikeyrg-logo.svg'
           alt="Picture of the author"
           width={169}
           height={208}
