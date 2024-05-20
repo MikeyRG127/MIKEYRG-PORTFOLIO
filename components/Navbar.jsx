@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useEffect, useState } from "react";
 import localFont from 'next/font/local';
 import logo from '../public/assets/icons/mikeyrg-logo.svg';
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const ArchitectsDaughterRegular = localFont({
   src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
@@ -19,15 +20,18 @@ const BebasNeueRegular = localFont({
 
 
 const Navbar = () => {
+  const router = useRouter()
   const [language, setLanguage] = useState();
 
   const toEnglish = () => {
     sessionStorage.setItem('LANGUAGE', 'en');
     setLanguage(sessionStorage.getItem('LANGUAGE'));
+    router.push('/');
   };
   const toSpanish = () => {
     sessionStorage.setItem('LANGUAGE', 'es');
     setLanguage(sessionStorage.getItem('LANGUAGE'));
+    router.push('/');
   };
 
   useEffect(() => {
