@@ -22,10 +22,6 @@ export function middleware(request) {
         // Set the LANGUAGE cookie for future requests
         const response = NextResponse.next();
         response.cookies.set('LANGUAGE', language, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV !== 'development',
-            path: '/',
-            maxAge: 60 * 60 * 24 * 365 // 1 year
         });
         return response;
     }

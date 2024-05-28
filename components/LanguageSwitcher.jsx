@@ -1,25 +1,24 @@
+'use client'
 import "@styles/navbar.css";
-import Cookies from 'js-cookie';
 import { useRouter, usePathname } from 'next/navigation';
+import { getCookies, setCookie, deleteCookie, getCookie } from 'cookies-next';
+
 
 export default function LanguageSwitcher() {
+
     const router = useRouter();
     const pathname = usePathname();
 
     const toEnglish = () => {
-        Cookies.set('LANGUAGE', 'en', {
-            expires: 365,
-            path: '/'
-        });
-        window.location.reload();
+        setCookie('LANGUAGE', 'en');
+        router.push(pathname.replace('/es', '/en'));
+        router.refresh();
     }
 
     const toSpanish = () => {
-        Cookies.set('LANGUAGE', 'es', {
-            expires: 365,
-            path: '/'
-        });
-        window.location.reload();
+        setCookie('LANGUAGE', 'es');
+        router.push(pathname.replace('/en', '/es'));
+        router.refresh();
     }
 
     return (
