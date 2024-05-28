@@ -13,6 +13,7 @@ export default function LanguageSwitcher() {
         });
 
         router.push(pathname.replace('/es/', '/en/'));
+        router.reload();
     }
 
     const toSpanish = () => {
@@ -21,6 +22,7 @@ export default function LanguageSwitcher() {
             path: '/'
         });
         router.push(pathname.replace('/en/', '/es/'));
+        router.reload();
     }
 
     return (
