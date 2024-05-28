@@ -25,9 +25,6 @@ export function middleware(request) {
         });
         return response;
     }
-
-    console.log(`Preferred language from cookie: ${language}`);
-
     // Check if the pathname has a locale
     const pathnameHasLocale = locales.some(
         (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
