@@ -11,8 +11,6 @@ export default function LanguageSwitcher() {
             expires: 365,
             path: '/'
         });
-
-        router.push(pathname.replace('/es/', '/en/'));
         window.location.reload();
     }
 
@@ -21,7 +19,6 @@ export default function LanguageSwitcher() {
             expires: 365,
             path: '/'
         });
-        router.push(pathname.replace('/en/', '/es/'));
         window.location.reload();
     }
 
