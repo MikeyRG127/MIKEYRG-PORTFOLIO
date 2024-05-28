@@ -1,29 +1,47 @@
-import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse } from "next/server";
 
-let headers = { 'accept-language': 'en-US,en;q=0.5' }
-let languages = new Negotiator({ headers }).languages()
-let locales = ['en', 'es']
-let defaultLocale = 'es'
+const locales = ['en', 'es'];
+const defaultLocale = 'en';
 
 
 export function middleware(request) {
-    // Check if there is any supported locale in the pathname
-    //console.log(request);
-    const { pathname } = request.nextUrl
+    const { nextUrl } = request;
+    const { pathname } = nextUrl;
+    const cookieStore = request.cookies;
+
+    // Retrieve the LANGUAGE cookie if it exists
+    let language = cookieStore.get('LANGUAGE')?.value;
+
+    // If the LANGUAGE cookie does not exist, perform language negotiation
+    if (!language) {
+        const headers = { 'accept-language': request.headers.get('accept-language') };
+        const negotiator = new Negotiator({ headers });
+        language = negotiator.languages(locales)[0] || defaultLocale;
+
+        // Set the LANGUAGE cookie for future requests
+        const response = NextResponse.next();
+        response.cookies.set('LANGUAGE', language, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV !== 'development',
+            path: '/',
+            maxAge: 60 * 60 * 24 * 365 // 1 year
+        });
+        return response;
+    }
+
+    console.log(`Preferred language from cookie: ${language}`);
+
+    // Check if the pathname has a locale
     const pathnameHasLocale = locales.some(
         (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-    )
+    );
 
-    if (pathnameHasLocale) return
+    if (pathnameHasLocale) return NextResponse.next();
 
-    // Redirect if there is no locale
-    const locale = match(languages, locales, defaultLocale);
-    request.nextUrl.pathname = `/${locale}${pathname}`
-    // e.g. incoming request is /products
-    // The new URL is now /en-US/products
-    return NextResponse.redirect(request.nextUrl)
+    // Redirect to the appropriate locale if not already in the URL
+    nextUrl.pathname = `/${language}${pathname}`;
+    return NextResponse.redirect(nextUrl);
 }
 
 export const config = {
@@ -34,3 +52,8 @@ export const config = {
         // '/'
     ],
 }
+
+
+
+
+
