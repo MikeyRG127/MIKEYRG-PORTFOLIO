@@ -1,13 +1,18 @@
 import "@styles/navbar.css";
 import Cookies from 'js-cookie';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function LanguageSwitcher() {
+    const router = useRouter();
+    const pathname = usePathname();
+
     const toEnglish = () => {
         Cookies.set('LANGUAGE', 'en', {
             expires: 365,
             path: '/'
         });
-        window.location.reload(); // Reload the page to apply changes
+
+        router.push(pathname.replace('/es/', '/en/'));
     }
 
     const toSpanish = () => {
@@ -15,7 +20,7 @@ export default function LanguageSwitcher() {
             expires: 365,
             path: '/'
         });
-        window.location.reload(); // Reload the page to apply changes
+        router.push(pathname.replace('/en/', '/es/'));
     }
 
     return (
