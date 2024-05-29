@@ -26,9 +26,7 @@ const KhulaRegular = localFont({
     display: 'swap',
     preload: 'false'
 })
-
-
-const about = () => {
+export default async function about() {
     return (
         <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
             <span className="about-paragraph">
@@ -384,4 +382,3 @@ const about = () => {
         </section>
     )
 }
-export default about;
