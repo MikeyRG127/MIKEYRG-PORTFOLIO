@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useEffect, useState } from "react";
 import localFont from 'next/font/local';
 import logo from '../public/assets/icons/mikeyrg-logo.svg';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const ArchitectsDaughterRegular = localFont({
@@ -18,33 +18,13 @@ const BebasNeueRegular = localFont({
   display: 'swap',
 });
 
-const Navbar = () => {
-  // Initialize state with a default value
-  const [language, setLanguage] = useState('defaultLanguage'); // Replace 'defaultLanguage' with your default language
 
-  // Effect to read from sessionStorage once component mounts
-  useEffect(() => {
-    const storedLanguage = sessionStorage.getItem('LANGUAGE');
-    if (storedLanguage) {
-      setLanguage(storedLanguage);
-    }
-  }, []);
 
-  // Effect to update sessionStorage whenever language state changes
-  useEffect(() => {
-    sessionStorage.setItem('LANGUAGE', language);
-  }, [language]);
+export default function Navbar() {
 
   const router = useRouter();
-
-  const switchLangEn = () => {
-    router.push(`/en`);
-  };
-
-  const switchLangEs = () => {
-    router.push(`/es`);
-  };
-
+  const pathname = usePathname();
+  const languageSelector = pathname.slice(4);
   useEffect(() => {
     const navbarOptions = document.querySelectorAll(".nav-sections");
     const logoClicked = document.getElementById("LogoClicked");
@@ -103,14 +83,14 @@ const Navbar = () => {
         />
       </Link>
       <div className="navbar-menu">
-        <Link className="nav-sections selected" href={`/`}>HOME</Link>
-        <Link className="nav-sections" href={`/about`}>ABOUT</Link>
-        <Link className="nav-sections" href={`/work`}>WORK</Link>
+        <Link className={`nav-sections ${(languageSelector === "" ? "selected" : "")}`} href={`/`}>HOME</Link>
+        <Link className={`nav-sections ${(languageSelector === "about" ? "selected" : "")}`} href={`/about`}>ABOUT</Link>
+        <Link className={`nav-sections ${(languageSelector === "work" ? "selected" : "")}`} href={`/work`}>WORK</Link>
         <LanguageSwitcher />
-        <Link className="button-get-in-touch-desktop" id="button-get-in-touch-desktop" href={`/getintouch`}>GET IN TOUCH</Link>
+        <Link className={`button-get-in-touch-desktop ${(languageSelector === "getintouch" ? "button-get-in-touch-desktop-selected" : "")}`} id="button-get-in-touch-desktop" href={`/getintouch`}>GET IN TOUCH</Link>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+

@@ -8,6 +8,7 @@ export default function LanguageSwitcher() {
 
     const router = useRouter();
     const pathname = usePathname();
+    const languageSelector = (pathname.slice(1, 3) === "en") ? "en" : "es";
 
     const toEnglish = () => {
         setCookie('LANGUAGE', 'en');
@@ -21,10 +22,12 @@ export default function LanguageSwitcher() {
         router.refresh();
     }
 
+
+
     return (
         <div className="language-selection">
-            <span className={"language selected"} onClick={toEnglish}>EN</span>
-            <span className={"language"} onClick={toSpanish}>ESP</span>
+            <span className={`language ${(languageSelector === "en" ? "selected" : "")}`} onClick={toEnglish}>EN</span>
+            <span className={`language ${(languageSelector === "es" ? "selected" : "")}`} onClick={toSpanish}>ESP</span>
         </div>
     );
 }
