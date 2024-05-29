@@ -10,11 +10,13 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const ArchitectsDaughterRegular = localFont({
   src: '../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
   display: 'swap',
+  preload: 'false'
 });
 
 const BebasNeueRegular = localFont({
   src: '../public/assets/fonts/BebasNeue-Regular.ttf',
   display: 'swap',
+  preload: 'false'
 });
 
 export default function Navbar() {

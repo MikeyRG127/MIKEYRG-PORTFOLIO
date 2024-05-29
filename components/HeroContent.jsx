@@ -7,11 +7,13 @@ import { useEffect } from "react";
 const AntonRegular = localFont({
     src: '../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 const KhulaRegular = localFont({
     src: '../public/assets/fonts/Khula-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 export default async function HeroContent({ dict }) {

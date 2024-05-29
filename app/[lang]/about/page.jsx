@@ -6,21 +6,25 @@ import localFont from 'next/font/local';
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 const ArchitectsDaughterRegular = localFont({
     src: '../../../public/assets/fonts/ArchitectsDaughter-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 const BebasNeueRegular = localFont({
     src: '../../../public/assets/fonts/BebasNeue-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 const KhulaRegular = localFont({
     src: '../../../public/assets/fonts/Khula-Regular.ttf',
     display: 'swap',
+    preload: 'false'
 })
 
 
