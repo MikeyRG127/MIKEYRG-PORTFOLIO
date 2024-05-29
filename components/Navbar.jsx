@@ -25,51 +25,6 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
   const languageSelector = pathname.slice(4);
-  useEffect(() => {
-    const navbarOptions = document.querySelectorAll(".nav-sections");
-    const logoClicked = document.getElementById("LogoClicked");
-    const getintouchClicked = document.getElementById("button-get-in-touch-desktop");
-    const languageElements = document.querySelectorAll(".language");
-
-    logoClicked.addEventListener('click', () => {
-      getintouchClicked.classList.remove('button-get-in-touch-desktop-selected');
-      navbarOptions.forEach(element => {
-        element.classList.remove('selected');
-      });
-      navbarOptions[0].classList.toggle('selected');
-    });
-
-    navbarOptions.forEach(element => {
-      element.addEventListener('click', () => {
-        getintouchClicked.classList.remove('button-get-in-touch-desktop-selected');
-        navbarOptions.forEach(element => {
-          element.classList.remove('selected');
-        });
-        element.classList.toggle('selected');
-      });
-    });
-
-    languageElements.forEach(element => {
-      element.addEventListener('click', () => {
-        languageElements.forEach(element => {
-          element.classList.remove('selected');
-        });
-        element.classList.toggle('selected');
-      });
-    });
-
-    getintouchClicked.addEventListener('click', () => {
-      if (getintouchClicked.classList.contains('button-get-in-touch-desktop-selected')) {
-        // Do nothing if already selected
-      } else {
-        navbarOptions.forEach(element => {
-          element.classList.remove('selected');
-        });
-        getintouchClicked.classList.toggle('button-get-in-touch-desktop-selected');
-      }
-    });
-
-  }, []);
 
   return (
     <nav className={`navbar ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
