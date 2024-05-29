@@ -34,6 +34,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={params.lang}>
       <head>
+
         <title>MikeyRG</title>
         <link rel="icon" href="/assets/icons/favicon.ico" />
         <link rel="apple-touch-icon" href="/assets/icons/favicon.ico" />

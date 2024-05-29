@@ -2,7 +2,6 @@
 import "@styles/navbar.css";
 import Image from "next/image";
 import Link from 'next/link';
-import { useEffect, useState } from "react";
 import localFont from 'next/font/local';
 import logo from '../public/assets/icons/mikeyrg-logo.svg';
 import { useRouter, usePathname } from 'next/navigation';
@@ -17,8 +16,6 @@ const BebasNeueRegular = localFont({
   src: '../public/assets/fonts/BebasNeue-Regular.ttf',
   display: 'swap',
 });
-
-
 
 export default function Navbar() {
 

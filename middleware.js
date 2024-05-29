@@ -3,12 +3,22 @@ import { NextResponse } from "next/server";
 
 const locales = ['en', 'es'];
 const defaultLocale = 'en';
-
+const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(request) {
+
+
     const { nextUrl } = request;
     const { pathname } = nextUrl;
     const cookieStore = request.cookies;
+
+    if (
+        request.nextUrl.pathname.startsWith('/_next') ||
+        request.nextUrl.pathname.includes('/api/') ||
+        PUBLIC_FILE.test(request.nextUrl.pathname)
+    ) {
+        return
+    }
 
     // Retrieve the LANGUAGE cookie if it exists
     let language = cookieStore.get('LANGUAGE')?.value;

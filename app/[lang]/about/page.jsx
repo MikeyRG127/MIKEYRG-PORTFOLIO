@@ -2,6 +2,7 @@ import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
+
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -70,7 +71,7 @@ const about = () => {
                     <span className="company">Bachelor’s Degree, Computer Science</span>
                     <span className="years">2023 - Present</span>
                     <Image
-                        src="public/assets/icons/uasd-logo.svg"
+                        src="/assets/icons/uasd-logo.svg"
                         alt="uasd-logo"
                         width={130}
                         height={130}
