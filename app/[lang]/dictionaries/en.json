@@ -4,5 +4,13 @@
         "phrase": "Your Ideal Developer for Bringing Your Dream Software Project to Life.",
         "fullstack": "FULLSTACK",
         "webdeveloper": "WEB DEVELOPER"
+    },
+    "about": {
+        "p1": "A 26-year-old enthusiast of",
+        "p2": "programming.",
+        "p3": "from the",
+        "p4": "DOMINICAN REPUBLIC",
+        "p5": "WITH OVER 5 YEARS OF PROFESSIONAL",
+        "p6": "EXPERIENCE"
     }
 }

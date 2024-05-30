@@ -2,7 +2,7 @@ import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
-
+import { getDictionary } from '../dictionaries'
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -25,26 +25,30 @@ const KhulaRegular = localFont({
     src: '../../../public/assets/fonts/Khula-Regular.ttf',
     display: 'swap',
     preload: 'false'
+
 })
-export default async function about() {
+
+
+export default async function about({ params: { lang } }) {
+    const dict = await getDictionary(lang) // en
     return (
         <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
             <span className="about-paragraph">
-                A 26-year-old enthusiast of
+                {dict.about.p1}
             </span>
             <span className="about-paragraph2">
-                programming.
+                {dict.about.p2}
             </span>
             <span className="about-paragraph3">
-                FROM THE
+                {dict.about.p3}
             </span>
 
             <span className="about-paragraph4">
-                DOMINICAN REPUBLIC
+                {dict.about.p4}
             </span>
             <div className="work-experience">
-                <span className="work-experience__title">WITH OVER 5 YEARS OF PROFESSIONAL</span>
-                <span className="work-experience__title2">EXPERIENCE</span>
+                <span className="work-experience__title">{dict.about.p5}</span>
+                <span className="work-experience__title2">{dict.about.p6}</span>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
                     <span className="company">Freelance {`(Self Employed)`} · Full-Time </span>
