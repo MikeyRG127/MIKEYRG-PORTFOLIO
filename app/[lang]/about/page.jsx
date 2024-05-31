@@ -85,6 +85,7 @@ export default async function about({ params: { lang } }) {
                         width={130}
                         height={130}
                         className="education-logos"
+                        loading="lazy"
                     />
                 </div>
                 <div className="education__items">
@@ -97,6 +98,7 @@ export default async function about({ params: { lang } }) {
                         width={130}
                         height={130}
                         className="education-logos"
+                        loading="lazy"
                     />
                 </div>
                 <div className="education__items">
@@ -109,6 +111,7 @@ export default async function about({ params: { lang } }) {
                         width={130}
                         height={130}
                         className="education-logos"
+                        loading="lazy"
                     />
                 </div>
                 <div className="education__items">
@@ -121,6 +124,7 @@ export default async function about({ params: { lang } }) {
                         width={130}
                         height={130}
                         className="education-logos"
+                        loading="lazy"
                     />
                 </div>
             </div>
@@ -138,6 +142,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+
                         />
                         <Image
                             src="/assets/icons/css-logo.svg"
