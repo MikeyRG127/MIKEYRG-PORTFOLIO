@@ -34,17 +34,20 @@ export default async function about({ params: { lang } }) {
     return (
         <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
             <span className="about-paragraph">
-                {dict.about.p1}
+                {"DON’T KNOW ME? LET’S TALK"}
             </span>
             <span className="about-paragraph2">
-                {dict.about.p2}
+                {"ABOUT ME"}
             </span>
             <span className="about-paragraph3">
-                {dict.about.p3}
+                {"I’M A 26-YEARS OLD ENTHUSIAST"}
             </span>
 
             <span className="about-paragraph4">
-                {dict.about.p4}
+                {"OF PROGRAMMING FROM THE"}
+            </span>
+            <span className="about-paragraph5">
+                {"DOMINICAN REPUBLIC"}
             </span>
             <div className="work-experience">
                 <span className="work-experience__title">{dict.about.p5}</span>

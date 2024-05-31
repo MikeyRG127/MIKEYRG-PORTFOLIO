@@ -151,50 +151,60 @@
 
 .about-paragraph {
     font-family: __AntonRegular_56858d;
-    font-size: 6.30vw;
+    font-size: 4vw;
     text-wrap: nowrap;
     line-height: 0vw;
     width: 100%;
     padding: 6vw 0vw;
     height: min-content;
     color: var(--secondary-color);
-    text-align: center;
+    padding-left: 5.2vw;
     color: var(--secondary-color);
 }
 
 .about-paragraph2 {
     font-family: __AntonRegular_56858d;
-    font-size: 12.2vw;
+    font-size: 18.65vw;
     text-wrap: nowrap;
-    line-height: 8vw;
+    line-height: 10vw;
     width: 100%;
     height: min-content;
     color: var(--secondary-color);
-    text-align: center;
+    padding-left: 5.2vw;
     color: var(--secondary-color);
 }
 
 .about-paragraph3 {
     font-family: __AntonRegular_56858d;
-    font-size: 19.15vw;
+    font-size: 4vw;
     text-wrap: nowrap;
-    line-height: 1vw;
-    padding-top: 12vw;
+    line-height: 0vw;
     width: 100%;
+    padding: 10vw 0vw 0vw 5.2vw;
     height: min-content;
     color: var(--secondary-color);
-    /* letter-spacing: 1vw; */
-    text-align: center;
     color: var(--secondary-color);
 }
 
 .about-paragraph4 {
+    font-family: __AntonRegular_56858d;
+    font-size: 4vw;
+    text-wrap: nowrap;
+    line-height: 0vw;
+    width: 100%;
+    padding: 4.5vw 0vw 0vw 5.2vw;
+    height: min-content;
+    color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.about-paragraph5 {
     display: grid;
     font-family: __AntonRegular_56858d;
     font-size: 8.9vw;
     text-wrap: nowrap;
     line-height: 10vw;
-    padding-top: 8.5vw;
+    padding-top: 1.5vw;
     color: rgba(255, 255, 255, 0.1);
     background: #ffffff;
     background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
@@ -223,7 +233,7 @@
     font-size: 4vw;
     text-wrap: wrap;
     line-height: 0;
-    margin: 10vw 0px 0vw 0px;
+    margin: 5vw 0px 0vw 0px;
     padding-left: 5.2vw;
     background-color: #222;
     color: var(--secondary-color);
