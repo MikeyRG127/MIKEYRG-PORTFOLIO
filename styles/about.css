@@ -96,6 +96,7 @@
     position: relative;
 }
 
+
 .grid-1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -103,6 +104,7 @@
     height: auto;
     animation: cascade 1s ease forwards;
 }
+
 
 .grid-1 .title {
     font-family: __AntonRegular_56858d;
@@ -124,6 +126,7 @@
     background-position: 0 6vw;
 }
 
+
 .grid-1 .download-resume {
     width: max-content;
     height: max-content;
@@ -144,10 +147,12 @@
     margin-top: 5vw;
 }
 
+
 .grid-1 .download-resume:hover {
     transform: scale(1.05);
     background-color: #2e2e2e;
 }
+
 
 .about-paragraph {
     font-family: __AntonRegular_56858d;
@@ -162,6 +167,7 @@
     color: var(--secondary-color);
 }
 
+
 .about-paragraph2 {
     font-family: __AntonRegular_56858d;
     font-size: 18.65vw;
@@ -173,6 +179,7 @@
     padding-left: 5.2vw;
     color: var(--secondary-color);
 }
+
 
 .about-paragraph3 {
     font-family: __AntonRegular_56858d;
@@ -186,6 +193,7 @@
     color: var(--secondary-color);
 }
 
+
 .about-paragraph4 {
     font-family: __AntonRegular_56858d;
     font-size: 4vw;
@@ -197,6 +205,7 @@
     color: var(--secondary-color);
     color: var(--secondary-color);
 }
+
 
 .about-paragraph5 {
     display: grid;
@@ -228,6 +237,7 @@
     gap: 2vw;
 }
 
+
 .work-experience__title {
     font-family: __AntonRegular_56858d;
     font-size: 4vw;
@@ -241,7 +251,7 @@
 
 .work-experience__title2 {
     font-family: __AntonRegular_56858d;
-    font-size: 16.32vw;
+    font-size: 15.32vw;
     text-wrap: wrap;
     line-height: 1;
     margin: 0vw 0px 0vw 0px;

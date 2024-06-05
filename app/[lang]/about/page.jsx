@@ -142,7 +142,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
-
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/css-logo.svg"
@@ -150,6 +150,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/javascript-logo.svg"
@@ -157,6 +158,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/tailwindcss-logo.svg"
@@ -164,6 +166,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/sass-logo.svg"
@@ -171,6 +174,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/angular-logo.svg"
@@ -178,6 +182,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/puntonet-logo.svg"
@@ -185,6 +190,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/nextjs-logo.svg"
@@ -192,6 +198,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/react-logo.svg"
@@ -199,6 +206,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/illustrator-logo.svg"
@@ -206,6 +214,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/adobe-photoshop-logo.svg"
@@ -213,6 +222,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/figma-logo.svg"
@@ -220,6 +230,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                     </div>
 
@@ -231,6 +242,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/C++-logo.svg"
@@ -238,13 +250,14 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/csharp-logo.svg"
                             alt="csharp-logo"
                             width={60}
                             height={60}
-                            className="skills__items"
+                            className="skills__items" loading="lazy"
                         />
 
                         <Image
@@ -253,6 +266,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/python-logo.svg"
@@ -260,6 +274,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/typescript-logo.svg"
@@ -267,6 +282,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/expressjs-logo.svg"
@@ -274,6 +290,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/sqlserver-logo.svg"
@@ -281,6 +298,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/postgresql-logo.svg"
@@ -288,6 +306,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/mongodb-logo.svg"
@@ -295,6 +314,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
 
                         <Image
@@ -303,6 +323,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
 
                         <Image
@@ -311,6 +332,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                     </div>
 
@@ -322,6 +344,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/github-logo.svg"
@@ -329,6 +352,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/bash-logo.svg"
@@ -336,6 +360,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
 
                         <Image
@@ -344,6 +369,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/visualstudio-logo.svg"
@@ -351,6 +377,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/webpack-logo.svg"
@@ -358,6 +385,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
 
                         <Image
@@ -366,6 +394,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/trello-logo.svg"
@@ -373,6 +402,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                         <Image
                             src="/assets/icons/jira-logo.svg"
@@ -380,6 +410,7 @@ export default async function about({ params: { lang } }) {
                             width={60}
                             height={60}
                             className="skills__items"
+                            loading="lazy"
                         />
                     </div>
                 </span>

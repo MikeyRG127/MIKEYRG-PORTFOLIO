@@ -38,7 +38,7 @@ export default async function RootLayout({ children, params }) {
         <link rel="icon" href="/assets/icons/favicon.ico" />
         <link rel="apple-touch-icon" href="/assets/icons/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="MikeyRG portfolio website." />
+        <meta name="description" content="Your Ideal Developer for Bringing Your Dream Software Project to Life." />
         <meta name="keywords" content="MikeyRG Portfolio, Creative Portfolio, MikeyRG, Modern Portfolio" />
         <meta name="creator" content="MikeyRG" />
         <meta name="publisher" content="MikeyRG" />

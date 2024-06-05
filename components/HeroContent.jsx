@@ -61,7 +61,7 @@ export default async function HeroContent({ dict }) {
                     <span className="desktop__im" id="im">{dict.im}</span>
                     <div className="desktop__name-and-photo">
                         <span className="name-and-photo__jose">JOSE</span>
-                        <Image className="name-and-photo__photo" src="/assets/images/profile.png" alt="MikeyRG picture." width={385} height={385} id="picture"></Image>
+                        <Image className="name-and-photo__photo" priority={true} src="/assets/images/profile.png" alt="MikeyRG picture." width={385} height={385} id="picture"></Image>
                         <span className="name-and-photo__rodriguez">RODRIGUEZ</span>
                     </div>
                     <div className="desktop__nickname">
