@@ -40,6 +40,10 @@
         animation: cascade 1s ease forwards;
     }
 
+    .getintouch-section .title1.spanish {
+        display: none;
+    }
+
     .getintouch-section .title2 {
         font-family: __AntonRegular_56858d;
         font-size: 5vw;
@@ -47,7 +51,6 @@
         line-height: 1.5vw;
         justify-self: start;
         padding-bottom: 50px;
-        text-decoration: underline;
         text-decoration-color: transparent;
         -webkit-text-decoration-line: underline;
         -webkit-text-decoration-style: solid;
@@ -67,7 +70,6 @@
         line-height: 7.5vw;
         justify-self: start;
         padding-bottom: 50px;
-        text-decoration: underline;
         text-decoration-color: transparent;
         -webkit-text-decoration-line: underline;
         -webkit-text-decoration-style: solid;
