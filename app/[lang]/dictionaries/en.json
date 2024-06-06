@@ -1,12 +1,13 @@
 {
     "home": {
         "im": "I'M",
-        "phrase": "Your Ideal Developer for Bringing Your Dream Software Project to Life.",
+        "phrase": "Your ideal developer for bringing your dream software project to life.",
         "fullstack": "FULLSTACK",
         "webdeveloper": "WEB DEVELOPER"
     },
     "about": {
-        "p1": "A 26-year-old enthusiast of",
+        "aboutP1": "DON’T KNOW ME? LET’S TALK",
+        "aboutP2": "ABOUT ME",
         "p2": "programming.",
         "p3": "from the",
         "p4": "DOMINICAN REPUBLIC",

@@ -4,8 +4,8 @@ import { useRouter, usePathname } from 'next/navigation';
 import { getCookies, setCookie, deleteCookie, getCookie } from 'cookies-next';
 
 
-export default function LanguageSwitcher() {
-
+export default function LanguageSwitcher(params) {
+    console.log(params)
     const router = useRouter();
     const pathname = usePathname();
     const languageSelector = (pathname.slice(1, 3) === "en") ? "en" : "es";
@@ -26,8 +26,8 @@ export default function LanguageSwitcher() {
 
     return (
         <div className="language-selection">
-            <span className={`language ${(languageSelector === "en" ? "selected" : "")}`} onClick={toEnglish}>EN</span>
-            <span className={`language ${(languageSelector === "es" ? "selected" : "")}`} onClick={toSpanish}>ESP</span>
+            <span className={`language ${(languageSelector === "en" ? "selected" : "")}`} onClick={toEnglish}>{(params.params === "en" ? "EN" : "ING")}</span>
+            <span className={`language ${(languageSelector === "es" ? "selected" : "")}`} onClick={toSpanish}>{(params.params === "en" ? "SPAN" : "ESP")}</span>
         </div>
     );
 }

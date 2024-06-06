@@ -2,7 +2,7 @@ import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
-import { getDictionary } from '../dictionaries'
+import { getDictionary } from '../dictionaries';
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -34,10 +34,10 @@ export default async function about({ params: { lang } }) {
     return (
         <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
             <span className="about-paragraph">
-                {"DON’T KNOW ME? LET’S TALK"}
+                {dict.about.aboutP1}
             </span>
             <span className="about-paragraph2">
-                {"ABOUT ME"}
+                {dict.about.aboutP2}
             </span>
             <span className="about-paragraph3">
                 {"I’M A 26-YEARS OLD ENTHUSIAST"}

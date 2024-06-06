@@ -50,7 +50,7 @@ export default async function RootLayout({ children, params }) {
         <meta name="google-site-verification" content="37th3wcIQWUV1kgeupcSRBdlCsFnzopaSv8btj0BJVA" />
       </head>
       <body>
-        <Navbar></Navbar>
+        <Navbar lang={params.lang}></Navbar>
         {children}
       </body>
     </html>

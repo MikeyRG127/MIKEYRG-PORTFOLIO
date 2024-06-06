@@ -18,9 +18,7 @@ const BebasNeueRegular = localFont({
   display: 'swap',
   preload: 'false'
 });
-
-export default function Navbar() {
-
+export default function Navbar(params) {
   const router = useRouter();
   const pathname = usePathname();
   const languageSelector = pathname.slice(4);
@@ -37,11 +35,11 @@ export default function Navbar() {
         />
       </Link>
       <div className="navbar-menu">
-        <Link className={`nav-sections ${(languageSelector === "" ? "selected" : "")}`} href={`/`}>HOME</Link>
-        <Link className={`nav-sections ${(languageSelector === "about" ? "selected" : "")}`} href={`/about`}>ABOUT</Link>
-        <Link className={`nav-sections ${(languageSelector === "work" ? "selected" : "")}`} href={`/work`}>WORK</Link>
-        <LanguageSwitcher />
-        <Link className={`button-get-in-touch-desktop ${(languageSelector === "getintouch" ? "button-get-in-touch-desktop-selected" : "")}`} id="button-get-in-touch-desktop" href={`/getintouch`}>GET IN TOUCH</Link>
+        <Link className={`nav-sections ${(languageSelector === "" ? "selected" : "")}`} href={`/`}>{(params.lang === "en" ? "HOME" : "INICIO")}</Link>
+        <Link className={`nav-sections ${(languageSelector === "about" ? "selected" : "")}`} href={`/about`}>{(params.lang === "en" ? "ABOUT" : "SOBRE Mí")}</Link>
+        <Link className={`nav-sections ${(languageSelector === "work" ? "selected" : "")}`} href={`/work`}>{(params.lang === "en" ? "WORK" : "PROJECTOS")}</Link>
+        <LanguageSwitcher params={params.lang} />
+        <Link className={`button-get-in-touch-desktop ${(languageSelector === "getintouch" ? "button-get-in-touch-desktop-selected" : "")}`} id="button-get-in-touch-desktop" href={`/getintouch`}>{(params.lang === "en" ? "GET IN TOUCH" : "CONTÁCTAME")}</Link>
       </div>
     </nav>
   );
