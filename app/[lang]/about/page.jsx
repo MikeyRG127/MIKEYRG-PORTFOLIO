@@ -40,18 +40,17 @@ export default async function about({ params: { lang } }) {
                 {dict.about.aboutP2}
             </span>
             <span className="about-paragraph3">
-                {"I’M A 26-YEARS OLD ENTHUSIAST"}
+                {dict.about.aboutP3}
             </span>
-
             <span className="about-paragraph4">
-                {"OF PROGRAMMING FROM THE"}
+                {dict.about.aboutP4}
             </span>
-            <span className="about-paragraph5">
-                {"DOMINICAN REPUBLIC"}
+            <span className={`about-paragraph5 ${lang === "es" ? "spanish" : ""}`}>
+                {dict.about.aboutP5}
             </span>
             <div className="work-experience">
-                <span className="work-experience__title">{dict.about.p5}</span>
-                <span className="work-experience__title2">{dict.about.p6}</span>
+                <span className="work-experience__title">{dict.about.experienceP1}</span>
+                <span className="work-experience__title2">{dict.about.experienceP2}</span>
                 <div className="work-experience__items">
                     <span className="role">FULL-STACK WEB DEVELOPER</span>
                     <span className="company">Freelance {`(Self Employed)`} · Full-Time </span>

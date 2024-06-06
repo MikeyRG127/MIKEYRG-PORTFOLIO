@@ -213,7 +213,8 @@
     font-size: 8.9vw;
     text-wrap: nowrap;
     line-height: 10vw;
-    padding-top: 1.5vw;
+    padding-top: 3.5vw;
+    padding-left: 4.6vw;
     color: rgba(255, 255, 255, 0.1);
     background: #ffffff;
     background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
@@ -227,7 +228,31 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-color: #222;
-    text-align: center;
+
+}
+
+.about-paragraph5.spanish {
+    display: grid;
+    font-family: __AntonRegular_56858d;
+    font-size: 8.5vw;
+    text-wrap: nowrap;
+    line-height: 10vw;
+    padding-top: 3.5vw;
+    padding-left: 4.6vw;
+    color: rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    background: linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047FF), color-stop(16%, #FF0000), color-stop(32%, #0047FF), color-stop(48%, #FF0000), color-stop(64%, #0047FF), color-stop(80%, #FF0000), color-stop(100%, #0047FF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0047FF', endColorstr='#FF0000', GradientType=1);
+    background-size: 300% 300%;
+    animation: shimmer infinite 3s linear;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
+
 }
 
 .work-experience {
@@ -251,7 +276,7 @@
 
 .work-experience__title2 {
     font-family: __AntonRegular_56858d;
-    font-size: 15.32vw;
+    font-size: 16.32vw;
     text-wrap: wrap;
     line-height: 1;
     margin: 0vw 0px 0vw 0px;
