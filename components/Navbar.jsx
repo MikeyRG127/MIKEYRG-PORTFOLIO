@@ -29,8 +29,8 @@ export default function Navbar(params) {
         <Image
           src={logo}
           alt="Picture of the author"
-          width={169}
-          height={208}
+          width={40}
+          height={50}
           className="mikey-logo"
         />
       </Link>

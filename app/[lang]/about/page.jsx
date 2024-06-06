@@ -36,7 +36,8 @@ export default async function about({ params: { lang } }) {
             <span className="about-paragraph">
                 {dict.about.aboutP1}
             </span>
-            <span className="about-paragraph2">
+
+            <span className={`about-paragraph2 ${lang === "es" ? "spanish" : ""}`}>
                 {dict.about.aboutP2}
             </span>
             <span className="about-paragraph3">
@@ -50,34 +51,34 @@ export default async function about({ params: { lang } }) {
             </span>
             <div className="work-experience">
                 <span className="work-experience__title">{dict.about.experienceP1}</span>
-                <span className="work-experience__title2">{dict.about.experienceP2}</span>
+                <span className={`work-experience__title2 ${lang === "es" ? "spanish" : ""}`}>{dict.about.experienceP2}</span>
                 <div className="work-experience__items">
-                    <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">Freelance {`(Self Employed)`} · Full-Time </span>
-                    <span className="years">2021 - Present</span>
-                    <span className="years2">3 yrs 4 mos</span>
+                    <span className="role">{dict.about.experienceP3}</span>
+                    <span className="company">{dict.about.experienceP4}</span>
+                    <span className="years">{dict.about.experienceP5}</span>
+                    <span className="years2">{dict.about.experienceP6}</span>
                 </div>
                 <div className="work-experience__items">
-                    <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">iKompras · Full-Time</span>
-                    <span className="years">2020 - 2021</span>
-                    <span className="years2">1 yr 10 mos</span>
+                    <span className="role">{dict.about.experienceP7}</span>
+                    <span className="company">{dict.about.experienceP8}</span>
+                    <span className="years">{dict.about.experienceP9}</span>
+                    <span className="years2">{dict.about.experienceP10}</span>
                 </div>
                 <div className="work-experience__items">
-                    <span className="role">FULL-STACK WEB DEVELOPER</span>
-                    <span className="company">Solumedios · Full-time</span>
-                    <span className="years">2017 - 2019</span>
-                    <span className="years2">2 yrs 2 mos</span>
+                    <span className="role">{dict.about.experienceP11}</span>
+                    <span className="company">{dict.about.experienceP12}</span>
+                    <span className="years">{dict.about.experienceP13}</span>
+                    <span className="years2">{dict.about.experienceP14}</span>
                 </div>
             </div>
 
             <div className="education">
-                <span className="education__title">EXCELLENT</span>
-                <span className="education__title2">EDUCATION</span>
+                <span className="education__title">{dict.about.educationP1}</span>
+                <span className="education__title2">{dict.about.educationP2}</span>
                 <div className="education__items">
-                    <span className="role">Universidad Autónoma de Santo Domingo - UASD</span>
-                    <span className="company">Bachelor’s Degree, Computer Science</span>
-                    <span className="years">2023 - Present</span>
+                    <span className="role">{dict.about.educationP3}</span>
+                    <span className="company">{dict.about.educationP4}</span>
+                    <span className="years">{dict.about.educationP5}</span>
                     <Image
                         src="/assets/icons/uasd-logo.svg"
                         alt="uasd-logo"
@@ -88,9 +89,9 @@ export default async function about({ params: { lang } }) {
                     />
                 </div>
                 <div className="education__items">
-                    <span className="role">Instituto Técnico Superior Comunitario - ITSC</span>
-                    <span className="company">Associate Degree in Software Development</span>
-                    <span className="years">2017 - 2020</span>
+                    <span className="role">{dict.about.educationP6}</span>
+                    <span className="company">{dict.about.educationP7}</span>
+                    <span className="years">{dict.about.educationP8}</span>
                     <Image
                         src="/assets/icons/itsc-logo.svg"
                         alt="itsc-logo"
@@ -101,9 +102,9 @@ export default async function about({ params: { lang } }) {
                     />
                 </div>
                 <div className="education__items">
-                    <span className="role">Ministerio de Educación Superior, Ciencia y Tecnología - Mescyt</span>
-                    <span className="company">English immersion program</span>
-                    <span className="years">2018 - 2018</span>
+                    <span className="role">{dict.about.educationP9}</span>
+                    <span className="company">{dict.about.educationP10}</span>
+                    <span className="years">{dict.about.educationP11}</span>
                     <Image
                         src="/assets/icons/mescyt-logo.svg"
                         alt="mescyt-logo"
@@ -114,9 +115,9 @@ export default async function about({ params: { lang } }) {
                     />
                 </div>
                 <div className="education__items">
-                    <span className="role">Instituto de Formación Técnico Profesional {'(INFOTEP)'}</span>
-                    <span className="company">Certificate in Graphic Design</span>
-                    <span className="years">2015 - 2016</span>
+                    <span className="role">{dict.about.educationP12}</span>
+                    <span className="company">{dict.about.educationP13}</span>
+                    <span className="years">{dict.about.educationP14}</span>
                     <Image
                         src="/assets/icons/infotep-logo.svg"
                         alt="infotep-logo"
@@ -129,9 +130,9 @@ export default async function about({ params: { lang } }) {
             </div>
 
             <div className="skills">
-                <span className="skills__title">VERSATILE</span>
-                <span className="skills__title2">SKILLS</span>
-                <span className="skills__title3">SETT</span>
+                <span className="skills__title">{dict.about.skillsP1}</span>
+                <span className={`skills__title2 ${lang === "es" ? "spanish" : ""}`}>{dict.about.skillsP2}</span>
+                <span className="skills__title3">{dict.about.skillsP3}</span>
                 <span className="skills__tools">
                     <div className="backend">
                         <span className="title">FRONTEND</span>
@@ -336,7 +337,7 @@ export default async function about({ params: { lang } }) {
                     </div>
 
                     <div className="additional-tools">
-                        <span className="title">Additional Tools</span>
+                        <span className="title">{dict.about.otherToolsP1}</span>
                         <Image
                             src="/assets/icons/git-logo.svg"
                             alt="git-logo"

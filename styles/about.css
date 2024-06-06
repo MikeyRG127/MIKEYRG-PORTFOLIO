@@ -167,10 +167,21 @@
     color: var(--secondary-color);
 }
 
-
 .about-paragraph2 {
     font-family: __AntonRegular_56858d;
     font-size: 18.65vw;
+    text-wrap: nowrap;
+    line-height: 10vw;
+    width: 100%;
+    height: min-content;
+    color: var(--secondary-color);
+    padding-left: 5.2vw;
+    color: var(--secondary-color);
+}
+
+.about-paragraph2.spanish {
+    font-family: __AntonRegular_56858d;
+    font-size: 19.65vw;
     text-wrap: nowrap;
     line-height: 10vw;
     width: 100%;
@@ -213,7 +224,7 @@
     font-size: 8.9vw;
     text-wrap: nowrap;
     line-height: 10vw;
-    padding-top: 3.5vw;
+    padding-top: 1.5vw;
     padding-left: 4.6vw;
     color: rgba(255, 255, 255, 0.1);
     background: #ffffff;
@@ -234,10 +245,10 @@
 .about-paragraph5.spanish {
     display: grid;
     font-family: __AntonRegular_56858d;
-    font-size: 8.5vw;
+    font-size: 8vw;
     text-wrap: nowrap;
     line-height: 10vw;
-    padding-top: 3.5vw;
+    padding-top: 2.5vw;
     padding-left: 4.6vw;
     color: rgba(255, 255, 255, 0.1);
     background: #ffffff;
@@ -274,6 +285,8 @@
     color: var(--secondary-color);
 }
 
+
+
 .work-experience__title2 {
     font-family: __AntonRegular_56858d;
     font-size: 16.32vw;
@@ -283,6 +296,17 @@
     padding-left: 4.6vw;
     color: var(--secondary-color);
 }
+
+.work-experience__title2.spanish {
+    font-family: __AntonRegular_56858d;
+    font-size: 15.32vw;
+    text-wrap: wrap;
+    line-height: 1;
+    margin: 0vw 0px 0vw 0px;
+    padding-left: 4.6vw;
+    color: var(--secondary-color);
+}
+
 
 
 .work-experience__items {
@@ -453,7 +477,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
     gap: 10vw;
-    margin-bottom: 20vw;
+    margin-bottom: 15vw;
 }
 
 .skills__title {
@@ -469,6 +493,16 @@
 .skills__title2 {
     font-family: __AntonRegular_56858d;
     font-size: 29.1vw;
+    text-wrap: wrap;
+    line-height: 1;
+    margin: 0vw 0px 0vw 0px;
+    padding-left: 4.6vw;
+    color: var(--secondary-color);
+}
+
+.skills__title2.spanish {
+    font-family: __AntonRegular_56858d;
+    font-size: 15.45vw;
     text-wrap: wrap;
     line-height: 1;
     margin: 0vw 0px 0vw 0px;

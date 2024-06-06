@@ -60,6 +60,26 @@
         animation: cascade 1s ease forwards;
     }
 
+    .getintouch-section .title2.spanish {
+        font-family: __AntonRegular_56858d;
+        font-size: 5vw;
+        text-wrap: nowrap;
+        line-height: 7.5vw;
+        justify-self: start;
+        padding-bottom: 50px;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        -webkit-text-decoration-line: underline;
+        -webkit-text-decoration-style: solid;
+        -webkit-text-decoration-color: transparent;
+        text-underline-offset: 0.3em;
+        background-image: linear-gradient(to right, #0047FF, #FF0000);
+        background-repeat: no-repeat;
+        background-size: 100% 0.1em;
+        background-position: 0 6.5vw;
+        animation: cascade 1s ease forwards;
+    }
+
     .getintouch-section .right {
         display: grid;
         grid-template-columns: 1fr;
@@ -85,12 +105,30 @@
 
     }
 
+    .questions .suggestion1.spanish {
+        display: grid;
+        font-family: __AntonRegular_56858d;
+        font-size: 7vw;
+        text-wrap: nowrap;
+        line-height: 9.5vw;
+
+    }
+
     .questions .suggestion2 {
         display: grid;
         font-family: __AntonRegular_56858d;
         font-size: 9.4vw;
         text-wrap: nowrap;
-        line-height: 5.5vw;
+        line-height: 6.5vw;
+
+    }
+
+    .questions .suggestion2.spanish {
+        display: grid;
+        font-family: __AntonRegular_56858d;
+        font-size: 10.65vw;
+        text-wrap: nowrap;
+        line-height: 7.5vw;
 
     }
 
@@ -99,7 +137,16 @@
         font-family: __AntonRegular_56858d;
         font-size: 6.26vw;
         text-wrap: nowrap;
-        line-height: 9vw;
+        line-height: 9.5vw;
+
+    }
+
+    .questions .suggestion3.spanish {
+        display: grid;
+        font-family: __AntonRegular_56858d;
+        font-size: 5.45vw;
+        text-wrap: nowrap;
+        line-height: 8.5vw;
 
     }
 
@@ -114,6 +161,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+
 
     .social-media {
         display: grid;
