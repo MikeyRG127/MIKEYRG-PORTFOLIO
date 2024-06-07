@@ -160,8 +160,8 @@ nav {
     }
 
     .mikey-logo {
-        width: 40.7px;
-        height: 50.4px;
+        width: 3.5vw;
+        height: 4.5vw;
         image-rendering: crisp-edges;
     }
 
@@ -189,7 +189,7 @@ nav {
         padding-top: 5px;
         padding-left: 7px;
         padding-right: 7px;
-        line-height: 0.8;
+        line-height: 2.2vw;
         border-style: solid;
         background: linear-gradient(white, white) padding-box,
             linear-gradient(to right, #0047FF 0%, #FF0000 16%, #0047FF 32%, #FF0000 48%, #0047FF 64%, #FF0000 80%, #0047FF 100%) border-box;
@@ -199,7 +199,7 @@ nav {
         -webkit-background-size: 300% 300%;
         -moz-background-size: 300% 300%;
         background-size: 300% 300%;
-        border: 3px solid transparent;
+        border: 0.25vw solid transparent;
         color: var(--secondary-color);
     }
 
