@@ -358,13 +358,17 @@
 }
 
 .work-experience__items .years2 {
-    font-family: __ArchitectsDaughterRegular_ca443e;
+    font-family: __BebasNeueRegular_171f10;
     font-size: 3vw;
     text-wrap: wrap;
     line-height: 1;
     grid-area: years2;
     justify-self: end;
     align-self: center;
+    background-color: #000000;
+    color: white;
+    padding: 1vw;
+    margin-right: 2vw;
 }
 
 
