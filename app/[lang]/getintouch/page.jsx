@@ -18,8 +18,10 @@ export default async function getintouch({ params: { lang } }) {
     return (
         <section className={`getintouch-section ${AntonRegular.className} ${PermanentMarkerRegular.className}`}>
             <div className="left">
-                <span className={`title1 ${lang === "es" ? "spanish" : ""}`}>{dict.about.getintouchP1}</span>
-                <span className={`title2 ${lang === "es" ? "spanish" : ""}`}>{dict.about.getintouchP2}</span>
+                <div className="titles">
+                    <span className={`title1 ${lang === "es" ? "spanish" : ""}`}>{dict.about.getintouchP1}</span>
+                    <span className={`title2 ${lang === "es" ? "spanish" : ""}`}>{dict.about.getintouchP2}</span>
+                </div>
                 <div className="social-media">
                     <Link href="https://www.linkedin.com/in/mikeyrg/" target="_blank" className="social-media__items">LINKEDIN</Link>
                     <Link href="https://www.facebook.com/mikeyrg127/" target="_blank" className="social-media__items">FACEBOOK</Link>

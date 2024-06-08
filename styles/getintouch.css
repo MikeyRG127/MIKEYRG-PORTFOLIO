@@ -26,8 +26,14 @@
     .left {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: max-content;
+        grid-template-rows: 1fr 1fr;
         animation: cascade 1s ease forwards;
+    }
+
+    .titles {
+        display: grid;
+        width: 100%;
+        height: max-content;
     }
 
     .getintouch-section .title1 {
@@ -69,7 +75,6 @@
         text-wrap: nowrap;
         line-height: 7.5vw;
         justify-self: start;
-        padding-bottom: 5vw;
         text-decoration-color: transparent;
         -webkit-text-decoration-line: underline;
         -webkit-text-decoration-style: solid;
@@ -169,10 +174,11 @@
     .social-media {
         display: grid;
         width: auto;
-        height: auto;
+        height: max-content;
         align-items: start;
         grid-template-columns: auto;
         line-height: 1.5;
+        gap: 1vw;
     }
 
     .social-media__items {
