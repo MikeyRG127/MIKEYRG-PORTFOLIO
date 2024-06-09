@@ -49,5 +49,9 @@
         "getintouchP4": "PROBLEM OR",
         "getintouchP5": "WANT TO HIRE ME?",
         "getintouchP6": "LET'S TALK"
+    },
+    "work": {
+        "paragraphP1": "NOW LET'S SEE SOME",
+        "paragraphP2": "WORK"
     }
 }

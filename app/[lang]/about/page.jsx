@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';

@@ -49,5 +49,9 @@
         "getintouchP4": "PROBLEMA O",
         "getintouchP5": "QUIERES CONTRATARME?",
         "getintouchP6": "HABLEMOS!!"
+    },
+    "work": {
+        "paragraphP1": "AHORA VEAMOS ALGUNOS",
+        "paragraphP2": "PROYECTOS"
     }
 }
