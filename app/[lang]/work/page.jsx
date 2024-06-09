@@ -70,8 +70,13 @@ export default async function work({ params: { lang } }) {
                             className="project-image"
                             loading="lazy"
                         />
+                        <span className="project-footer"></span>
                     </div>
                 </div>
+                <span className="footer">
+                    <span className="copyright">©2024</span>
+                    <span className="designer">DESIGNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="designer__item">MikeyRG</span></span>
+                </span>
             </section>
         </>
 

@@ -416,10 +416,10 @@ export default async function about({ params: { lang } }) {
 
 
             </div>
-            <section className="footer">
+            <div className="footer">
                 <span className="copyright">©2024</span>
                 <span className="designer">DESIGNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="designer__item">MikeyRG</span></span>
-            </section>
+            </div>
 
         </section>
     )
