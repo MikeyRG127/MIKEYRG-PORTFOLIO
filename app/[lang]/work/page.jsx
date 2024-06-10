@@ -2,7 +2,7 @@ import "@styles/work.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
 import { getDictionary } from '../dictionaries';
-
+import Link from 'next/link';
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -39,7 +39,22 @@ export default async function work({ params: { lang } }) {
                 </div>
                 <div className="projects">
                     <div className="project-container">
-                        <span className="project-title">SOLUCIONES NET LIBERACIÓN</span>
+                        <span className="project-title">CLARO RD</span>
+
+                        <Image
+                            src="/assets/images/claro.png"
+                            alt="snl"
+                            width={1500}
+                            height={1500}
+                            className="project-image"
+                            loading="lazy"
+                        />
+
+                    </div>
+                    <div className="project-container">
+                        <span className="project-title">DILCAR INTERNATIONAL, S.A.</span>
+
+
                         <Image
                             src="/assets/images/workdefault.jpg"
                             alt="snl"
@@ -48,17 +63,6 @@ export default async function work({ params: { lang } }) {
                             className="project-image"
                             loading="lazy"
                         />
-                    </div>
-                    <div className="project-container">
-                        <span className="project-title">DILCAR INTERNATIONAL, S.A.</span>
-                        <Image
-                            src="/assets/images/workdefault.jpg"
-                            alt="snl"
-                            width={1500}
-                            height={1500}
-                            className="project-image"
-                            loading="lazy"
-                        ></Image>
                     </div>
                     <div className="project-container">
                         <span className="project-title">SOLUCIONES NET LIBERACIÓN</span>
