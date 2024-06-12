@@ -1,0 +1,41 @@
+.work-modal {
+    display: none
+}
+
+.work-modal.active {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.modal-content {
+    display: grid;
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 2vw;
+}
+
+.project-image {
+    width: 100%;
+    height: 50vw;
+    clip-path: polygon(0% 0%, 100% 17.5%, 100% 100%, 0% 82.5%);
+    position: relative;
+    top: -4vw;
+    object-fit: cover;
+    transition: opacity 0.7s;
+
+}
+
+.project-image:hover {
+    opacity: 50%;
+    cursor: pointer
+}

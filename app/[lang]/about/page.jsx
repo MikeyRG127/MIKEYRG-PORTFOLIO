@@ -2,6 +2,7 @@ import "@styles/about.css";
 import Image from "next/image";
 import localFont from 'next/font/local';
 import { getDictionary } from '../dictionaries';
+
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -30,8 +31,10 @@ const KhulaRegular = localFont({
 
 export default async function about({ params: { lang } }) {
     const dict = await getDictionary(lang) // en
+
     return (
         <section className={`about-section ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
+
             <span className="about-paragraph">
                 {dict.about.aboutP1}
             </span>
@@ -74,58 +77,67 @@ export default async function about({ params: { lang } }) {
             <div className="education">
                 <span className="education__title">{dict.about.educationP1}</span>
                 <span className="education__title2">{dict.about.educationP2}</span>
-                <div className="education__items">
-                    <span className="role">{dict.about.educationP3}</span>
-                    <span className="company">{dict.about.educationP4}</span>
-                    <span className="years">{dict.about.educationP5}</span>
-                    <Image
-                        src="/assets/icons/uasd-logo.svg"
-                        alt="uasd-logo"
-                        width={130}
-                        height={130}
-                        className="education-logos"
-                        loading="lazy"
-                    />
-                </div>
-                <div className="education__items">
-                    <span className="role">{dict.about.educationP6}</span>
-                    <span className="company">{dict.about.educationP7}</span>
-                    <span className="years">{dict.about.educationP8}</span>
-                    <Image
-                        src="/assets/icons/itsc-logo.svg"
-                        alt="itsc-logo"
-                        width={130}
-                        height={130}
-                        className="education-logos"
-                        loading="lazy"
-                    />
-                </div>
-                <div className="education__items">
-                    <span className="role">{dict.about.educationP9}</span>
-                    <span className="company">{dict.about.educationP10}</span>
-                    <span className="years">{dict.about.educationP11}</span>
-                    <Image
-                        src="/assets/icons/mescyt-logo.svg"
-                        alt="mescyt-logo"
-                        width={130}
-                        height={130}
-                        className="education-logos"
-                        loading="lazy"
-                    />
-                </div>
-                <div className="education__items">
-                    <span className="role">{dict.about.educationP12}</span>
-                    <span className="company">{dict.about.educationP13}</span>
-                    <span className="years">{dict.about.educationP14}</span>
-                    <Image
-                        src="/assets/icons/infotep-logo.svg"
-                        alt="infotep-logo"
-                        width={130}
-                        height={130}
-                        className="education-logos"
-                        loading="lazy"
-                    />
-                </div>
+                <a href="https://uasd.edu.do/" target="_blank">
+                    <div className="education__items">
+                        <span className="role">{dict.about.educationP3}</span>
+                        <span className="company">{dict.about.educationP4}</span>
+                        <span className="years">{dict.about.educationP5}</span>
+                        <Image
+                            src="/assets/icons/uasd-logo.svg"
+                            alt="uasd-logo"
+                            width={130}
+                            height={130}
+                            className="education-logos"
+                            loading="lazy"
+                        />
+                    </div>
+                </a>
+
+                <a href="https://www.itsc.edu.do/" target="_blank">
+                    <div className="education__items">
+                        <span className="role">{dict.about.educationP6}</span>
+                        <span className="company">{dict.about.educationP7}</span>
+                        <span className="years">{dict.about.educationP8}</span>
+                        <Image
+                            src="/assets/icons/itsc-logo.svg"
+                            alt="itsc-logo"
+                            width={130}
+                            height={130}
+                            className="education-logos"
+                            loading="lazy"
+                        />
+                    </div>
+                </a>
+                <a href="https://mescyt.gob.do/" target="_blank">
+                    <div className="education__items">
+                        <span className="role">{dict.about.educationP9}</span>
+                        <span className="company">{dict.about.educationP10}</span>
+                        <span className="years">{dict.about.educationP11}</span>
+                        <Image
+                            src="/assets/icons/mescyt-logo.svg"
+                            alt="mescyt-logo"
+                            width={130}
+                            height={130}
+                            className="education-logos"
+                            loading="lazy"
+                        />
+                    </div>
+                </a>
+                <a href="https://www.infotep.gob.do/" target="_blank">
+                    <div className="education__items">
+                        <span className="role">{dict.about.educationP12}</span>
+                        <span className="company">{dict.about.educationP13}</span>
+                        <span className="years">{dict.about.educationP14}</span>
+                        <Image
+                            src="/assets/icons/infotep-logo.svg"
+                            alt="infotep-logo"
+                            width={130}
+                            height={130}
+                            className="education-logos"
+                            loading="lazy"
+                        />
+                    </div>
+                </a>
             </div>
 
             <div className="skills">
@@ -416,7 +428,7 @@ export default async function about({ params: { lang } }) {
 
 
             </div>
-            <div className="footer">
+            <div className="about-footer">
                 <span className="copyright">©2024</span>
                 <span className="designer">DESIGNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="designer__item">MikeyRG</span></span>
             </div>

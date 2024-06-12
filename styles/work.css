@@ -137,7 +137,7 @@
 }
 
 
-.footer {
+.work-footer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -150,19 +150,19 @@
     margin-top: 20vw;
 }
 
-.footer .copyright {
+.work-footer .copyright {
     font-family: __BebasNeueRegular_171f10;
     font-size: 2vw;
 }
 
-.footer .designer {
+.work-footer .designer {
     font-family: __BebasNeueRegular_171f10;
     font-size: 2vw;
     text-align: end;
 }
 
 
-.footer .designer__item {
+.work-footer .designer__item {
     font-family: __ArchitectsDaughterRegular_ca443e;
     font-size: 2vw;
     text-align: end;

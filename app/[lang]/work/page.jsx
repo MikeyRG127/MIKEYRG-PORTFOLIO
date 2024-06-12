@@ -3,6 +3,8 @@ import Image from "next/image";
 import localFont from 'next/font/local';
 import { getDictionary } from '../dictionaries';
 import Link from 'next/link';
+import WorkModal from "@components/WorkModal";
+
 const AntonRegular = localFont({
     src: '../../../public/assets/fonts/Anton-Regular.ttf',
     display: 'swap',
@@ -40,44 +42,37 @@ export default async function work({ params: { lang } }) {
                 <div className="projects">
                     <div className="project-container">
                         <span className="project-title">CLARO RD</span>
-
-                        <Image
+                        <WorkModal
+                            title="ClaroRD"
+                            description={`I helped the develop visual changes in the main dashboard`}
+                            url="www.mikeyrg.com"
                             src="/assets/images/claro.png"
-                            alt="snl"
-                            width={1500}
-                            height={1500}
-                            className="project-image"
-                            loading="lazy"
-                        />
-
+                        ></WorkModal>
                     </div>
                     <div className="project-container">
                         <span className="project-title">DILCAR INTERNATIONAL, S.A.</span>
+                        <WorkModal
+                            title="DILCAR INTERNATIONAL, S.A."
+                            description={`I helped the develop visual changes in the main dashboard`}
+                            url="www.mikeyrg.com"
+                            src="/assets/images/claro.png"
+                            alt={"DILCAR INTERNATIONAL, S.A."}
+                        ></WorkModal>
 
-
-                        <Image
-                            src="/assets/images/workdefault.jpg"
-                            alt="snl"
-                            width={1500}
-                            height={1500}
-                            className="project-image"
-                            loading="lazy"
-                        />
                     </div>
                     <div className="project-container">
                         <span className="project-title">SOLUCIONES NET LIBERACIÓN</span>
-                        <Image
+                        <WorkModal
+                            title="SOLUCIONES NET LIBERACIÓN"
+                            description={`I helped the develop visual changes in the main dashboard`}
+                            url="www.mikeyrg.com"
                             src="/assets/images/workdefault.jpg"
-                            alt="snl"
-                            width={1500}
-                            height={1500}
-                            className="project-image"
-                            loading="lazy"
-                        />
+                            alt={"SOLUCIONES NET LIBERACIÓN"}
+                        ></WorkModal>
                         <span className="project-footer"></span>
                     </div>
                 </div>
-                <span className="footer">
+                <span className="work-footer">
                     <span className="copyright">©2024</span>
                     <span className="designer">DESIGNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="designer__item">MikeyRG</span></span>
                 </span>
