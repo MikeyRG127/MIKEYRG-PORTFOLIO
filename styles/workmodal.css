@@ -1,0 +1,17 @@
+.work-modal {
+    display: none
+}
+
+.work-modal.active {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
