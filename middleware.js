@@ -11,7 +11,6 @@ export function middleware(request) {
     const { nextUrl } = request;
     const { pathname } = nextUrl;
     const cookieStore = request.cookies;
-    console.log(pathname);
     if (
         request.nextUrl.pathname.startsWith('/_next') ||
         PUBLIC_FILE.test(request.nextUrl.pathname)
