@@ -11,7 +11,7 @@ export function middleware(request) {
     const { nextUrl } = request;
     const { pathname } = nextUrl;
     const cookieStore = request.cookies;
-
+    console.log(pathname);
     if (
         request.nextUrl.pathname.startsWith('/_next') ||
         PUBLIC_FILE.test(request.nextUrl.pathname)
@@ -23,7 +23,7 @@ export function middleware(request) {
     let language = cookieStore.get('LANGUAGE')?.value;
 
     // If the LANGUAGE cookie does not exist, perform language negotiation
-    if (!language) {
+    if (!language || pathname === undefined || pathname === "" || pathname === null) {
         const headers = { 'accept-language': request.headers.get('accept-language') };
         const negotiator = new Negotiator({ headers });
         language = negotiator.languages(locales)[0] || defaultLocale;
