@@ -40,6 +40,12 @@ nav {
     gap: 1.5rem;
 }
 
+#LogoClicked {
+    display: grid;
+    width: min-content;
+    height: min-content;
+}
+
 .nav-sections {
     display: none;
 }

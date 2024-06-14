@@ -21,7 +21,34 @@
     width: 70vw;
     height: 80vh;
     background-color: white;
-    border-radius: 2vw;
+    border-radius: 1.5vw;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+}
+
+
+
+.topbar {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    padding: 1vw;
+    justify-items: end;
+}
+
+
+.modal-close-icon {
+    opacity: 100%;
+    transition: opacity 1s ease;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.modal-close-icon:hover {
+    opacity: 40%;
+    transform: scale(1.05);
 }
 
 .project-image {
