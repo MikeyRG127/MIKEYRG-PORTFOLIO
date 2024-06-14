@@ -1,5 +1,5 @@
 import "@styles/work.css";
-import Image from "next/image";
+
 import localFont from 'next/font/local';
 import { getDictionary } from '../dictionaries';
 import Link from 'next/link';
@@ -33,7 +33,7 @@ const KhulaRegular = localFont({
 export default async function work({ params: { lang } }) {
     const dict = await getDictionary(lang) // en
     return (
-        <>  <WorkModal isActive={false}></WorkModal>
+        <>
             <section className={`work ${AntonRegular.className} ${KhulaRegular.className} ${ArchitectsDaughterRegular.className} ${BebasNeueRegular.className}`}>
                 <div className="paragraph">
                     <span className="paragraph1">{dict.work.paragraphP1}</span>
